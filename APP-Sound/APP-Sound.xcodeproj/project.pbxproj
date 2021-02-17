@@ -1,0 +1,766 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C0F37B325DC66EF00C4AD34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0F37B225DC66EF00C4AD34 /* AppDelegate.swift */; };
+		4C0F37B525DC66EF00C4AD34 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0F37B425DC66EF00C4AD34 /* SceneDelegate.swift */; };
+		4C0F37B725DC66EF00C4AD34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0F37B625DC66EF00C4AD34 /* ViewController.swift */; };
+		4C0F37BA25DC66EF00C4AD34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C0F37B825DC66EF00C4AD34 /* Main.storyboard */; };
+		4C0F37BC25DC66F100C4AD34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C0F37BB25DC66F100C4AD34 /* Assets.xcassets */; };
+		4C0F37BF25DC66F100C4AD34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C0F37BD25DC66F100C4AD34 /* LaunchScreen.storyboard */; };
+		4C0F37CA25DC66F100C4AD34 /* APP_SoundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0F37C925DC66F100C4AD34 /* APP_SoundTests.swift */; };
+		4C0F37D525DC66F100C4AD34 /* APP_SoundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0F37D425DC66F100C4AD34 /* APP_SoundUITests.swift */; };
+		4C0F37E625DC672A00C4AD34 /* Player.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C0F37E525DC672A00C4AD34 /* Player.storyboard */; };
+		4C0F37EB25DC674300C4AD34 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0F37EA25DC674300C4AD34 /* PlayerViewController.swift */; };
+		4C0F381425DC853000C4AD34 /* Somebody That I Used to Know.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4C0F381325DC853000C4AD34 /* Somebody That I Used to Know.mp3 */; };
+		701F02F140DBFBC7683966F7 /* Pods_APP_Sound.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2A9E68806AD57E8FEB269E6 /* Pods_APP_Sound.framework */; };
+		71AD966A703674745888825A /* Pods_APP_Sound_APP_SoundUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72DA7017BDD117A784B4507D /* Pods_APP_Sound_APP_SoundUITests.framework */; };
+		C8D5B1B70D291D186809C33C /* Pods_APP_SoundTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FC7B85EBEE6EB1DF9BAB285 /* Pods_APP_SoundTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4C0F37C625DC66F100C4AD34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C0F37A725DC66EF00C4AD34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C0F37AE25DC66EF00C4AD34;
+			remoteInfo = "APP-Sound";
+		};
+		4C0F37D125DC66F100C4AD34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C0F37A725DC66EF00C4AD34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C0F37AE25DC66EF00C4AD34;
+			remoteInfo = "APP-Sound";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08AC27F36B066C2FB554715C /* Pods-APP-Sound.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APP-Sound.debug.xcconfig"; path = "Target Support Files/Pods-APP-Sound/Pods-APP-Sound.debug.xcconfig"; sourceTree = "<group>"; };
+		20AD35BAAC635151542D384C /* Pods-APP-Sound.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APP-Sound.release.xcconfig"; path = "Target Support Files/Pods-APP-Sound/Pods-APP-Sound.release.xcconfig"; sourceTree = "<group>"; };
+		4C0F37AF25DC66EF00C4AD34 /* APP-Sound.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "APP-Sound.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C0F37B225DC66EF00C4AD34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4C0F37B425DC66EF00C4AD34 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4C0F37B625DC66EF00C4AD34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4C0F37B925DC66EF00C4AD34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4C0F37BB25DC66F100C4AD34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C0F37BE25DC66F100C4AD34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4C0F37C025DC66F100C4AD34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C0F37C525DC66F100C4AD34 /* APP-SoundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "APP-SoundTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C0F37C925DC66F100C4AD34 /* APP_SoundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APP_SoundTests.swift; sourceTree = "<group>"; };
+		4C0F37CB25DC66F100C4AD34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C0F37D025DC66F100C4AD34 /* APP-SoundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "APP-SoundUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C0F37D425DC66F100C4AD34 /* APP_SoundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APP_SoundUITests.swift; sourceTree = "<group>"; };
+		4C0F37D625DC66F100C4AD34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C0F37E525DC672A00C4AD34 /* Player.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Player.storyboard; sourceTree = "<group>"; };
+		4C0F37EA25DC674300C4AD34 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		4C0F381325DC853000C4AD34 /* Somebody That I Used to Know.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Somebody That I Used to Know.mp3"; sourceTree = "<group>"; };
+		72DA7017BDD117A784B4507D /* Pods_APP_Sound_APP_SoundUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APP_Sound_APP_SoundUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FC7B85EBEE6EB1DF9BAB285 /* Pods_APP_SoundTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APP_SoundTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9377F689BAC87F030BDA50A0 /* Pods-APP-Sound-APP-SoundUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APP-Sound-APP-SoundUITests.debug.xcconfig"; path = "Target Support Files/Pods-APP-Sound-APP-SoundUITests/Pods-APP-Sound-APP-SoundUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B2A9E68806AD57E8FEB269E6 /* Pods_APP_Sound.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APP_Sound.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFAF3FABADCC3D508728CF86 /* Pods-APP-Sound-APP-SoundUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APP-Sound-APP-SoundUITests.release.xcconfig"; path = "Target Support Files/Pods-APP-Sound-APP-SoundUITests/Pods-APP-Sound-APP-SoundUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D65F04DFA21D90DD4C725C52 /* Pods-APP-SoundTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APP-SoundTests.debug.xcconfig"; path = "Target Support Files/Pods-APP-SoundTests/Pods-APP-SoundTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F9A3E230F626B40A44100BAF /* Pods-APP-SoundTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APP-SoundTests.release.xcconfig"; path = "Target Support Files/Pods-APP-SoundTests/Pods-APP-SoundTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C0F37AC25DC66EF00C4AD34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				701F02F140DBFBC7683966F7 /* Pods_APP_Sound.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C0F37C225DC66F100C4AD34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8D5B1B70D291D186809C33C /* Pods_APP_SoundTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C0F37CD25DC66F100C4AD34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71AD966A703674745888825A /* Pods_APP_Sound_APP_SoundUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		23E9721A980BD3424A63420C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2A9E68806AD57E8FEB269E6 /* Pods_APP_Sound.framework */,
+				72DA7017BDD117A784B4507D /* Pods_APP_Sound_APP_SoundUITests.framework */,
+				8FC7B85EBEE6EB1DF9BAB285 /* Pods_APP_SoundTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C0F37A625DC66EF00C4AD34 = {
+			isa = PBXGroup;
+			children = (
+				4C0F37B125DC66EF00C4AD34 /* APP-Sound */,
+				4C0F37C825DC66F100C4AD34 /* APP-SoundTests */,
+				4C0F37D325DC66F100C4AD34 /* APP-SoundUITests */,
+				4C0F37B025DC66EF00C4AD34 /* Products */,
+				F578A1FE79F1A5EF6B28DADC /* Pods */,
+				23E9721A980BD3424A63420C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4C0F37B025DC66EF00C4AD34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C0F37AF25DC66EF00C4AD34 /* APP-Sound.app */,
+				4C0F37C525DC66F100C4AD34 /* APP-SoundTests.xctest */,
+				4C0F37D025DC66F100C4AD34 /* APP-SoundUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C0F37B125DC66EF00C4AD34 /* APP-Sound */ = {
+			isa = PBXGroup;
+			children = (
+				4C0F37B225DC66EF00C4AD34 /* AppDelegate.swift */,
+				4C0F37B425DC66EF00C4AD34 /* SceneDelegate.swift */,
+				4C0F37B625DC66EF00C4AD34 /* ViewController.swift */,
+				4C0F37B825DC66EF00C4AD34 /* Main.storyboard */,
+				4C0F37BB25DC66F100C4AD34 /* Assets.xcassets */,
+				4C0F380F25DC852400C4AD34 /* Music */,
+				4C0F37BD25DC66F100C4AD34 /* LaunchScreen.storyboard */,
+				4C0F37C025DC66F100C4AD34 /* Info.plist */,
+				4C0F37E525DC672A00C4AD34 /* Player.storyboard */,
+				4C0F37EA25DC674300C4AD34 /* PlayerViewController.swift */,
+			);
+			path = "APP-Sound";
+			sourceTree = "<group>";
+		};
+		4C0F37C825DC66F100C4AD34 /* APP-SoundTests */ = {
+			isa = PBXGroup;
+			children = (
+				4C0F37C925DC66F100C4AD34 /* APP_SoundTests.swift */,
+				4C0F37CB25DC66F100C4AD34 /* Info.plist */,
+			);
+			path = "APP-SoundTests";
+			sourceTree = "<group>";
+		};
+		4C0F37D325DC66F100C4AD34 /* APP-SoundUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4C0F37D425DC66F100C4AD34 /* APP_SoundUITests.swift */,
+				4C0F37D625DC66F100C4AD34 /* Info.plist */,
+			);
+			path = "APP-SoundUITests";
+			sourceTree = "<group>";
+		};
+		4C0F380F25DC852400C4AD34 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				4C0F381325DC853000C4AD34 /* Somebody That I Used to Know.mp3 */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		F578A1FE79F1A5EF6B28DADC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08AC27F36B066C2FB554715C /* Pods-APP-Sound.debug.xcconfig */,
+				20AD35BAAC635151542D384C /* Pods-APP-Sound.release.xcconfig */,
+				9377F689BAC87F030BDA50A0 /* Pods-APP-Sound-APP-SoundUITests.debug.xcconfig */,
+				CFAF3FABADCC3D508728CF86 /* Pods-APP-Sound-APP-SoundUITests.release.xcconfig */,
+				D65F04DFA21D90DD4C725C52 /* Pods-APP-SoundTests.debug.xcconfig */,
+				F9A3E230F626B40A44100BAF /* Pods-APP-SoundTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C0F37AE25DC66EF00C4AD34 /* APP-Sound */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C0F37D925DC66F100C4AD34 /* Build configuration list for PBXNativeTarget "APP-Sound" */;
+			buildPhases = (
+				A0F6E6D7704759324F6CBB4D /* [CP] Check Pods Manifest.lock */,
+				4C0F37AB25DC66EF00C4AD34 /* Sources */,
+				4C0F37AC25DC66EF00C4AD34 /* Frameworks */,
+				4C0F37AD25DC66EF00C4AD34 /* Resources */,
+				43EFE43EB026D215F9688E01 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "APP-Sound";
+			productName = "APP-Sound";
+			productReference = 4C0F37AF25DC66EF00C4AD34 /* APP-Sound.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4C0F37C425DC66F100C4AD34 /* APP-SoundTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C0F37DC25DC66F100C4AD34 /* Build configuration list for PBXNativeTarget "APP-SoundTests" */;
+			buildPhases = (
+				74B389F048A8E6348C05C18E /* [CP] Check Pods Manifest.lock */,
+				4C0F37C125DC66F100C4AD34 /* Sources */,
+				4C0F37C225DC66F100C4AD34 /* Frameworks */,
+				4C0F37C325DC66F100C4AD34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C0F37C725DC66F100C4AD34 /* PBXTargetDependency */,
+			);
+			name = "APP-SoundTests";
+			productName = "APP-SoundTests";
+			productReference = 4C0F37C525DC66F100C4AD34 /* APP-SoundTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4C0F37CF25DC66F100C4AD34 /* APP-SoundUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C0F37DF25DC66F100C4AD34 /* Build configuration list for PBXNativeTarget "APP-SoundUITests" */;
+			buildPhases = (
+				4900745126FB0E9CEA35E51E /* [CP] Check Pods Manifest.lock */,
+				4C0F37CC25DC66F100C4AD34 /* Sources */,
+				4C0F37CD25DC66F100C4AD34 /* Frameworks */,
+				4C0F37CE25DC66F100C4AD34 /* Resources */,
+				022E55B0570003A9C8C440FA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C0F37D225DC66F100C4AD34 /* PBXTargetDependency */,
+			);
+			name = "APP-SoundUITests";
+			productName = "APP-SoundUITests";
+			productReference = 4C0F37D025DC66F100C4AD34 /* APP-SoundUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C0F37A725DC66EF00C4AD34 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					4C0F37AE25DC66EF00C4AD34 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					4C0F37C425DC66F100C4AD34 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 4C0F37AE25DC66EF00C4AD34;
+					};
+					4C0F37CF25DC66F100C4AD34 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 4C0F37AE25DC66EF00C4AD34;
+					};
+				};
+			};
+			buildConfigurationList = 4C0F37AA25DC66EF00C4AD34 /* Build configuration list for PBXProject "APP-Sound" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4C0F37A625DC66EF00C4AD34;
+			productRefGroup = 4C0F37B025DC66EF00C4AD34 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C0F37AE25DC66EF00C4AD34 /* APP-Sound */,
+				4C0F37C425DC66F100C4AD34 /* APP-SoundTests */,
+				4C0F37CF25DC66F100C4AD34 /* APP-SoundUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C0F37AD25DC66EF00C4AD34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C0F381425DC853000C4AD34 /* Somebody That I Used to Know.mp3 in Resources */,
+				4C0F37BF25DC66F100C4AD34 /* LaunchScreen.storyboard in Resources */,
+				4C0F37E625DC672A00C4AD34 /* Player.storyboard in Resources */,
+				4C0F37BC25DC66F100C4AD34 /* Assets.xcassets in Resources */,
+				4C0F37BA25DC66EF00C4AD34 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C0F37C325DC66F100C4AD34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C0F37CE25DC66F100C4AD34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		022E55B0570003A9C8C440FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-APP-Sound-APP-SoundUITests/Pods-APP-Sound-APP-SoundUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-APP-Sound-APP-SoundUITests/Pods-APP-Sound-APP-SoundUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-APP-Sound-APP-SoundUITests/Pods-APP-Sound-APP-SoundUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43EFE43EB026D215F9688E01 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-APP-Sound/Pods-APP-Sound-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-APP-Sound/Pods-APP-Sound-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-APP-Sound/Pods-APP-Sound-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4900745126FB0E9CEA35E51E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-APP-Sound-APP-SoundUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74B389F048A8E6348C05C18E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-APP-SoundTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0F6E6D7704759324F6CBB4D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-APP-Sound-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C0F37AB25DC66EF00C4AD34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C0F37B725DC66EF00C4AD34 /* ViewController.swift in Sources */,
+				4C0F37EB25DC674300C4AD34 /* PlayerViewController.swift in Sources */,
+				4C0F37B325DC66EF00C4AD34 /* AppDelegate.swift in Sources */,
+				4C0F37B525DC66EF00C4AD34 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C0F37C125DC66F100C4AD34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C0F37CA25DC66F100C4AD34 /* APP_SoundTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C0F37CC25DC66F100C4AD34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C0F37D525DC66F100C4AD34 /* APP_SoundUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4C0F37C725DC66F100C4AD34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C0F37AE25DC66EF00C4AD34 /* APP-Sound */;
+			targetProxy = 4C0F37C625DC66F100C4AD34 /* PBXContainerItemProxy */;
+		};
+		4C0F37D225DC66F100C4AD34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C0F37AE25DC66EF00C4AD34 /* APP-Sound */;
+			targetProxy = 4C0F37D125DC66F100C4AD34 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4C0F37B825DC66EF00C4AD34 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C0F37B925DC66EF00C4AD34 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4C0F37BD25DC66F100C4AD34 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C0F37BE25DC66F100C4AD34 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4C0F37D725DC66F100C4AD34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4C0F37D825DC66F100C4AD34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C0F37DA25DC66F100C4AD34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08AC27F36B066C2FB554715C /* Pods-APP-Sound.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "APP-Sound/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lestad.APP-Sound";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4C0F37DB25DC66F100C4AD34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20AD35BAAC635151542D384C /* Pods-APP-Sound.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "APP-Sound/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lestad.APP-Sound";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4C0F37DD25DC66F100C4AD34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D65F04DFA21D90DD4C725C52 /* Pods-APP-SoundTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "APP-SoundTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lestad.APP-SoundTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/APP-Sound.app/APP-Sound";
+			};
+			name = Debug;
+		};
+		4C0F37DE25DC66F100C4AD34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9A3E230F626B40A44100BAF /* Pods-APP-SoundTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "APP-SoundTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lestad.APP-SoundTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/APP-Sound.app/APP-Sound";
+			};
+			name = Release;
+		};
+		4C0F37E025DC66F100C4AD34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9377F689BAC87F030BDA50A0 /* Pods-APP-Sound-APP-SoundUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "APP-SoundUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lestad.APP-SoundUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "APP-Sound";
+			};
+			name = Debug;
+		};
+		4C0F37E125DC66F100C4AD34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFAF3FABADCC3D508728CF86 /* Pods-APP-Sound-APP-SoundUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "APP-SoundUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lestad.APP-SoundUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "APP-Sound";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C0F37AA25DC66EF00C4AD34 /* Build configuration list for PBXProject "APP-Sound" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C0F37D725DC66F100C4AD34 /* Debug */,
+				4C0F37D825DC66F100C4AD34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C0F37D925DC66F100C4AD34 /* Build configuration list for PBXNativeTarget "APP-Sound" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C0F37DA25DC66F100C4AD34 /* Debug */,
+				4C0F37DB25DC66F100C4AD34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C0F37DC25DC66F100C4AD34 /* Build configuration list for PBXNativeTarget "APP-SoundTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C0F37DD25DC66F100C4AD34 /* Debug */,
+				4C0F37DE25DC66F100C4AD34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C0F37DF25DC66F100C4AD34 /* Build configuration list for PBXNativeTarget "APP-SoundUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C0F37E025DC66F100C4AD34 /* Debug */,
+				4C0F37E125DC66F100C4AD34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C0F37A725DC66EF00C4AD34 /* Project object */;
+}

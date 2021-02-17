@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="71X-ej-j0A">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Player-->
+        <scene sceneID="71n-PW-1Vo">
+            <objects>
+                <viewController storyboardIdentifier="Player" title="Player" useStoryboardIdentifierAsRestorationIdentifier="YES" id="71X-ej-j0A" customClass="PlayerViewController" customModule="APP_Sound" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="48m-ib-wLq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EgX-H0-ir9" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                <rect key="frame" x="39" y="49" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="61h-ot-vxA"/>
+                                    <constraint firstAttribute="width" constant="40" id="Ubo-WO-3pG"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="arrowshape.turn.up.left" catalog="system"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glg-kD-9ew" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                <rect key="frame" x="335" y="49" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="GDy-aP-mHH"/>
+                                    <constraint firstAttribute="height" constant="40" id="OrJ-a3-jyb"/>
+                                </constraints>
+                                <state key="normal" image="list.triangle" catalog="system"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfz-68-aeZ" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                <rect key="frame" x="59" y="638" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="BIa-oa-Su9"/>
+                                    <constraint firstAttribute="height" constant="50" id="dkl-s0-FBw"/>
+                                </constraints>
+                                <state key="normal" image="backward.frame" catalog="system"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Asc-zT-Lln" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                <rect key="frame" x="305" y="638" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Gt3-Mf-XNB"/>
+                                    <constraint firstAttribute="width" constant="50" id="Zgd-5b-Vbw"/>
+                                </constraints>
+                                <state key="normal" image="forward.end" catalog="system"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phk-NA-oGc" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                <rect key="frame" x="164" y="623" width="86" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="86" id="OYl-eF-IGG"/>
+                                    <constraint firstAttribute="height" constant="80" id="i9L-65-WJO"/>
+                                </constraints>
+                                <state key="normal" image="play" catalog="system"/>
+                                <connections>
+                                    <action selector="playButton:" destination="71X-ej-j0A" eventType="touchUpInside" id="GR8-9g-HOd"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLAYING NOW" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="swG-Vn-Z56">
+                                <rect key="frame" x="131" y="59" width="160" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="UD5-kf-7c0"/>
+                                    <constraint firstAttribute="width" constant="160" id="yCx-39-VxF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7c4-rf-dn1" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                <rect key="frame" x="61" y="137" width="300" height="300"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="cuZ-iD-zzr"/>
+                                    <constraint firstAttribute="width" constant="300" id="h5p-1f-3gd"/>
+                                </constraints>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ghU-6c-Qo9">
+                                <rect key="frame" x="70" y="145" width="285" height="285"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="285" id="8xi-sC-5mc"/>
+                                    <constraint firstAttribute="height" constant="285" id="l2T-15-1d8"/>
+                                </constraints>
+                            </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="smb-WH-Ghu">
+                                <rect key="frame" x="70" y="602" width="305" height="4"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="4" id="D8a-WK-YYJ"/>
+                                    <constraint firstAttribute="width" constant="305" id="jYd-nj-4bi"/>
+                                </constraints>
+                            </progressView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="69g-M6-lpE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="69g-M6-lpE" firstAttribute="bottom" secondItem="xfz-68-aeZ" secondAttribute="bottom" constant="125" id="2nh-cU-he1"/>
+                            <constraint firstItem="EgX-H0-ir9" firstAttribute="leading" secondItem="69g-M6-lpE" secondAttribute="leading" constant="39" id="3Zj-Rd-Uar"/>
+                            <constraint firstItem="69g-M6-lpE" firstAttribute="trailing" secondItem="glg-kD-9ew" secondAttribute="trailing" constant="39" id="3cm-eF-AvN"/>
+                            <constraint firstItem="7c4-rf-dn1" firstAttribute="top" secondItem="EgX-H0-ir9" secondAttribute="bottom" constant="48" id="6Kq-3s-z6z"/>
+                            <constraint firstItem="EgX-H0-ir9" firstAttribute="top" secondItem="69g-M6-lpE" secondAttribute="top" constant="5" id="6jG-PE-zxD"/>
+                            <constraint firstItem="swG-Vn-Z56" firstAttribute="top" secondItem="69g-M6-lpE" secondAttribute="top" constant="15" id="75u-cv-4cJ"/>
+                            <constraint firstItem="69g-M6-lpE" firstAttribute="bottom" secondItem="phk-NA-oGc" secondAttribute="bottom" constant="110" id="9PX-Vi-TjT"/>
+                            <constraint firstItem="ghU-6c-Qo9" firstAttribute="leading" secondItem="69g-M6-lpE" secondAttribute="leading" constant="70" id="AJX-uq-908"/>
+                            <constraint firstItem="69g-M6-lpE" firstAttribute="bottom" secondItem="Asc-zT-Lln" secondAttribute="bottom" constant="125" id="I8K-jS-xqb"/>
+                            <constraint firstItem="69g-M6-lpE" firstAttribute="trailing" secondItem="Asc-zT-Lln" secondAttribute="trailing" constant="59" id="Jrz-Z3-d6P"/>
+                            <constraint firstItem="7c4-rf-dn1" firstAttribute="leading" secondItem="69g-M6-lpE" secondAttribute="leading" constant="61" id="M4e-v4-UdT"/>
+                            <constraint firstItem="69g-M6-lpE" firstAttribute="trailing" secondItem="ghU-6c-Qo9" secondAttribute="trailing" constant="59" id="Mt6-jc-sgR"/>
+                            <constraint firstItem="phk-NA-oGc" firstAttribute="leading" secondItem="xfz-68-aeZ" secondAttribute="trailing" constant="55" id="Qhe-fz-bEe"/>
+                            <constraint firstItem="Asc-zT-Lln" firstAttribute="leading" secondItem="phk-NA-oGc" secondAttribute="trailing" constant="55" id="bRT-Aa-8z8"/>
+                            <constraint firstItem="smb-WH-Ghu" firstAttribute="leading" secondItem="69g-M6-lpE" secondAttribute="leading" constant="70" id="c9d-gN-9S5"/>
+                            <constraint firstItem="69g-M6-lpE" firstAttribute="trailing" secondItem="smb-WH-Ghu" secondAttribute="trailing" constant="39" id="gq9-bp-Mc5"/>
+                            <constraint firstItem="glg-kD-9ew" firstAttribute="top" secondItem="69g-M6-lpE" secondAttribute="top" constant="5" id="iKd-Zd-Wa5"/>
+                            <constraint firstItem="xfz-68-aeZ" firstAttribute="leading" secondItem="69g-M6-lpE" secondAttribute="leading" constant="59" id="mha-7e-g4K"/>
+                            <constraint firstItem="phk-NA-oGc" firstAttribute="top" secondItem="smb-WH-Ghu" secondAttribute="bottom" constant="17" id="pdQ-YP-8vC"/>
+                            <constraint firstItem="69g-M6-lpE" firstAttribute="trailing" secondItem="7c4-rf-dn1" secondAttribute="trailing" constant="53" id="x2M-7m-2wx"/>
+                            <constraint firstItem="swG-Vn-Z56" firstAttribute="leading" secondItem="EgX-H0-ir9" secondAttribute="trailing" constant="52" id="y7s-Ph-r5s"/>
+                            <constraint firstItem="ghU-6c-Qo9" firstAttribute="top" secondItem="EgX-H0-ir9" secondAttribute="bottom" constant="56" id="ye5-bq-nbh"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="autorImage" destination="ghU-6c-Qo9" id="6ka-D0-4km"/>
+                        <outlet property="backButton" destination="EgX-H0-ir9" id="t14-aJ-ER5"/>
+                        <outlet property="backwardButton" destination="xfz-68-aeZ" id="nGz-qH-mgp"/>
+                        <outlet property="forwardButton" destination="Asc-zT-Lln" id="A5c-mu-uW2"/>
+                        <outlet property="menuListButton" destination="glg-kD-9ew" id="MbH-Ha-MED"/>
+                        <outlet property="playButton" destination="phk-NA-oGc" id="O7J-Xt-I8s"/>
+                        <outlet property="progressBar" destination="smb-WH-Ghu" id="UDv-Nb-z2Y"/>
+                        <outlet property="viewImage" destination="7c4-rf-dn1" id="ErR-k7-Fl5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ama-1b-aSI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-110.14492753623189" y="145.98214285714286"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrowshape.turn.up.left" catalog="system" width="128" height="106"/>
+        <image name="backward.frame" catalog="system" width="128" height="99"/>
+        <image name="forward.end" catalog="system" width="128" height="120"/>
+        <image name="list.triangle" catalog="system" width="128" height="91"/>
+        <image name="play" catalog="system" width="120" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
