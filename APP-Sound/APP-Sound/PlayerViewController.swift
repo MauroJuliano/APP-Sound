@@ -8,7 +8,7 @@
 import UIKit
 import EMTNeumorphicView
 import SwiftySound
-
+import SwiftSiriWaveformView
 class PlayerViewController: UIViewController {
     @IBOutlet var backButton: EMTNeumorphicButton!
     @IBOutlet var menuListButton: EMTNeumorphicButton!
@@ -16,23 +16,39 @@ class PlayerViewController: UIViewController {
     @IBOutlet var playButton: EMTNeumorphicButton!
     @IBOutlet var forwardButton: EMTNeumorphicButton!
     @IBOutlet var viewImage: EMTNeumorphicButton!
- 
+    @IBOutlet weak var siriProgressView: SwiftSiriWaveformView!
+    var timer:Timer?
+    var change:CGFloat = 0.01
     @IBOutlet var progressBar: UIProgressView!
     @IBOutlet var autorImage: UIImageView!
     @IBOutlet var botaoimage: UIButton!
     private var songSound: Sound?
     var controller: PlayerController?
+    let color2 = UIColor(rgb: 0xF0EEEF)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        siriProgressView.backgroundColor = color2
         self.controller = PlayerController(playerView: self)
         
-        // Do any additional setup after loading the view.
+    }
+    func timerProgressSetup(){
+        
+        timer = Timer.scheduledTimer(timeInterval: 0.03, target: self, selector: #selector(refreshAudioView(_:)), userInfo: nil, repeats: true)
+    }
+    
+    @objc internal func refreshAudioView(_:Timer) {
+        
+        if self.siriProgressView.amplitude <= self.siriProgressView.idleAmplitude || self.siriProgressView.amplitude > 1.0 {
+            self.change *= -1.0
+        }
+        // Simply set the amplitude to whatever you need and the view will update itself.
+        self.siriProgressView.amplitude += self.change
     }
     
     func setupUI(){
-        let color2 = UIColor(rgb: 0xF0EEEF)
+        //let color2 = UIColor(rgb: 0xF0EEEF)
         self.view.backgroundColor = color2
         playButton.neumorphicLayer?.cornerRadius = 40
         playButton.neumorphicLayer?.elementBackgroundColor = view.backgroundColor?.cgColor ?? UIColor.white.cgColor

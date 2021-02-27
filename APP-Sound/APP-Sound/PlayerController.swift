@@ -15,6 +15,8 @@ class PlayerController {
     var currentSong = "Somebody That I Used to Know"
     var songsCount: Int!
     var timer:Timer!
+    var change:CGFloat = 0.01
+    
     init(playerView: PlayerViewController){
         self.playerView = playerView
       
@@ -41,7 +43,7 @@ class PlayerController {
             playerView?.playButton.isSelected = true
             playerView?.playButton.setImage(UIImage(systemName: "play"), for: .normal)
             player.play()
-            
+           
             
         } catch let error {
             print(error.localizedDescription)
@@ -56,22 +58,30 @@ class PlayerController {
         playerView?.playButton.isSelected = false
         
         player?.pause()
+        playerView?.timer?.invalidate()
     }
-
+    
         func resumeNow() {
         playerView?.playButton.isSelected = true
         playerView?.playButton.setImage(UIImage(systemName: "play"), for: .normal)
+            
             if ((player?.play()) != nil) {
-                progressSetup()
+                playerView?.change = 0.01
+                playerView?.timerProgressSetup()
+                //progressSetup()
             }else{
              playSound()
-                progressSetup()
+               // progressSetup()
+                playerView?.change = 0.01
+                playerView?.timerProgressSetup()
             }
     }
+    
     func progressSetup(){
         timer = Timer.scheduledTimer(timeInterval: 0.3, target: self, selector: #selector(musicProgress), userInfo: nil,repeats: true)
-        musicProgress()
+        
     }
+    
     func nextSong(){
         songsCount = songs.count
         if var indexOfSong = songs.firstIndex(where: {$0 == currentSong}) {
@@ -83,30 +93,32 @@ class PlayerController {
                 }else{
                 currentSong = songs[nextSongIndex]
                 }
-                playSound()
-                
+                stopAndContinueSong()
             }
         }
     }
     
     func previousSong(){
         let last = songs.endIndex
-        print(last)
         if var indexOfSong = songs.firstIndex(where: {$0 == currentSong}) {
             if let i = songs.firstIndex(where: { $0 == currentSong }) {
                 let previousSongIndex = songs.index(before: indexOfSong)
                 if previousSongIndex < 0 {
-                   print(0, previousSongIndex)
-                    currentSong = songs[2]
+                    currentSong = songs[last-1]
                 }else{
                 currentSong = songs[previousSongIndex]
                 }
-                playSound()
-                
+                stopAndContinueSong()
             }
         }
     }
     
+    func stopAndContinueSong(){
+        playerView?.timer?.invalidate()
+        playSound()
+        playerView?.timerProgressSetup()
+    }
+
     @objc func musicProgress(){
         let normalizedTime = Float(player?.currentTime as! Double / (player?.duration as! Double))
         playerView?.progressBar.progress = normalizedTime

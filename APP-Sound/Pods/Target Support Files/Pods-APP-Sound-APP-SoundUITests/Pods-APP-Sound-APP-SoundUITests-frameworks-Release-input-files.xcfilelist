@@ -1,3 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-APP-Sound-APP-SoundUITests/Pods-APP-Sound-APP-SoundUITests-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/EMTNeumorphicView/EMTNeumorphicView.framework
+${BUILT_PRODUCTS_DIR}/SwiftSiriWaveformView/SwiftSiriWaveformView.framework
 ${BUILT_PRODUCTS_DIR}/SwiftySound/SwiftySound.framework

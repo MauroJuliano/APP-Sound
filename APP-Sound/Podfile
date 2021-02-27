@@ -8,6 +8,7 @@ target 'APP-Sound' do
   # Pods for APP-Sound
   pod 'EMTNeumorphicView'
   pod 'SwiftySound'
+  pod "SwiftSiriWaveformView"
   target 'APP-SoundTests' do
     inherit! :search_paths
     # Pods for testing
