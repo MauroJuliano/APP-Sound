@@ -21,10 +21,12 @@ class PlayerViewController: UIViewController {
     @IBOutlet var autorImage: UIImageView!
     @IBOutlet var botaoimage: UIButton!
     private var songSound: Sound?
+    var controller: PlayerController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        self.controller = PlayerController(playerView: self)
         
         // Do any additional setup after loading the view.
     }
@@ -50,38 +52,22 @@ class PlayerViewController: UIViewController {
         viewImage.neumorphicLayer?.cornerRadius = 150
         
     }
-    func musicProgress(){
-        let normalizedTime = Float(songSound?.duration as! Double / (songSound?.duration as! Double))
-        self.progressBar.progress = normalizedTime
-    }
+    
+    
     @IBAction func playButton(_ sender: Any) {
         playButton.setImage(UIImage(systemName: "pause"), for: .selected)
         
-        if playButton.isSelected == true {
-            
-            playButton.setImage(UIImage(systemName: "pause"), for: .selected)
-            playButton.neumorphicLayer?.elementBackgroundColor = view.backgroundColor?.cgColor ?? UIColor.white.cgColor
-            playButton.isSelected = false
-            songSound?.pause()
-            
-        }else{
-           
-            if songSound?.paused == true {
-                songSound?.resume()
-                
-            }else {
-                if let soundUrl = Bundle.main.url(forResource: "Somebody That I Used to Know", withExtension: "mp3") {
-                    
-                    songSound = Sound(url: soundUrl)
-                    songSound?.play()
-                    musicProgress()
-                    playButton.isSelected = true
-                    playButton.setImage(UIImage(systemName: "play"), for: .normal)
-                }
-            }
-            playButton.neumorphicLayer?.shadowOpacity = 0
-            playButton.isSelected = true
+        if playButton.isSelected == false {
+             let resume = try? controller?.resumeNow()
+        }else {
+            controller?.pausePlayer()
         }
+    }
+    @IBAction func previousSongButton(_ sender: Any) {
+        controller?.previousSong()
+    }
+    @IBAction func nextSongButton(_ sender: Any) {
+        controller?.nextSong()
     }
     
 }

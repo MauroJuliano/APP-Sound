@@ -18,6 +18,9 @@
 		4C0F37E625DC672A00C4AD34 /* Player.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C0F37E525DC672A00C4AD34 /* Player.storyboard */; };
 		4C0F37EB25DC674300C4AD34 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0F37EA25DC674300C4AD34 /* PlayerViewController.swift */; };
 		4C0F381425DC853000C4AD34 /* Somebody That I Used to Know.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4C0F381325DC853000C4AD34 /* Somebody That I Used to Know.mp3 */; };
+		4C20717C25E9AD9C00BDB885 /* PlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C20717B25E9AD9C00BDB885 /* PlayerController.swift */; };
+		4C20718125E9B78A00BDB885 /* MORE.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4C20718025E9B78A00BDB885 /* MORE.mp3 */; };
+		4C20718625E9B7A100BDB885 /* Childhood dreams.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4C20718525E9B7A100BDB885 /* Childhood dreams.mp3 */; };
 		701F02F140DBFBC7683966F7 /* Pods_APP_Sound.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2A9E68806AD57E8FEB269E6 /* Pods_APP_Sound.framework */; };
 		71AD966A703674745888825A /* Pods_APP_Sound_APP_SoundUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72DA7017BDD117A784B4507D /* Pods_APP_Sound_APP_SoundUITests.framework */; };
 		C8D5B1B70D291D186809C33C /* Pods_APP_SoundTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FC7B85EBEE6EB1DF9BAB285 /* Pods_APP_SoundTests.framework */; };
@@ -60,6 +63,9 @@
 		4C0F37E525DC672A00C4AD34 /* Player.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Player.storyboard; sourceTree = "<group>"; };
 		4C0F37EA25DC674300C4AD34 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 		4C0F381325DC853000C4AD34 /* Somebody That I Used to Know.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Somebody That I Used to Know.mp3"; sourceTree = "<group>"; };
+		4C20717B25E9AD9C00BDB885 /* PlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerController.swift; sourceTree = "<group>"; };
+		4C20718025E9B78A00BDB885 /* MORE.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MORE.mp3; sourceTree = "<group>"; };
+		4C20718525E9B7A100BDB885 /* Childhood dreams.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Childhood dreams.mp3"; sourceTree = "<group>"; };
 		72DA7017BDD117A784B4507D /* Pods_APP_Sound_APP_SoundUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APP_Sound_APP_SoundUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FC7B85EBEE6EB1DF9BAB285 /* Pods_APP_SoundTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APP_SoundTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9377F689BAC87F030BDA50A0 /* Pods-APP-Sound-APP-SoundUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APP-Sound-APP-SoundUITests.debug.xcconfig"; path = "Target Support Files/Pods-APP-Sound-APP-SoundUITests/Pods-APP-Sound-APP-SoundUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -141,6 +147,7 @@
 				4C0F37BD25DC66F100C4AD34 /* LaunchScreen.storyboard */,
 				4C0F37C025DC66F100C4AD34 /* Info.plist */,
 				4C0F37E525DC672A00C4AD34 /* Player.storyboard */,
+				4C20717B25E9AD9C00BDB885 /* PlayerController.swift */,
 				4C0F37EA25DC674300C4AD34 /* PlayerViewController.swift */,
 			);
 			path = "APP-Sound";
@@ -167,6 +174,8 @@
 		4C0F380F25DC852400C4AD34 /* Music */ = {
 			isa = PBXGroup;
 			children = (
+				4C20718025E9B78A00BDB885 /* MORE.mp3 */,
+				4C20718525E9B7A100BDB885 /* Childhood dreams.mp3 */,
 				4C0F381325DC853000C4AD34 /* Somebody That I Used to Know.mp3 */,
 			);
 			path = Music;
@@ -296,8 +305,10 @@
 				4C0F381425DC853000C4AD34 /* Somebody That I Used to Know.mp3 in Resources */,
 				4C0F37BF25DC66F100C4AD34 /* LaunchScreen.storyboard in Resources */,
 				4C0F37E625DC672A00C4AD34 /* Player.storyboard in Resources */,
+				4C20718125E9B78A00BDB885 /* MORE.mp3 in Resources */,
 				4C0F37BC25DC66F100C4AD34 /* Assets.xcassets in Resources */,
 				4C0F37BA25DC66EF00C4AD34 /* Main.storyboard in Resources */,
+				4C20718625E9B7A100BDB885 /* Childhood dreams.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +439,7 @@
 				4C0F37B725DC66EF00C4AD34 /* ViewController.swift in Sources */,
 				4C0F37EB25DC674300C4AD34 /* PlayerViewController.swift in Sources */,
 				4C0F37B325DC66EF00C4AD34 /* AppDelegate.swift in Sources */,
+				4C20717C25E9AD9C00BDB885 /* PlayerController.swift in Sources */,
 				4C0F37B525DC66EF00C4AD34 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

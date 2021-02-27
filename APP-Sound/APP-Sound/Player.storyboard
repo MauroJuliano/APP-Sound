@@ -40,6 +40,9 @@
                                     <constraint firstAttribute="height" constant="50" id="dkl-s0-FBw"/>
                                 </constraints>
                                 <state key="normal" image="backward.frame" catalog="system"/>
+                                <connections>
+                                    <action selector="previousSongButton:" destination="71X-ej-j0A" eventType="touchUpInside" id="r5s-NF-7hr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Asc-zT-Lln" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
                                 <rect key="frame" x="305" y="638" width="50" height="50"/>
@@ -48,6 +51,9 @@
                                     <constraint firstAttribute="width" constant="50" id="Zgd-5b-Vbw"/>
                                 </constraints>
                                 <state key="normal" image="forward.end" catalog="system"/>
+                                <connections>
+                                    <action selector="nextSongButton:" destination="71X-ej-j0A" eventType="touchUpInside" id="9oJ-mp-lVj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phk-NA-oGc" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
                                 <rect key="frame" x="164" y="623" width="86" height="80"/>
