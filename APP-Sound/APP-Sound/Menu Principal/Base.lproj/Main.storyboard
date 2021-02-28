@@ -47,7 +47,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lnr-Ml-DUv" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lnr-Ml-DUv" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
                                 <rect key="frame" x="40" y="186" width="334" height="190"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="365" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Fz-Lf-yfU">
@@ -138,7 +138,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="237" height="209"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rlf-W3-Fmt" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                                <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rlf-W3-Fmt" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
                                                     <rect key="frame" x="2" y="2" width="233" height="205"/>
                                                     <subviews>
                                                         <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YFg-kg-eUK" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
@@ -222,6 +222,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="favoritesLabel" destination="4Fz-Lf-yfU" id="qll-Ve-W3C"/>
                         <outlet property="favoritesView" destination="Lnr-Ml-DUv" id="i6k-fE-TGc"/>
                         <outlet property="iconView" destination="SH6-nL-oqz" id="1Ln-Nb-HA9"/>
                         <outlet property="playlistCollectionview" destination="qDm-3M-ucv" id="Udq-3J-wEc"/>

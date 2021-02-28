@@ -13,36 +13,46 @@ class SongListViewController: UIViewController {
     @IBOutlet var albumTitleLabel: UILabel!
     @IBOutlet var songListTable: UITableView!
     @IBOutlet var albumView: UIView!
-    
+    @IBOutlet var backButton: EMTNeumorphicButton!
+    var albumSelected: Music?
     var musicArray = [Music]()
     let color2 = UIColor(rgb: 0xF0EEEF)
     var controller: SongListController?
+    var musicController = NewSong()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
         tableViewSetup()
-        addSongs()
+        getSongs()
         // Do any additional setup after loading the view.
     }
-    
-    func addSongs(){
-        musicArray.append(Music(songName: "Somebody That I Used To Know", songAutor: "Gotye", songImage: "Gotye", songAlbum: "Making Mirrors", isFavorite: false))
-        musicArray.append(Music(songName: "ChildHood Dreams", songAutor: "Seraphine", songImage: "Gotye", songAlbum: "Seraphine", isFavorite: false))
-        musicArray.append(Music(songName: "you make that way", songAutor: "Seraphine", songImage: "Gotye", songAlbum: "Seraphine", isFavorite: false))
-        musicArray.append(Music(songName: "MORE", songAutor: "KDA Feat. Seraphine", songImage: "Gotye", songAlbum: "KDA All Out", isFavorite: false))
-        controller?.arraySetup()
-        
+    func getSongs(){
+        musicController.addNewSongs(completionHandler: { success, _ in
+            if success{
+                self.musicArray = self.musicController.musicArray
+                self.controller?.arraySetup()
+            }
+        })
     }
         
     func setupUI(){
         self.view.backgroundColor = color2
-        albumImageView.image = UIImage(named: "gotye.jpg")
+        albumTitleLabel.text = albumSelected?.songAlbum
+        albumImageView.image = UIImage(named: (albumSelected?.songImage)!)
+        //albumImageView.image = UIImage(named: "gotye.jpg")
         albumImageView.roundCorners(.allCorners, radius: 82.5)
         AlbumImageButton.neumorphicLayer?.elementBackgroundColor = view.backgroundColor?.cgColor ?? UIColor.white.cgColor
         albumView.backgroundColor = color2
         AlbumImageButton.neumorphicLayer?.cornerRadius = 90
         
+        backButton.neumorphicLayer?.elementBackgroundColor = view.backgroundColor?.cgColor ?? UIColor.white.cgColor
+        backButton.backgroundColor = color2
+        backButton.neumorphicLayer?.cornerRadius = 20
+        
+    }
+    @IBAction func backButton(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
     
     func tableViewSetup(){

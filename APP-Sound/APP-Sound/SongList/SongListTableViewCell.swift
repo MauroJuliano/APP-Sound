@@ -14,7 +14,7 @@ class SongListTableViewCell: UITableViewCell {
     @IBOutlet var playButton: EMTNeumorphicButton!
     @IBOutlet var viewCell: EMTNeumorphicButton!
     
-    
+    var buttonTap : (() -> ()) = {}
     let color2 = UIColor(rgb: 0xF0EEEF)
     
     override func awakeFromNib() {
@@ -27,6 +27,10 @@ class SongListTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    @IBAction func playSongButton(_ sender: Any) {
+        buttonTap()
+        
     }
     func setup(music: Music){
         songNameLabel.text = music.songName

@@ -28,11 +28,23 @@ class PlayListController: NSObject, UICollectionViewDelegate, UICollectionViewDa
                     completionHandler(true)
                 }
                 }
-            
-           
         }
     }
     
+    func getFavorites(){
+
+            if let favorites = view?.musicArray.filter({$0.isFavorite == true}){
+                    view?.favoritesLabel.text = "\(favorites.count)"
+                }
+    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("clicked")
+        if let storyboard = UIStoryboard(name: "SongList", bundle: nil).instantiateInitialViewController() as? SongListViewController {
+            storyboard.albumSelected = albumMusic[indexPath.row]
+            storyboard.modalPresentationStyle = .fullScreen
+            view?.present(storyboard, animated: true, completion: nil)
+        }
+    }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return albumMusic.count
     }

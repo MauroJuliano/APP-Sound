@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet var playlistCollectionview: UICollectionView!
     @IBOutlet var favoritesView: EMTNeumorphicButton!
     @IBOutlet var iconView: EMTNeumorphicButton!
+    @IBOutlet var favoritesLabel: UILabel!
     var musicArray = [Music]()
     var controller: PlayListController?
     var musicController = NewSong()
@@ -41,7 +42,8 @@ class ViewController: UIViewController {
                 if self.musicArray != nil {
                     self.controller?.arraySetup(completionHandler: { success in
                        if success {
-
+                        self.controller?.getFavorites()
+                        //self.favoritesLabel.text = "\(self.musicArray.count)"
                         self.collectionSetup()
                         
                     }})
@@ -51,6 +53,7 @@ class ViewController: UIViewController {
     }
     
     func setup(){
+        favoritesLabel.text = "\(musicArray.count)"
         favoritesView.neumorphicLayer?.cornerRadius = 20
         favoritesView.neumorphicLayer?.elementBackgroundColor = color2.cgColor ?? UIColor.white.cgColor
         favoritesView.neumorphicLayer?.edged = true

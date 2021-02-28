@@ -49,16 +49,29 @@
                                                 <constraint firstAttribute="width" constant="165" id="Y6A-Dn-ZEc"/>
                                             </constraints>
                                         </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0si-by-7na" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                            <rect key="frame" x="40" y="120" width="40" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="40" id="O5W-Yd-IMh"/>
+                                                <constraint firstAttribute="height" constant="40" id="jZI-Xo-hQQ"/>
+                                            </constraints>
+                                            <state key="normal" image="return" catalog="system"/>
+                                            <connections>
+                                                <action selector="backButton:" destination="Iqi-p4-P2H" eventType="touchUpInside" id="BRG-ai-yv7"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
                                         <constraint firstItem="tgW-tY-Xoh" firstAttribute="leading" secondItem="LNR-QY-rI9" secondAttribute="leading" constant="117" id="1Uv-9I-fWd"/>
+                                        <constraint firstItem="0si-by-7na" firstAttribute="leading" secondItem="LNR-QY-rI9" secondAttribute="leading" constant="40" id="aI2-UV-c37"/>
                                         <constraint firstItem="tgW-tY-Xoh" firstAttribute="top" secondItem="CvY-VB-Rdf" secondAttribute="bottom" constant="16" id="duv-Pz-xap"/>
                                         <constraint firstItem="CvY-VB-Rdf" firstAttribute="leading" secondItem="LNR-QY-rI9" secondAttribute="leading" constant="40" id="gfF-En-WwB"/>
                                         <constraint firstItem="CvY-VB-Rdf" firstAttribute="top" secondItem="LNR-QY-rI9" secondAttribute="top" constant="17" id="ixt-wW-rGf"/>
                                         <constraint firstAttribute="trailing" secondItem="tgW-tY-Xoh" secondAttribute="trailing" constant="117" id="rVr-om-gDH"/>
                                         <constraint firstItem="y79-lo-ydL" firstAttribute="leading" secondItem="LNR-QY-rI9" secondAttribute="leading" constant="125" id="tt7-QC-Ocp"/>
                                         <constraint firstItem="y79-lo-ydL" firstAttribute="top" secondItem="CvY-VB-Rdf" secondAttribute="bottom" constant="24" id="vuZ-O1-Kvp"/>
+                                        <constraint firstItem="0si-by-7na" firstAttribute="top" secondItem="CvY-VB-Rdf" secondAttribute="bottom" constant="70" id="xZl-v0-xel"/>
                                     </constraints>
                                 </view>
                                 <prototypes>
@@ -99,6 +112,9 @@
                                                                 <constraint firstAttribute="height" constant="40" id="zfg-7V-Y57"/>
                                                             </constraints>
                                                             <state key="normal" image="play" catalog="system"/>
+                                                            <connections>
+                                                                <action selector="playSongButton:" destination="Djq-wU-nIe" eventType="touchUpInside" id="puU-hb-845"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -145,6 +161,7 @@
                         <outlet property="albumImageView" destination="y79-lo-ydL" id="j5i-c8-iMP"/>
                         <outlet property="albumTitleLabel" destination="CvY-VB-Rdf" id="iui-hT-Tc7"/>
                         <outlet property="albumView" destination="LNR-QY-rI9" id="7Qy-db-iEV"/>
+                        <outlet property="backButton" destination="0si-by-7na" id="7o6-Q5-VWe"/>
                         <outlet property="songListTable" destination="kWx-MI-8tm" id="A4x-1L-LQV"/>
                     </connections>
                 </viewController>
@@ -155,6 +172,7 @@
     </scenes>
     <resources>
         <image name="play" catalog="system" width="120" height="128"/>
+        <image name="return" catalog="system" width="128" height="101"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
