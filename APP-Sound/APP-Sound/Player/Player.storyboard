@@ -24,6 +24,9 @@
                                 </constraints>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="arrowshape.turn.up.left" catalog="system"/>
+                                <connections>
+                                    <action selector="backButton:" destination="71X-ej-j0A" eventType="touchUpInside" id="UGq-Hg-tvG"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glg-kD-9ew" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
                                 <rect key="frame" x="335" y="49" width="40" height="40"/>
@@ -128,8 +131,8 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Kz-PY-XcF">
-                                <rect key="frame" x="39" y="586" width="30.5" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Kz-PY-XcF">
+                                <rect key="frame" x="39" y="586" width="0.0" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="vHL-Z6-QvB"/>
                                 </constraints>
@@ -137,8 +140,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2:32" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JWw-JR-mUa">
-                                <rect key="frame" x="345.5" y="586" width="29.5" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JWw-JR-mUa">
+                                <rect key="frame" x="375" y="586" width="0.0" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="eWg-IP-HX3"/>
                                 </constraints>
@@ -186,13 +189,17 @@
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="artistNameLabel" destination="siu-Y6-byt" id="h5o-4j-CCW"/>
                         <outlet property="autorImage" destination="ghU-6c-Qo9" id="6ka-D0-4km"/>
                         <outlet property="backButton" destination="EgX-H0-ir9" id="t14-aJ-ER5"/>
                         <outlet property="backwardButton" destination="xfz-68-aeZ" id="nGz-qH-mgp"/>
+                        <outlet property="currentTimeLabel" destination="3Kz-PY-XcF" id="1LC-2e-UUA"/>
+                        <outlet property="durationSongLabel" destination="JWw-JR-mUa" id="iqb-BA-U2j"/>
                         <outlet property="forwardButton" destination="Asc-zT-Lln" id="A5c-mu-uW2"/>
                         <outlet property="menuListButton" destination="glg-kD-9ew" id="MbH-Ha-MED"/>
                         <outlet property="playButton" destination="phk-NA-oGc" id="O7J-Xt-I8s"/>
                         <outlet property="siriProgressView" destination="lLF-Rd-hvO" id="22t-BS-DR1"/>
+                        <outlet property="songNameLabel" destination="tor-kZ-zjd" id="gwN-gR-6Up"/>
                         <outlet property="viewImage" destination="7c4-rf-dn1" id="ErR-k7-Fl5"/>
                     </connections>
                 </viewController>

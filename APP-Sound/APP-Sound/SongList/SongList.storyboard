@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kWx-MI-8tm">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kWx-MI-8tm">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="LNR-QY-rI9">
@@ -116,16 +116,26 @@
                                                                 <action selector="playSongButton:" destination="Djq-wU-nIe" eventType="touchUpInside" id="puU-hb-845"/>
                                                             </connections>
                                                         </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ful-eH-AeL">
+                                                            <rect key="frame" x="0.0" y="0.0" width="337" height="65"/>
+                                                            <connections>
+                                                                <action selector="tapCellButton:" destination="Djq-wU-nIe" eventType="touchUpInside" id="7BJ-yN-PGx"/>
+                                                            </connections>
+                                                        </button>
                                                     </subviews>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="bottom" secondItem="84w-Gg-hyv" secondAttribute="bottom" constant="11" id="EsB-gb-j5B"/>
                                                         <constraint firstAttribute="trailing" secondItem="Yhg-y6-hrw" secondAttribute="trailing" constant="29" id="ITP-bi-AOS"/>
                                                         <constraint firstItem="84w-Gg-hyv" firstAttribute="top" secondItem="Xgg-Pn-gLG" secondAttribute="bottom" constant="4" id="R2J-b7-FRm"/>
+                                                        <constraint firstAttribute="bottom" secondItem="ful-eH-AeL" secondAttribute="bottom" id="UWn-lT-JqB"/>
                                                         <constraint firstItem="84w-Gg-hyv" firstAttribute="leading" secondItem="kbw-hd-KjC" secondAttribute="leading" constant="27" id="V0Y-PP-eK2"/>
+                                                        <constraint firstItem="ful-eH-AeL" firstAttribute="leading" secondItem="kbw-hd-KjC" secondAttribute="leading" id="YKk-vj-EeZ"/>
+                                                        <constraint firstItem="Yhg-y6-hrw" firstAttribute="leading" secondItem="ful-eH-AeL" secondAttribute="trailing" constant="4" id="dob-ja-Spm"/>
                                                         <constraint firstAttribute="bottom" secondItem="Yhg-y6-hrw" secondAttribute="bottom" constant="13" id="gza-yE-dhv"/>
                                                         <constraint firstItem="Xgg-Pn-gLG" firstAttribute="top" secondItem="kbw-hd-KjC" secondAttribute="top" constant="8" id="hV9-61-8dK"/>
                                                         <constraint firstItem="Xgg-Pn-gLG" firstAttribute="leading" secondItem="kbw-hd-KjC" secondAttribute="leading" constant="27" id="uBK-YR-BId"/>
+                                                        <constraint firstItem="ful-eH-AeL" firstAttribute="top" secondItem="kbw-hd-KjC" secondAttribute="top" id="wLo-el-YLF"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>

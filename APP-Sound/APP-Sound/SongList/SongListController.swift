@@ -12,10 +12,9 @@ class SongListController: NSObject, UITableViewDelegate, UITableViewDataSource {
     var player: AVAudioPlayer?
     var view: SongListViewController?
     var songsArray = [Music]()
-    
+    var song = ""
     init(view: SongListViewController) {
         self.view = view
-        print(player?.isPlaying)
     }
     
     func arraySetup(){
@@ -33,24 +32,41 @@ class SongListController: NSObject, UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SongList", for: indexPath) as! SongListTableViewCell
         let array = songsArray[indexPath.row]
         cell.setup(music: array)
+            
+        cell.cellTap = {
+            self.nextView(music: array)
+        }
         cell.buttonTap = {
             
             if let currentSong = array.songName {
                 cell.playButton.setImage(UIImage(systemName: "pause"), for: .selected)
                 cell.playButton.setImage(UIImage(systemName: "play"), for: .normal)
+                
                 if cell.playButton.isSelected == false {
                     let resume = try? self.resumeNow(currentSong: currentSong)
+                    //self.playSound(currentSong: currentSong)
+                    self.song = currentSong
                     cell.playButton.isSelected = true
+                    
                 }else{
                     self.pausePlayer()
                     cell.playButton.isSelected = false
                 }
             }
         }
+        
         return cell
     }
+    func nextView(music: Music?){
+        if let storyboard = UIStoryboard(name: "Player", bundle: nil).instantiateInitialViewController() as? PlayerViewController {
+            storyboard.modalPresentationStyle = .fullScreen
+            storyboard.musicSelected = music
+            player?.stop()
+            view!.present(storyboard, animated: true, completion: nil)
+        }
+    }
+    
     func playSound(currentSong: String){
-        
         player?.stop()
 
         guard let url = Bundle.main.url(forResource: currentSong, withExtension: "mp3") else { return }
@@ -81,8 +97,10 @@ class SongListController: NSObject, UITableViewDelegate, UITableViewDataSource {
 
     }
         func resumeNow(currentSong: String) {
-
-            if ((player?.play()) != nil) {
+            print(currentSong, "song before", song)
+            if currentSong != song {
+                playSound(currentSong: currentSong)
+            }else if ((player?.play()) != nil) {
             }else{
                 playSound(currentSong: currentSong)
             }

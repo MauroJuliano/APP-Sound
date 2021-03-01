@@ -29,6 +29,10 @@
 		4CA255B925EC0927005EB538 /* PlayListsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA255B825EC0927005EB538 /* PlayListsCollectionViewCell.swift */; };
 		4CA255BE25EC099D005EB538 /* PlayListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA255BD25EC099D005EB538 /* PlayListController.swift */; };
 		4CA255C325EC104B005EB538 /* NewSongs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA255C225EC104B005EB538 /* NewSongs.swift */; };
+		4CEEEDFA25ED93910013A257 /* i dont wanna be you anymore.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CEEEDF925ED93910013A257 /* i dont wanna be you anymore.mp3 */; };
+		4CEEEE0025ED939B0013A257 /* Bellyache.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CEEEDFF25ED939B0013A257 /* Bellyache.mp3 */; };
+		4CEEEE0525ED93A20013A257 /* lovely.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CEEEE0425ED93A20013A257 /* lovely.mp3 */; };
+		4CEEEE0A25ED93B20013A257 /* Drum go dum.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CEEEE0925ED93B20013A257 /* Drum go dum.mp3 */; };
 		701F02F140DBFBC7683966F7 /* Pods_APP_Sound.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2A9E68806AD57E8FEB269E6 /* Pods_APP_Sound.framework */; };
 		71AD966A703674745888825A /* Pods_APP_Sound_APP_SoundUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72DA7017BDD117A784B4507D /* Pods_APP_Sound_APP_SoundUITests.framework */; };
 		C8D5B1B70D291D186809C33C /* Pods_APP_SoundTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FC7B85EBEE6EB1DF9BAB285 /* Pods_APP_SoundTests.framework */; };
@@ -82,6 +86,11 @@
 		4CA255B825EC0927005EB538 /* PlayListsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListsCollectionViewCell.swift; sourceTree = "<group>"; };
 		4CA255BD25EC099D005EB538 /* PlayListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListController.swift; sourceTree = "<group>"; };
 		4CA255C225EC104B005EB538 /* NewSongs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSongs.swift; sourceTree = "<group>"; };
+		4CEEEDF925ED93910013A257 /* i dont wanna be you anymore.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "i dont wanna be you anymore.mp3"; sourceTree = "<group>"; };
+		4CEEEDFE25ED93970013A257 /* bad guy.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "bad guy.m4a"; sourceTree = "<group>"; };
+		4CEEEDFF25ED939B0013A257 /* Bellyache.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Bellyache.mp3; sourceTree = "<group>"; };
+		4CEEEE0425ED93A20013A257 /* lovely.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lovely.mp3; sourceTree = "<group>"; };
+		4CEEEE0925ED93B20013A257 /* Drum go dum.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Drum go dum.mp3"; sourceTree = "<group>"; };
 		72DA7017BDD117A784B4507D /* Pods_APP_Sound_APP_SoundUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APP_Sound_APP_SoundUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FC7B85EBEE6EB1DF9BAB285 /* Pods_APP_SoundTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APP_SoundTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9377F689BAC87F030BDA50A0 /* Pods-APP-Sound-APP-SoundUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APP-Sound-APP-SoundUITests.debug.xcconfig"; path = "Target Support Files/Pods-APP-Sound-APP-SoundUITests/Pods-APP-Sound-APP-SoundUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -193,6 +202,11 @@
 				4C20718025E9B78A00BDB885 /* MORE.mp3 */,
 				4C20718525E9B7A100BDB885 /* Childhood dreams.mp3 */,
 				4C0F381325DC853000C4AD34 /* Somebody That I Used to Know.mp3 */,
+				4CEEEDFF25ED939B0013A257 /* Bellyache.mp3 */,
+				4CEEEE0925ED93B20013A257 /* Drum go dum.mp3 */,
+				4CEEEE0425ED93A20013A257 /* lovely.mp3 */,
+				4CEEEDFE25ED93970013A257 /* bad guy.m4a */,
+				4CEEEDF925ED93910013A257 /* i dont wanna be you anymore.mp3 */,
 			);
 			path = Music;
 			sourceTree = "<group>";
@@ -351,11 +365,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C0F381425DC853000C4AD34 /* Somebody That I Used to Know.mp3 in Resources */,
+				4CEEEE0525ED93A20013A257 /* lovely.mp3 in Resources */,
 				4C0F37BF25DC66F100C4AD34 /* LaunchScreen.storyboard in Resources */,
+				4CEEEE0025ED939B0013A257 /* Bellyache.mp3 in Resources */,
 				4C0F37E625DC672A00C4AD34 /* Player.storyboard in Resources */,
 				4C20718125E9B78A00BDB885 /* MORE.mp3 in Resources */,
 				4C0F37BC25DC66F100C4AD34 /* Assets.xcassets in Resources */,
+				4CEEEDFA25ED93910013A257 /* i dont wanna be you anymore.mp3 in Resources */,
 				4CA2559025EBE561005EB538 /* SongList.storyboard in Resources */,
+				4CEEEE0A25ED93B20013A257 /* Drum go dum.mp3 in Resources */,
 				4C0F37BA25DC66EF00C4AD34 /* Main.storyboard in Resources */,
 				4C20718625E9B7A100BDB885 /* Childhood dreams.mp3 in Resources */,
 			);

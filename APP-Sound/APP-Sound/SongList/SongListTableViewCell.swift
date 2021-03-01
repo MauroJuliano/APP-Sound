@@ -15,6 +15,7 @@ class SongListTableViewCell: UITableViewCell {
     @IBOutlet var viewCell: EMTNeumorphicButton!
     
     var buttonTap : (() -> ()) = {}
+    var cellTap : (() -> ()) = {}
     let color2 = UIColor(rgb: 0xF0EEEF)
     
     override func awakeFromNib() {
@@ -27,6 +28,10 @@ class SongListTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+  
+    @IBAction func tapCellButton(_ sender: Any) {
+        cellTap()
     }
     @IBAction func playSongButton(_ sender: Any) {
         buttonTap()
@@ -44,7 +49,7 @@ class SongListTableViewCell: UITableViewCell {
         viewCell.neumorphicLayer?.elementBackgroundColor = contentView.backgroundColor?.cgColor ?? UIColor.white.cgColor
         //viewCell.neumorphicLayer?.cornerRadius = 24
           // set convex or concave.
-        viewCell.neumorphicLayer?.depthType = .concave
+        viewCell.neumorphicLayer?.depthType = .convex
           // set elementDepth (corresponds to shadowRadius). Default is 5
         viewCell.neumorphicLayer?.elementDepth = 7
         

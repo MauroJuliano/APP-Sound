@@ -7,16 +7,18 @@
 
 import UIKit
 import EMTNeumorphicView
+import AVFoundation
 class ViewController: UIViewController {
 
     @IBOutlet var playlistCollectionview: UICollectionView!
     @IBOutlet var favoritesView: EMTNeumorphicButton!
     @IBOutlet var iconView: EMTNeumorphicButton!
     @IBOutlet var favoritesLabel: UILabel!
+    var player: AVAudioPlayer?
     var musicArray = [Music]()
     var controller: PlayListController?
     var musicController = NewSong()
-    
+    var teste = "teste1"
     let color2 = UIColor(rgb: 0xF0EEEF)
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,13 +28,9 @@ class ViewController: UIViewController {
         view.backgroundColor = color2
 
     }
-    @IBAction func nextView(_ sender: Any) {
-        if let storyboard = UIStoryboard(name: "SongList", bundle: nil).instantiateInitialViewController() as? SongListViewController {
-        //if let storyboard = UIStoryboard(name: "Player", bundle: nil).instantiateInitialViewController() as? PlayerViewController {
-            storyboard.modalPresentationStyle = .fullScreen
-            self.present(storyboard, animated: true, completion: nil)
-        }
+    override func viewWillAppear(_ animated: Bool) {
     }
+
     func getSongs(){
         controller = PlayListController(view: self)
         musicController.addNewSongs(completionHandler: { success, _ in

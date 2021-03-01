@@ -17,18 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2P-iW-AbQ">
-                                <rect key="frame" x="310" y="44" width="91" height="66"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="66" id="Dbx-HM-mLl"/>
-                                    <constraint firstAttribute="width" constant="91" id="JHn-hq-quz"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <state key="normal" title="Next"/>
-                                <connections>
-                                    <action selector="nextView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UtC-4L-tDN"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PlayList" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WbG-Gg-lMh">
                                 <rect key="frame" x="35" y="61" width="91.5" height="32.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
@@ -206,11 +194,9 @@
                         <constraints>
                             <constraint firstItem="WbG-Gg-lMh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="17" id="6ez-gY-jn3"/>
                             <constraint firstItem="qDm-3M-ucv" firstAttribute="top" secondItem="5ge-o5-ZdF" secondAttribute="bottom" constant="32" id="LMb-4o-hEo"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c2P-iW-AbQ" secondAttribute="trailing" constant="13" id="PqH-cp-xDi"/>
                             <constraint firstItem="hxG-w8-VxC" firstAttribute="top" secondItem="WbG-Gg-lMh" secondAttribute="bottom" constant="7.5" id="QdA-sK-rXu"/>
                             <constraint firstItem="qDm-3M-ucv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="RX2-rU-Ag1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5ge-o5-ZdF" secondAttribute="trailing" constant="221" id="TFn-iz-HjS"/>
-                            <constraint firstItem="c2P-iW-AbQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ZeE-TY-cTd"/>
                             <constraint firstItem="qDm-3M-ucv" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="a3k-Gh-wEG"/>
                             <constraint firstItem="hxG-w8-VxC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="m0h-Gh-BG8"/>
                             <constraint firstItem="5ge-o5-ZdF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="nLX-e6-2cc"/>

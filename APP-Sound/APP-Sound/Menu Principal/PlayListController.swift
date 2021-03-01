@@ -7,11 +7,13 @@
 
 import Foundation
 import UIKit
+import AVFoundation
 class PlayListController: NSObject, UICollectionViewDelegate, UICollectionViewDataSource {
     var view: ViewController?
     var albumMusic = [Music]()
     var alreadyHas = [String]()
     var artistName = ""
+    
     init(view: ViewController){
         self.view = view
     }
