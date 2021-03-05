@@ -5,13 +5,18 @@ Ordinal helps you to listen your amazing songs.
 
 <h2>Summary</h2>
 
-- be happy,
+- View Favorites
+- Separate music by album
+- Play music.
+- Proceed to next
+- Play previous music
 
 <h2>Installation</h2>
 
 - To run the example project, clone the repo, and run pod install from the Example directory first.
 - opens the NewSong.Swift file and add your music to the class.
 - Also add each song to the Music group.
+- if you wnat to add image to your album, please add to image to Assets.xcassets
 
 Remember it is extremely important that the name of the song is in the same spelling in the NewSong Class and in the Music folder 
 		
@@ -44,3 +49,5 @@ For example:
 - Album name;
 - Runtime;
 - Duration of the song.
+
+You can also skip to the next song, or play the previous one.
