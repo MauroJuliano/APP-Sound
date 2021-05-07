@@ -22,7 +22,7 @@
                                     <constraint firstAttribute="height" constant="40" id="61h-ot-vxA"/>
                                     <constraint firstAttribute="width" constant="40" id="Ubo-WO-3pG"/>
                                 </constraints>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="systemIndigoColor"/>
                                 <state key="normal" image="arrowshape.turn.up.left" catalog="system"/>
                                 <connections>
                                     <action selector="backButton:" destination="71X-ej-j0A" eventType="touchUpInside" id="UGq-Hg-tvG"/>
@@ -34,6 +34,7 @@
                                     <constraint firstAttribute="width" constant="40" id="GDy-aP-mHH"/>
                                     <constraint firstAttribute="height" constant="40" id="OrJ-a3-jyb"/>
                                 </constraints>
+                                <color key="tintColor" systemColor="systemIndigoColor"/>
                                 <state key="normal" image="list.triangle" catalog="system"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfz-68-aeZ" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
@@ -42,6 +43,7 @@
                                     <constraint firstAttribute="height" constant="50" id="6vm-MG-kp3"/>
                                     <constraint firstAttribute="width" constant="50" id="jKm-VV-wCG"/>
                                 </constraints>
+                                <color key="tintColor" systemColor="systemIndigoColor"/>
                                 <state key="normal" image="backward.frame" catalog="system"/>
                                 <connections>
                                     <action selector="previousSongButton:" destination="71X-ej-j0A" eventType="touchUpInside" id="r5s-NF-7hr"/>
@@ -53,6 +55,7 @@
                                     <constraint firstAttribute="height" constant="50" id="9I9-3c-0Cz"/>
                                     <constraint firstAttribute="width" constant="50" id="PIm-E6-xWr"/>
                                 </constraints>
+                                <color key="tintColor" systemColor="systemIndigoColor"/>
                                 <state key="normal" image="forward.end" catalog="system"/>
                                 <connections>
                                     <action selector="nextSongButton:" destination="71X-ej-j0A" eventType="touchUpInside" id="9oJ-mp-lVj"/>
@@ -64,6 +67,7 @@
                                     <constraint firstAttribute="height" constant="80" id="SoQ-A3-6KT"/>
                                     <constraint firstAttribute="width" constant="86" id="kdc-AW-3Y3"/>
                                 </constraints>
+                                <color key="tintColor" systemColor="systemIndigoColor"/>
                                 <state key="normal" image="play" catalog="system"/>
                                 <connections>
                                     <action selector="playButton:" destination="71X-ej-j0A" eventType="touchUpInside" id="GR8-9g-HOd"/>
@@ -219,6 +223,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
