@@ -38,21 +38,19 @@ class SongListController: NSObject, UITableViewDelegate, UITableViewDataSource {
         }
         cell.buttonTap = {
             
-            if let currentSong = array.songName {
                 cell.playButton.setImage(UIImage(systemName: "pause"), for: .selected)
                 cell.playButton.setImage(UIImage(systemName: "play"), for: .normal)
                 
                 if cell.playButton.isSelected == false {
-                    let resume = try? self.resumeNow(currentSong: currentSong)
+                    let resume = try? self.resumeNow(currentSong: array.songName)
                     //self.playSound(currentSong: currentSong)
-                    self.song = currentSong
+                    self.song = array.songName
                     cell.playButton.isSelected = true
                     
                 }else{
                     self.pausePlayer()
                     cell.playButton.isSelected = false
                 }
-            }
         }
         
         return cell

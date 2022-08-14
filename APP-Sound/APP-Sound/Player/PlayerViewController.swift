@@ -84,7 +84,7 @@ class PlayerViewController: UIViewController {
         forwardButton.neumorphicLayer?.cornerRadius = 25
         
         if let musicInfo = musicSelected {
-            autorImage.image = UIImage(named: musicInfo.songImage!)!
+            autorImage.image = UIImage(named: musicInfo.songImage)!
             autorImage.roundCorners(.allCorners, radius: 142.5)
             viewImage.neumorphicLayer?.elementBackgroundColor = view.backgroundColor?.cgColor ?? UIColor.white.cgColor
             

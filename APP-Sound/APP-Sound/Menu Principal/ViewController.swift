@@ -1,36 +1,34 @@
-//
-//  ViewController.swift
-//  APP-Sound
-//
-//  Created by Lestad on 2021-02-16.
-//
-
 import UIKit
 import EMTNeumorphicView
 import AVFoundation
+
 class ViewController: UIViewController {
 
     @IBOutlet var playlistCollectionview: UICollectionView!
     @IBOutlet var favoritesView: EMTNeumorphicButton!
     @IBOutlet var iconView: EMTNeumorphicButton!
     @IBOutlet var favoritesLabel: UILabel!
+    
+    var customView = MainView()
+    
     var player: AVAudioPlayer?
     var musicArray = [Music]()
     var controller: PlayListController?
     var musicController = NewSong()
-    var teste = "teste1"
+    
+    // TODO: Change color to another file
     let color2 = UIColor(rgb: 0xF0EEEF)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionSetup()
         setup()
         getSongs()
-        view.backgroundColor = color2
-
+         view.backgroundColor = color2
+        
+       self.view = customView
     }
-    override func viewWillAppear(_ animated: Bool) {
-    }
-
+    
     func getSongs(){
         controller = PlayListController(view: self)
         musicController.addNewSongs(completionHandler: { success, _ in
@@ -68,23 +66,10 @@ class ViewController: UIViewController {
         playlistCollectionview.delegate = controller
         playlistCollectionview.dataSource = controller
         playlistCollectionview.reloadData()
+        
+        customView.collectionView.delegate = controller
+        customView.collectionView.dataSource = controller
+        customView.collectionView.reloadData()
     }
-}
-extension UIColor {
-   convenience init(red: Int, green: Int, blue: Int) {
-       assert(red >= 0 && red <= 255, "Invalid red component")
-       assert(green >= 0 && green <= 255, "Invalid green component")
-       assert(blue >= 0 && blue <= 255, "Invalid blue component")
-
-       self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: 1.0)
-   }
-
-   convenience init(rgb: Int) {
-       self.init(
-           red: (rgb >> 16) & 0xFF,
-           green: (rgb >> 8) & 0xFF,
-           blue: rgb & 0xFF
-       )
-   }
 }
 
