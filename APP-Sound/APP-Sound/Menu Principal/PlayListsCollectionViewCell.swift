@@ -9,26 +9,27 @@ class PlayListsCollectionViewCell: UICollectionViewCell {
     
     private lazy var favoriteView: EMTNeumorphicButton = {
         var button = EMTNeumorphicButton()
-        button.contentMode = .scaleToFill
         button.neumorphicLayer?.cornerRadius = 20
-        button.neumorphicLayer?.elementBackgroundColor = color2.cgColor
+        button.neumorphicLayer?.elementBackgroundColor = NeumorphicColor.base01.color.cgColor
         button.neumorphicLayer?.edged = true
         button.neumorphicLayer?.depthType = .concave
         button.neumorphicLayer?.borderColor = UIColor.black.cgColor
+        button.isUserInteractionEnabled = false
         return button
     }()
     
     private lazy var favoritesIcon: EMTNeumorphicButton = {
         var button = EMTNeumorphicButton()
-        button.neumorphicLayer?.elementBackgroundColor = color2.cgColor  ?? UIColor.white.cgColor
+        button.contentMode = .scaleAspectFit
+        button.neumorphicLayer?.elementBackgroundColor = NeumorphicColor.base01.color.cgColor
         button.neumorphicLayer?.cornerRadius = 20
-        
         button.neumorphicLayer?.elementDepth = 7
+        button.neumorphicLayer?.edged = true
         return button
     }()
     
-    private lazy var iconImageView: EMTNeumorphicButton = {
-        var button = EMTNeumorphicButton()
+    private lazy var iconImageView: UIImageView = {
+        var button = UIImageView()
         
         return button
     }()
@@ -38,29 +39,21 @@ class PlayListsCollectionViewCell: UICollectionViewCell {
         return label
     }()
     
-    let color2 = UIColor(rgb: 0xF0EEEF)
-    
-    func setup(music: Music) {
-        
+    private func setupCell() {
         favoriteView.addSubview(favoritesIcon)
         favoriteView.addSubview(iconImageView)
         favoriteView.addSubview(albumName)
         contentView.addSubview(favoriteView)
         contentView.backgroundColor = NeumorphicColor.base01.color
-    //    albumNameLabel.text = music.songAlbum
-        
-//        backView.neumorphicLayer?.cornerRadius = 20
-//        backView.neumorphicLayer?.elementBackgroundColor = color2.cgColor ?? UIColor.white.cgColor
-//        backView.neumorphicLayer?.edged = true
-//        backView.neumorphicLayer?.depthType = .concave
-//        backView.neumorphicLayer?.borderColor = UIColor.black.cgColor
-//
-//        iconView.neumorphicLayer?.elementBackgroundColor = color2.cgColor  ?? UIColor.white.cgColor
-//        iconView.neumorphicLayer?.cornerRadius = 20
-
-//        iconView.neumorphicLayer?.elementDepth = 7
+    }
+    
+    func setup(music: Music) {
+        setupCell()
         
         albumName.text = music.songAlbum
+        let image = UIImage(systemName: "guitars.fill")
+        favoritesIcon.setImage(image, for: .normal)
+        
         setupConstraints()
     }
     
@@ -74,10 +67,14 @@ class PlayListsCollectionViewCell: UICollectionViewCell {
             favoriteView.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: Space.base00.rawValue),
             favoriteView.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: Space.base00.rawValue),
             favoriteView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: Space.base00.rawValue),
-            favoritesIcon.topAnchor.constraint(equalTo: favoriteView.bottomAnchor, constant: Space.base03.rawValue),
+            
+            favoritesIcon.topAnchor.constraint(equalTo: favoriteView.topAnchor, constant: Space.base03.rawValue),
             favoritesIcon.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: Space.base03.rawValue),
-            albumName.topAnchor.constraint(equalTo: favoritesIcon.bottomAnchor, constant: Space.base04.rawValue),
-            albumName.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: Space.base03.rawValue)
+            favoritesIcon.heightAnchor.constraint(equalToConstant: 40),
+            favoritesIcon.widthAnchor.constraint(equalToConstant: 40),
+            
+            albumName.bottomAnchor.constraint(equalTo: favoriteView.bottomAnchor, constant: -Space.base07.rawValue),
+            albumName.leadingAnchor.constraint(equalTo: favoriteView.leadingAnchor, constant: Space.base03.rawValue)
         ])
        
         
