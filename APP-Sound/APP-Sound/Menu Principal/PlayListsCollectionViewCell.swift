@@ -62,7 +62,7 @@ class PlayListsCollectionViewCell: UICollectionViewCell {
             favoriteView.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: Space.base00.rawValue),
             favoriteView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: Space.base00.rawValue),
             
-            favoritesIcon.topAnchor.constraint(equalTo: favoriteView.topAnchor, constant: Space.base05.rawValue),
+            favoritesIcon.topAnchor.constraint(equalTo: favoriteView.topAnchor, constant: Space.base07.rawValue),
             favoritesIcon.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: Space.base05.rawValue),
             favoritesIcon.heightAnchor.constraint(equalToConstant: 40),
             favoritesIcon.widthAnchor.constraint(equalToConstant: 40),
