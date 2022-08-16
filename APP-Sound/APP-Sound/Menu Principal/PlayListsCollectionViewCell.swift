@@ -2,11 +2,6 @@ import UIKit
 import EMTNeumorphicView
 
 class PlayListsCollectionViewCell: UICollectionViewCell {
-    @IBOutlet var backView: EMTNeumorphicButton!
-    @IBOutlet var iconView: EMTNeumorphicButton!
-    @IBOutlet var iconImage: UIImageView!
-    @IBOutlet var albumNameLabel: UILabel!
-    
     private lazy var favoriteView: EMTNeumorphicButton = {
         var button = EMTNeumorphicButton()
         button.neumorphicLayer?.cornerRadius = 20
@@ -49,7 +44,6 @@ class PlayListsCollectionViewCell: UICollectionViewCell {
     
     func setup(music: Music) {
         setupCell()
-        
         albumName.text = music.songAlbum
         let image = UIImage(systemName: "guitars.fill")
         favoritesIcon.setImage(image, for: .normal)
@@ -68,13 +62,13 @@ class PlayListsCollectionViewCell: UICollectionViewCell {
             favoriteView.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: Space.base00.rawValue),
             favoriteView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: Space.base00.rawValue),
             
-            favoritesIcon.topAnchor.constraint(equalTo: favoriteView.topAnchor, constant: Space.base03.rawValue),
-            favoritesIcon.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: Space.base03.rawValue),
+            favoritesIcon.topAnchor.constraint(equalTo: favoriteView.topAnchor, constant: Space.base05.rawValue),
+            favoritesIcon.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: Space.base05.rawValue),
             favoritesIcon.heightAnchor.constraint(equalToConstant: 40),
             favoritesIcon.widthAnchor.constraint(equalToConstant: 40),
             
-            albumName.bottomAnchor.constraint(equalTo: favoriteView.bottomAnchor, constant: -Space.base07.rawValue),
-            albumName.leadingAnchor.constraint(equalTo: favoriteView.leadingAnchor, constant: Space.base03.rawValue)
+            albumName.bottomAnchor.constraint(equalTo: favoriteView.bottomAnchor, constant: -Space.base10.rawValue),
+            albumName.leadingAnchor.constraint(equalTo: favoriteView.leadingAnchor, constant: Space.base05.rawValue)
         ])
        
         

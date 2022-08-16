@@ -1,44 +1,42 @@
-import Foundation
 import UIKit
+import EMTNeumorphicView
 import AVFoundation
-class PlayListController: NSObject, UICollectionViewDelegate, UICollectionViewDataSource {
-    var view: ViewController?
-    var albumMusic = [Music]()
-    var alreadyHas = [String]()
+
+class MainViewController: UIViewController {
+    private var customView = MainView()
+    private var albumMusic = [Music]()
     
-    init(view: ViewController){
-        self.view = view
+    var player: AVAudioPlayer?
+    var musicArray = [Music]()
+    lazy var controller = MainViewPresenter(view: self)
+    var musicController = NewSong()
+    
+    override func loadView() {
+        controller.getSongs()
+        self.view = customView
     }
     
-    func arraySetup(completionHandler: @escaping (_ result: Bool) -> Void){
-        if let musicArray = view?.musicArray {
-            musicArray.forEach { (itens) in
-                if !alreadyHas.contains(itens.songAutor){
-                    albumMusic.append(itens)
-                    alreadyHas.append(itens.songAlbum)
-                    completionHandler(true)
-                }
-            }
-        }
+    func displayScreen(viewModel: [Music]) {
+        albumMusic.append(contentsOf: viewModel)
+        customView.collectionView.delegate = self
+        customView.collectionView.dataSource = self
+        customView.collectionView.reloadData()
+        
+        customView.setupView(musics: viewModel.count)
     }
-    
-    func getFavorites(){
-        if let favorites = view?.musicArray.filter({$0.isFavorite == true}){
-            view?.favoritesLabel.text = "\(favorites.count)"
-        }
-    }
-    
+}
+
+extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize
-        {
-           return CGSize(width: 300.0, height: 300.0)
-        }
+    {
+        return CGSize(width: 300.0, height: 300.0)
+    }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("clicked")
         if let storyboard = UIStoryboard(name: "SongList", bundle: nil).instantiateInitialViewController() as? SongListViewController {
             storyboard.albumSelected = albumMusic[indexPath.row]
             storyboard.modalPresentationStyle = .fullScreen
-            view?.present(storyboard, animated: true, completion: nil)
+            present(storyboard, animated: true, completion: nil)
         }
     }
     
@@ -53,6 +51,4 @@ class PlayListController: NSObject, UICollectionViewDelegate, UICollectionViewDa
         cell.setup(music: albumMusic[indexPath.row])
         return cell
     }
-    
-    
 }
