@@ -31,7 +31,7 @@ class PlayerViewController: UIViewController {
     var musicArray = [Music]()
     var controller: PlayerController?
     var musicController = NewSong()
-    let color2 = UIColor(rgb: 0xF0EEEF)
+    let color2 = UIColor(RGB: 0xF0EEEF)
     
     override func viewDidLoad() {
         super.viewDidLoad()

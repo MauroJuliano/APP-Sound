@@ -16,7 +16,7 @@ class SongListViewController: UIViewController {
     @IBOutlet var backButton: EMTNeumorphicButton!
     var albumSelected: Music?
     var musicArray = [Music]()
-    let color2 = UIColor(rgb: 0xF0EEEF)
+    let color2 = UIColor(RGB: 0xF0EEEF)
     var controller: SongListController?
     var musicController = NewSong()
     
@@ -40,7 +40,6 @@ class SongListViewController: UIViewController {
         self.view.backgroundColor = color2
         albumTitleLabel.text = albumSelected?.songAlbum
         albumImageView.image = UIImage(named: (albumSelected?.songImage)!)
-        //albumImageView.image = UIImage(named: "gotye.jpg")
         albumImageView.roundCorners(.allCorners, radius: 82.5)
         AlbumImageButton.neumorphicLayer?.elementBackgroundColor = view.backgroundColor?.cgColor ?? UIColor.white.cgColor
         albumView.backgroundColor = color2

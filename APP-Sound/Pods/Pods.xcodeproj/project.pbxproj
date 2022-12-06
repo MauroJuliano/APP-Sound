@@ -7,195 +7,302 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		08BF1935889F0124642C46DAA4D8B0C8 /* Pods-APP-SoundTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E5F67B08A1CA6071F4E204B46FA68B5C /* Pods-APP-SoundTests-dummy.m */; };
-		090FF809B49462F1417ADBBE3C33EC20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BD9787FB7C94A0DC2A516C656509B78 /* Foundation.framework */; };
-		2338FE6ECE65009DC0D62A9E07ECED4B /* SwiftySound-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 037429A7D8BFDAAF9B511CCA41B48008 /* SwiftySound-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		39F1D65E58CCEA6CB6598A0B186EEBAF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2689EA712E5D78CDDF35E7B1BD8994B6 /* AVFoundation.framework */; };
-		3B30C7C15124FDD2EEA6815B634E8BD3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BD9787FB7C94A0DC2A516C656509B78 /* Foundation.framework */; };
-		51321813BA07355609140E23D506354D /* UIColor+tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E1A776C987E8C3A9D5468D1938B828 /* UIColor+tool.swift */; };
-		67EEFAA935C521281A57F08E1F288DC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BD9787FB7C94A0DC2A516C656509B78 /* Foundation.framework */; };
-		6E3EBB13122437E4B5AB87B8DC9A6BBA /* SwiftSiriWaveformView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F07B1CB22102EACB10AF7B0E3F1B9C71 /* SwiftSiriWaveformView-dummy.m */; };
-		6EC9711DACCF858BB3972F3FC0EFC8EE /* Pods-APP-Sound-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 524CDC4688E2D4AEB303F756DF10B9FD /* Pods-APP-Sound-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		754B4DA7350B0EAA585F0BC417E996A8 /* SwiftSiriWaveformView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EF6CB2DC424CBCA4C5727550751E5699 /* SwiftSiriWaveformView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		79F1EDA17C0580F3AA7EEDFEF4D424DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BD9787FB7C94A0DC2A516C656509B78 /* Foundation.framework */; };
-		7B2BF2A4DD2B598ECD1BCA3D9E080C73 /* EMTNeumorphicView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D184264F544D972D533B92727CE29 /* EMTNeumorphicView-dummy.m */; };
-		9F02B06D94E38E6A555B608390B3366F /* Pods-APP-SoundTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 255D903664B3A9130AD7C85C4475FCF4 /* Pods-APP-SoundTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B481F4773B8326545AC17DD4FEF1E204 /* Pods-APP-Sound-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C37BF9E2420B0F2072C7C1EDA116E6 /* Pods-APP-Sound-dummy.m */; };
-		BA782B7A91216D85090879BDB3226736 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8953CFFB64FA6BE665D385206E531340 /* Sound.swift */; };
-		BAEAA5478086B8486EB3C8C3F3F281EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BD9787FB7C94A0DC2A516C656509B78 /* Foundation.framework */; };
-		BB4C23AF8C24743FB58CA993D9A37033 /* EMTNeumorphicView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B87218C921A7F864736CD1A68426B221 /* EMTNeumorphicView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BD1B5F1F17159951EC049E0CD7F9EA1E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BD9787FB7C94A0DC2A516C656509B78 /* Foundation.framework */; };
-		BFAE8A59BFA8877AA94FA254FEAFAB86 /* Pods-APP-Sound-APP-SoundUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D77B9F0B859215CF37F04412DF2CCE51 /* Pods-APP-Sound-APP-SoundUITests-dummy.m */; };
-		CB59F60F311B28783E1E7A816828D316 /* SwiftySound-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BD52247246E7385CF235C6E816297E33 /* SwiftySound-dummy.m */; };
-		D572570A1405E02681483F2E4E34CDB7 /* EMTNeumorphicLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB400D0131736842937DA279238E858 /* EMTNeumorphicLayer.swift */; };
-		D7F61FF2045DFA84DCF3A3578AB2DAA9 /* Pods-APP-Sound-APP-SoundUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F0F65510018BCA8573935FBAA8B9137 /* Pods-APP-Sound-APP-SoundUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DBECE51AE3302A98334D9BBF65E149D0 /* EMTNeumorphicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933C714AE0783BE945924B98F5415C01 /* EMTNeumorphicView.swift */; };
-		F5B5A6AB61EEEBA04820125E57D8DE9E /* SwiftSiriWaveformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324F7F51F5E793A3946F2F9B4AC38C22 /* SwiftSiriWaveformView.swift */; };
+		00A2749F46C967ED4725A32357E3FB1B /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6431D1830BC873AFE3558841B76E6EDC /* ConstraintLayoutSupport.swift */; };
+		04637C70546B34F93C3A1D79C3F78B37 /* ConstraintDirectionalInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E36B752466306C0E8FB0099F262184 /* ConstraintDirectionalInsetTarget.swift */; };
+		0591132B5EA1BE4DDA268D8A9C3D0421 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E98C734654DAF6B916F143D24F45B52 /* LayoutConstraint.swift */; };
+		06E43B4751069B47B3BD4AFD936A57E3 /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C40225979AC3AFC5D7D0900E4E4FCAB /* ConstraintPriority.swift */; };
+		0833E66E7F19849322305D67777B77DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BD9787FB7C94A0DC2A516C656509B78 /* Foundation.framework */; };
+		0B9579CC651F5ECC0634860B67080B07 /* SwiftySound-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3E6D3B24EA077B39DE5FF1D6191B46 /* SwiftySound-dummy.m */; };
+		0B994CDC79B1AD3A7BE62490D27C60C8 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F891A3846969A08412B10E828A867A11 /* ConstraintAttributes.swift */; };
+		1483195F624719EEF27EC16F2F464BFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BD9787FB7C94A0DC2A516C656509B78 /* Foundation.framework */; };
+		157F87D0C2876B4CCF105A4F6B281DC8 /* SwiftSiriWaveformView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BC3A1B2ABCC85E11DD10C95BB1B5C79 /* SwiftSiriWaveformView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		183D8B3E057B885EA7DF9A8CDCCE9029 /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FE8042B48A47916A81030084BDF307 /* ConstraintMakerRelatable.swift */; };
+		220D6AC9B1B1EC8EFFB204F9C1EAC842 /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ADE8FD563DF24A6FD8590D164BD1FF /* ConstraintMakerEditable.swift */; };
+		256558233B40ACA6818F143BBC5B8017 /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C638C73F64F5C94AE03E0AE0A71FBAD9 /* ConstraintViewDSL.swift */; };
+		3117C10566606BDC5C26812DAE1B039D /* Pods-APP-Sound-APP-SoundUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D77B9F0B859215CF37F04412DF2CCE51 /* Pods-APP-Sound-APP-SoundUITests-dummy.m */; };
+		3660B4F629053ABC3C1DF69366770289 /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DBD395172F10F946ECD84D7AB7B986 /* ConstraintConfig.swift */; };
+		37B1BE453A504FA98F2C28214D3A1741 /* SwiftSiriWaveformView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D63004EE0F83061EAC35393ACBD0030B /* SwiftSiriWaveformView-dummy.m */; };
+		38B9D58E94D9C1CECD7E381C64A2329D /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9263335A51516EFDA3CAE2A87732D8 /* UILayoutSupport+Extensions.swift */; };
+		42B6ACFCF650183030867CB3EF345E95 /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3949634108598875211AA4D4A5FF37EF /* ConstraintMakerFinalizable.swift */; };
+		4BAD99B7394E225CEDBF94B8100BCC7F /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36F76C704FC871538FFBB16B4F56A5E /* ConstraintRelation.swift */; };
+		4BB3255A6BE5F06DF2B3417008797AE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BD9787FB7C94A0DC2A516C656509B78 /* Foundation.framework */; };
+		4D55E645A828A3EE7AA00DC5603587B7 /* SwiftSiriWaveformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD0E10348D612F434D040DD8E456874 /* SwiftSiriWaveformView.swift */; };
+		4DA72FD7F1FB2C0449EDEF4B8A579807 /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F68CAAF83023D753D55F2036E936139 /* ConstraintPriorityTarget.swift */; };
+		527656DE6160FC654088D738A7057535 /* Pods-APP-Sound-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C37BF9E2420B0F2072C7C1EDA116E6 /* Pods-APP-Sound-dummy.m */; };
+		5380454C48A12A6E376122ABD8096968 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9575AB2843A6B5455528695B4E37BE9 /* ConstraintDescription.swift */; };
+		55E51F45F1E157D3B4942BA7252C277E /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70EBB2DDB5AB64B6A0BD4C1D2854EB2 /* ConstraintRelatableTarget.swift */; };
+		56A72F6D13D930C4A2568F24DEA33C8D /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5E49B1B04269EFD521988754B8BD88 /* ConstraintLayoutSupportDSL.swift */; };
+		56AC6DC6459AE47E7BC4AF06E5B148D2 /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183701718A2B51114B90A7580C81998D /* ConstraintDSL.swift */; };
+		5951A80A020077B301E5F6059605C387 /* Pods-APP-SoundTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E5F67B08A1CA6071F4E204B46FA68B5C /* Pods-APP-SoundTests-dummy.m */; };
+		5D36B99F3CAB1FC7337082D9581FECA6 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91AD65C3A47631570F833C8361266E3 /* Debugging.swift */; };
+		604D3C93C17978C23600EC415949AB64 /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2B22F5AFE08257099E98D902396C62 /* ConstraintInsets.swift */; };
+		611CEF7FF1EF9EA1BCEF6C73EEE3ACCF /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A903449CDD10BD56E6FB90A0D21A794 /* ConstraintLayoutGuide.swift */; };
+		65C884CE0E6F76F5CF2D298E33DA090A /* EMTNeumorphicLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE91271B1B89CD80222DEEB7A6BD4AC /* EMTNeumorphicLayer.swift */; };
+		69DE75BA185BBAB5FDAA28321F3C849F /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C239E8353C5C78C7059D13EB884005BF /* ConstraintItem.swift */; };
+		6AC1B881BB319C89AD023A02CDC8FC3D /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304B2B32C981DC3E94298C5454108F87 /* ConstraintLayoutGuide+Extensions.swift */; };
+		6BBBAE922F7735131C159262024957D1 /* EMTNeumorphicView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F0E3E3BC574CB5B29CCFB0149FA60EC0 /* EMTNeumorphicView-dummy.m */; };
+		6CCBDAC6E983D8D54C8B9AD6BB125752 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BD9787FB7C94A0DC2A516C656509B78 /* Foundation.framework */; };
+		6EAC8B6FA2D115DE708A58C601DD25E1 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8323617207227075D01A4FCBDD1D2D /* Constraint.swift */; };
+		723FEAEA1CAC2DAD52FBAB49E9417367 /* Pods-APP-Sound-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 524CDC4688E2D4AEB303F756DF10B9FD /* Pods-APP-Sound-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		768F937CB3780440E55C02164390197E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BD9787FB7C94A0DC2A516C656509B78 /* Foundation.framework */; };
+		8638CF899E1F240D281EFDF37F969B2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BD9787FB7C94A0DC2A516C656509B78 /* Foundation.framework */; };
+		95E194A3AABB5407231E898B6686F73E /* ConstraintMakerRelatable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D34690F86FF4EF1D365EF38382F3B21 /* ConstraintMakerRelatable+Extensions.swift */; };
+		98F570DA48370453D648BD526FDAAEAA /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE22DC4F53C9B863C0BA771AC0C815 /* LayoutConstraintItem.swift */; };
+		9C9548E8B4675954566202F7B87FF0E6 /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F6792067BDF6A6980CD88C6AE282DE /* ConstraintConstantTarget.swift */; };
+		9E02CFFEFE1BEC978B512286F03D31DA /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32223A1981F015982B83C5B7528CA34D /* ConstraintInsetTarget.swift */; };
+		A03FDA8BC5741880B1EF11AFD248EF48 /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16BC6867710D8585F148FE3A1017368 /* ConstraintOffsetTarget.swift */; };
+		A1CB4AC31483DDC2F149308F981AB22C /* UIColor+tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F3C37320599CB059CEB539AFBD6C32 /* UIColor+tool.swift */; };
+		A3E3AB7C765C21AE17B1E6EE6560040C /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A56C7608D2EBE051A0F6765E9676ADB1 /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5A8BF973BFE9C9304372A26C9F2E35B /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04C3CC0F4452B1CD9F646E91529C7FB /* ConstraintMakerExtendable.swift */; };
+		ACAA5B9B4341425981D1CFEABAA4ED33 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8F6D9BC66BD5F2F5BB76A0FF98AB4E /* Sound.swift */; };
+		B03B5579590D528CBA6D11FF638BC2AF /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2940B96AAEBBCA87141AC607C2A8920 /* Typealiases.swift */; };
+		B43017FEC99D227D4CDD81DD2C27D9D9 /* ConstraintMakerPrioritizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE595E4E15F371C5E3F73BE81E19C2C /* ConstraintMakerPrioritizable.swift */; };
+		B752F7C4BECB65894B1F49421049CE5F /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060D2A3AD743B7B8304F1C60E36E5FE6 /* ConstraintView.swift */; };
+		BD47CB74CD9B2B4D2D942C9B65748DFB /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BD505D88B68C304A84228E6A3636214C /* SnapKit-dummy.m */; };
+		D6F519A0DDF8051607B63C6A777B29B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BD9787FB7C94A0DC2A516C656509B78 /* Foundation.framework */; };
+		D8C57043B07BD88B755AFD860B1EC526 /* EMTNeumorphicView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BAEAA705B4E2ED78FD5C810129A97E8 /* EMTNeumorphicView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6C09A25AC8255747DEB75DCBCA2B264 /* Pods-APP-Sound-APP-SoundUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F0F65510018BCA8573935FBAA8B9137 /* Pods-APP-Sound-APP-SoundUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E98DC8FB2578E76A812E0C94BA10E1B1 /* ConstraintDirectionalInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFAA152A1E27BE978B60293259F560B /* ConstraintDirectionalInsets.swift */; };
+		EDFBC6226973356455ED922B0A902DA5 /* EMTNeumorphicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BBBEF2816BC953D4582A293EBF41E0 /* EMTNeumorphicView.swift */; };
+		EF21586EC3DFF6097A58EEC87376A0C1 /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE070BE29A43A32EAB0F7069442394E0 /* ConstraintLayoutGuideDSL.swift */; };
+		F7C0960CEEB8F0C18F4503B405EAC08F /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAF6F0DDFE7ADDFC766A777AACE6D22 /* ConstraintMultiplierTarget.swift */; };
+		F953AA9104BFE0C2DAD639EA60104A75 /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC62270DBCE38AFF2F199577C65D6AEE /* ConstraintView+Extensions.swift */; };
+		F9F735423ABBDDB1679FFDACEB4B1BDE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2689EA712E5D78CDDF35E7B1BD8994B6 /* AVFoundation.framework */; };
+		FAB03959C2357E325B19E08BC4775DAB /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0A7665CE3B18F716077BDF12BD62CD /* ConstraintMaker.swift */; };
+		FB9F4F61B3BEBEA0FB314ED930B35BE5 /* Pods-APP-SoundTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 255D903664B3A9130AD7C85C4475FCF4 /* Pods-APP-SoundTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE8B9BD971E022ABE8E1CAF3CECAA0D8 /* SwiftySound-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 915CC97445567527767C46BBC9FA9FDA /* SwiftySound-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		09B461B85430F6CE994C5A577D1A04A3 /* PBXContainerItemProxy */ = {
+		0B02D8D5794AD8B7BC043A8A26C3D127 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF76419D4650F093FFACB1AD713C1EF1;
+			remoteInfo = SwiftySound;
+		};
+		97A37D06830673834F8BCC08AC0DBF2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19622742EBA51E823D6DAE3F8CDBFAD4;
+			remoteInfo = SnapKit;
+		};
+		9D560C82B08597FA0D5F0EBB38313FB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CE6EE7AB67EEDB2785C26554B4B516A;
+			remoteInfo = EMTNeumorphicView;
+		};
+		A9DC49162B65AB3400B79F1FD592A5C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8305E0279723F2F5C790F6BEE58E8596;
+			remoteInfo = SwiftSiriWaveformView;
+		};
+		B15F80DAF99BB76F601CD9A03D026B23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19622742EBA51E823D6DAE3F8CDBFAD4;
+			remoteInfo = SnapKit;
+		};
+		D0F39E163CBE36748AE43D9CD43B7D43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF76419D4650F093FFACB1AD713C1EF1;
+			remoteInfo = SwiftySound;
+		};
+		F7396A75D797E0A2AB82477FD0DCE6D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CE6EE7AB67EEDB2785C26554B4B516A;
+			remoteInfo = EMTNeumorphicView;
+		};
+		F77D381010DEE843D2D6C281B9DB9B77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8305E0279723F2F5C790F6BEE58E8596;
+			remoteInfo = SwiftSiriWaveformView;
+		};
+		F87AF7108133D7B733D5F4C3C8A4B51E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = CD98539CE51FAC58BD544156EBD5958C;
 			remoteInfo = "Pods-APP-Sound";
 		};
-		0CE967135EE1E47F5C2408D6DE637F84 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8CE6EE7AB67EEDB2785C26554B4B516A;
-			remoteInfo = EMTNeumorphicView;
-		};
-		2812F243B26A7F83E1C3592EA3CF49E4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8305E0279723F2F5C790F6BEE58E8596;
-			remoteInfo = SwiftSiriWaveformView;
-		};
-		6A0D9C1A2BD97F3E59A80C750791C720 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AF76419D4650F093FFACB1AD713C1EF1;
-			remoteInfo = SwiftySound;
-		};
-		6EF847F3801EBB49CCF42D5220B0EFA1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8CE6EE7AB67EEDB2785C26554B4B516A;
-			remoteInfo = EMTNeumorphicView;
-		};
-		6FAB00115BE112877A0DAA120346C4CB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8305E0279723F2F5C790F6BEE58E8596;
-			remoteInfo = SwiftSiriWaveformView;
-		};
-		9ADC013B7BECD8A2C0E7AB5F2B044A49 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AF76419D4650F093FFACB1AD713C1EF1;
-			remoteInfo = SwiftySound;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01B70DDD7053357B3114F112B82CE00D /* SwiftySound.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftySound.debug.xcconfig; sourceTree = "<group>"; };
-		037429A7D8BFDAAF9B511CCA41B48008 /* SwiftySound-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftySound-umbrella.h"; sourceTree = "<group>"; };
-		1085B00C116C10523A6774F583BF185B /* EMTNeumorphicView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EMTNeumorphicView.debug.xcconfig; sourceTree = "<group>"; };
-		1736847A097F079EA3ABF889EFF20C63 /* SwiftySound.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftySound.release.xcconfig; sourceTree = "<group>"; };
-		1C5807A1054E16FB746C9D45C3616A66 /* Pods_APP_SoundTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_APP_SoundTests.framework; path = "Pods-APP-SoundTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1D7D184264F544D972D533B92727CE29 /* EMTNeumorphicView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EMTNeumorphicView-dummy.m"; sourceTree = "<group>"; };
+		060D2A3AD743B7B8304F1C60E36E5FE6 /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Sources/ConstraintView.swift; sourceTree = "<group>"; };
+		0BAEAA705B4E2ED78FD5C810129A97E8 /* EMTNeumorphicView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EMTNeumorphicView-umbrella.h"; sourceTree = "<group>"; };
+		0F8F6D9BC66BD5F2F5BB76A0FF98AB4E /* Sound.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Sound.swift; path = Sources/Sound.swift; sourceTree = "<group>"; };
+		17862FABA2E21AC4EBB8C29B3E5F9D51 /* SnapKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.release.xcconfig; sourceTree = "<group>"; };
+		183701718A2B51114B90A7580C81998D /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Sources/ConstraintDSL.swift; sourceTree = "<group>"; };
+		1C5807A1054E16FB746C9D45C3616A66 /* Pods-APP-SoundTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-APP-SoundTests"; path = Pods_APP_SoundTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F68CAAF83023D753D55F2036E936139 /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Sources/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
+		1F855BF32C3A8CB5611AEBD6DB54C6E5 /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
 		1FD658AEC9E194DADEA2095BE40220E9 /* Pods-APP-SoundTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-APP-SoundTests.modulemap"; sourceTree = "<group>"; };
-		1FEEE17B7F031591011B64B62F1FC91C /* SwiftSiriWaveformView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftSiriWaveformView.framework; path = SwiftSiriWaveformView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		21B0DA77D56DB4FF4C881929FF292F29 /* EMTNeumorphicView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "EMTNeumorphicView-Info.plist"; sourceTree = "<group>"; };
-		23D5F09B481A963F16F87FC738A53EFC /* SwiftSiriWaveformView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftSiriWaveformView.modulemap; sourceTree = "<group>"; };
+		1FEEE17B7F031591011B64B62F1FC91C /* SwiftSiriWaveformView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftSiriWaveformView; path = SwiftSiriWaveformView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24F7BB825306EB65F2C00539282C1F56 /* SwiftSiriWaveformView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSiriWaveformView.debug.xcconfig; sourceTree = "<group>"; };
 		255D903664B3A9130AD7C85C4475FCF4 /* Pods-APP-SoundTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-APP-SoundTests-umbrella.h"; sourceTree = "<group>"; };
 		267363B8BF53183F80BBE85C0CD9A98B /* Pods-APP-Sound-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-APP-Sound-frameworks.sh"; sourceTree = "<group>"; };
 		2689EA712E5D78CDDF35E7B1BD8994B6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		271FC11E43DC219899DCBA8A3EDFD7BB /* SwiftySound.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftySound.modulemap; sourceTree = "<group>"; };
 		2BD9787FB7C94A0DC2A516C656509B78 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		2CFAA152A1E27BE978B60293259F560B /* ConstraintDirectionalInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDirectionalInsets.swift; path = Sources/ConstraintDirectionalInsets.swift; sourceTree = "<group>"; };
+		2D34690F86FF4EF1D365EF38382F3B21 /* ConstraintMakerRelatable+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintMakerRelatable+Extensions.swift"; path = "Sources/ConstraintMakerRelatable+Extensions.swift"; sourceTree = "<group>"; };
 		2FAF563174A96B2BDEB0B00DB302054F /* Pods-APP-Sound.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-APP-Sound.debug.xcconfig"; sourceTree = "<group>"; };
 		2FCD689FD6BF4BCE4E97E6094FCB62D1 /* Pods-APP-Sound-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-APP-Sound-acknowledgements.markdown"; sourceTree = "<group>"; };
+		304B2B32C981DC3E94298C5454108F87 /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Sources/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
+		32223A1981F015982B83C5B7528CA34D /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Sources/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
 		322E958AC6C3331D032DB168195DA1AF /* Pods-APP-Sound-APP-SoundUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-APP-Sound-APP-SoundUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		324F7F51F5E793A3946F2F9B4AC38C22 /* SwiftSiriWaveformView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSiriWaveformView.swift; path = Pod/Classes/SwiftSiriWaveformView.swift; sourceTree = "<group>"; };
 		35C37BF9E2420B0F2072C7C1EDA116E6 /* Pods-APP-Sound-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-APP-Sound-dummy.m"; sourceTree = "<group>"; };
-		39653BDC3A24B56CD2663293106D73C1 /* Pods_APP_Sound.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_APP_Sound.framework; path = "Pods-APP-Sound.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3949634108598875211AA4D4A5FF37EF /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Sources/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
+		39653BDC3A24B56CD2663293106D73C1 /* Pods-APP-Sound */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-APP-Sound"; path = Pods_APP_Sound.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C68BB76B6AAF2BC260309D9EB4D3ADA /* Pods-APP-Sound-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-APP-Sound-acknowledgements.plist"; sourceTree = "<group>"; };
+		3D5E49B1B04269EFD521988754B8BD88 /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Sources/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
+		3E2B22F5AFE08257099E98D902396C62 /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Sources/ConstraintInsets.swift; sourceTree = "<group>"; };
+		3E5A4C2A343E14308B079CC0AB7C1A58 /* EMTNeumorphicView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EMTNeumorphicView.debug.xcconfig; sourceTree = "<group>"; };
 		3F0F65510018BCA8573935FBAA8B9137 /* Pods-APP-Sound-APP-SoundUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-APP-Sound-APP-SoundUITests-umbrella.h"; sourceTree = "<group>"; };
 		407553498D861AE4968A2E95CF5416F3 /* Pods-APP-Sound.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-APP-Sound.modulemap"; sourceTree = "<group>"; };
-		412580E56D79901D7203B5D6336E3166 /* SwiftSiriWaveformView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSiriWaveformView-prefix.pch"; sourceTree = "<group>"; };
+		41780420B5BFB4212F5BD1BFCEE1B487 /* EMTNeumorphicView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EMTNeumorphicView.release.xcconfig; sourceTree = "<group>"; };
 		44B10381F27A3861F096E76B8F2D3747 /* Pods-APP-Sound-APP-SoundUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-APP-Sound-APP-SoundUITests-frameworks.sh"; sourceTree = "<group>"; };
+		47F6792067BDF6A6980CD88C6AE282DE /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Sources/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
+		48FE22DC4F53C9B863C0BA771AC0C815 /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Sources/LayoutConstraintItem.swift; sourceTree = "<group>"; };
 		4B9F23266EC27A342E14973CDACFFA94 /* Pods-APP-SoundTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-APP-SoundTests.release.xcconfig"; sourceTree = "<group>"; };
-		4CDC562046A208F477B625D5AE67795F /* EMTNeumorphicView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EMTNeumorphicView.framework; path = EMTNeumorphicView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CDC562046A208F477B625D5AE67795F /* EMTNeumorphicView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EMTNeumorphicView; path = EMTNeumorphicView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DAB024FF898BDDA3026225717AD9CC6 /* Pods-APP-Sound-APP-SoundUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-APP-Sound-APP-SoundUITests.modulemap"; sourceTree = "<group>"; };
+		4E98C734654DAF6B916F143D24F45B52 /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Sources/LayoutConstraint.swift; sourceTree = "<group>"; };
 		524CDC4688E2D4AEB303F756DF10B9FD /* Pods-APP-Sound-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-APP-Sound-umbrella.h"; sourceTree = "<group>"; };
-		527F6F918A2CDA4FC6211D386F04602E /* SwiftySound.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftySound.modulemap; sourceTree = "<group>"; };
 		52EF582470EABAD9CF5034E6EC750120 /* Pods-APP-Sound-APP-SoundUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-APP-Sound-APP-SoundUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		530201021F1E4A1D69CCC2D1B108E33B /* SwiftySound.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftySound.release.xcconfig; sourceTree = "<group>"; };
 		5A44082513D4AA8EFA015526A20FC20E /* Pods-APP-Sound-APP-SoundUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-APP-Sound-APP-SoundUITests-Info.plist"; sourceTree = "<group>"; };
-		71F23FEBBB927C993E86F7C33003EC02 /* SwiftSiriWaveformView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftSiriWaveformView-Info.plist"; sourceTree = "<group>"; };
+		5A903449CDD10BD56E6FB90A0D21A794 /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Sources/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
+		6431D1830BC873AFE3558841B76E6EDC /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Sources/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
+		653F8479C0C553BCA8ECF150CC11A47B /* SnapKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SnapKit-Info.plist"; sourceTree = "<group>"; };
+		6A9263335A51516EFDA3CAE2A87732D8 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Sources/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
+		70DBD395172F10F946ECD84D7AB7B986 /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Sources/ConstraintConfig.swift; sourceTree = "<group>"; };
+		79F3C37320599CB059CEB539AFBD6C32 /* UIColor+tool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+tool.swift"; path = "EMTNeumorphicView/Classes/UIColor+tool.swift"; sourceTree = "<group>"; };
+		7BC3A1B2ABCC85E11DD10C95BB1B5C79 /* SwiftSiriWaveformView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSiriWaveformView-umbrella.h"; sourceTree = "<group>"; };
 		7C61620D7778ED42C39302EF418A242D /* Pods-APP-Sound.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-APP-Sound.release.xcconfig"; sourceTree = "<group>"; };
-		810D12FF39233EF3719B845FF2255AEC /* SwiftySound-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftySound-prefix.pch"; sourceTree = "<group>"; };
-		81C038BC035D1C91761C200990E56EAD /* EMTNeumorphicView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EMTNeumorphicView-prefix.pch"; sourceTree = "<group>"; };
-		85E6C34567B8726896510308D1533BCF /* EMTNeumorphicView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EMTNeumorphicView.release.xcconfig; sourceTree = "<group>"; };
-		882F46B48DDD3C1F6AD84DE630FB68ED /* Pods_APP_Sound_APP_SoundUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_APP_Sound_APP_SoundUITests.framework; path = "Pods-APP-Sound-APP-SoundUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8953CFFB64FA6BE665D385206E531340 /* Sound.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Sound.swift; path = Sources/Sound.swift; sourceTree = "<group>"; };
-		8DB400D0131736842937DA279238E858 /* EMTNeumorphicLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EMTNeumorphicLayer.swift; path = EMTNeumorphicView/Classes/EMTNeumorphicLayer.swift; sourceTree = "<group>"; };
+		80E36B752466306C0E8FB0099F262184 /* ConstraintDirectionalInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDirectionalInsetTarget.swift; path = Sources/ConstraintDirectionalInsetTarget.swift; sourceTree = "<group>"; };
+		882F46B48DDD3C1F6AD84DE630FB68ED /* Pods-APP-Sound-APP-SoundUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-APP-Sound-APP-SoundUITests"; path = Pods_APP_Sound_APP_SoundUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A0A7665CE3B18F716077BDF12BD62CD /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Sources/ConstraintMaker.swift; sourceTree = "<group>"; };
+		8C40225979AC3AFC5D7D0900E4E4FCAB /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Sources/ConstraintPriority.swift; sourceTree = "<group>"; };
 		8F0F17BCDCD1F941275C535DDCCBF5FD /* Pods-APP-Sound-APP-SoundUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-APP-Sound-APP-SoundUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		933C714AE0783BE945924B98F5415C01 /* EMTNeumorphicView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EMTNeumorphicView.swift; path = EMTNeumorphicView/Classes/EMTNeumorphicView.swift; sourceTree = "<group>"; };
-		996615DEDCD6C2933EC3F8504427765B /* SwiftySound.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftySound.framework; path = SwiftySound.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		915CC97445567527767C46BBC9FA9FDA /* SwiftySound-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftySound-umbrella.h"; sourceTree = "<group>"; };
+		979486118B3E90C08386079D57962701 /* SnapKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98BBBEF2816BC953D4582A293EBF41E0 /* EMTNeumorphicView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EMTNeumorphicView.swift; path = EMTNeumorphicView/Classes/EMTNeumorphicView.swift; sourceTree = "<group>"; };
+		98E4FB7ED6F8FD4E819A5B267F1CF208 /* SnapKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.debug.xcconfig; sourceTree = "<group>"; };
+		996615DEDCD6C2933EC3F8504427765B /* SwiftySound */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftySound; path = SwiftySound.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E595F7845B478905DAFAC442C8D23B9 /* Pods-APP-SoundTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-APP-SoundTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9F45A90E9E705B9ABD440835E1BE02D0 /* SwiftySound-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftySound-Info.plist"; sourceTree = "<group>"; };
+		9F8323617207227075D01A4FCBDD1D2D /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Sources/Constraint.swift; sourceTree = "<group>"; };
+		A36F76C704FC871538FFBB16B4F56A5E /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Sources/ConstraintRelation.swift; sourceTree = "<group>"; };
 		A3828101A6287552D78AB818A2E36798 /* Pods-APP-Sound-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-APP-Sound-Info.plist"; sourceTree = "<group>"; };
+		A56C7608D2EBE051A0F6765E9676ADB1 /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
 		AB5D566A6BD352D0FBD2809402ED663E /* Pods-APP-Sound-APP-SoundUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-APP-Sound-APP-SoundUITests.release.xcconfig"; sourceTree = "<group>"; };
-		B87218C921A7F864736CD1A68426B221 /* EMTNeumorphicView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EMTNeumorphicView-umbrella.h"; sourceTree = "<group>"; };
-		BD52247246E7385CF235C6E816297E33 /* SwiftySound-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftySound-dummy.m"; sourceTree = "<group>"; };
+		ABAF6F0DDFE7ADDFC766A777AACE6D22 /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Sources/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
+		AF3E6D3B24EA077B39DE5FF1D6191B46 /* SwiftySound-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftySound-dummy.m"; sourceTree = "<group>"; };
+		B2940B96AAEBBCA87141AC607C2A8920 /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Sources/Typealiases.swift; sourceTree = "<group>"; };
+		B7F6523320C4F1F7D6B162417EB9E194 /* SwiftySound-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftySound-prefix.pch"; sourceTree = "<group>"; };
+		B85EBA177998240815D237A83ED306A5 /* SwiftSiriWaveformView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftSiriWaveformView.modulemap; sourceTree = "<group>"; };
+		B9B5C1853964849824E25A77C5C55152 /* SwiftSiriWaveformView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSiriWaveformView.release.xcconfig; sourceTree = "<group>"; };
+		BCE60C848EC708CB8C0C644159DFDB5C /* EMTNeumorphicView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EMTNeumorphicView-prefix.pch"; sourceTree = "<group>"; };
+		BCE91271B1B89CD80222DEEB7A6BD4AC /* EMTNeumorphicLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EMTNeumorphicLayer.swift; path = EMTNeumorphicView/Classes/EMTNeumorphicLayer.swift; sourceTree = "<group>"; };
+		BD505D88B68C304A84228E6A3636214C /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
+		C04C3CC0F4452B1CD9F646E91529C7FB /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Sources/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
+		C239E8353C5C78C7059D13EB884005BF /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Sources/ConstraintItem.swift; sourceTree = "<group>"; };
+		C2FE8042B48A47916A81030084BDF307 /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Sources/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
 		C5543CFA426311CF7C79E88F58F8E64F /* Pods-APP-SoundTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-APP-SoundTests-Info.plist"; sourceTree = "<group>"; };
-		C6E1A776C987E8C3A9D5468D1938B828 /* UIColor+tool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+tool.swift"; path = "EMTNeumorphicView/Classes/UIColor+tool.swift"; sourceTree = "<group>"; };
-		CE586302C5BE2F6DD9744790C993BB82 /* EMTNeumorphicView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = EMTNeumorphicView.modulemap; sourceTree = "<group>"; };
+		C638C73F64F5C94AE03E0AE0A71FBAD9 /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Sources/ConstraintViewDSL.swift; sourceTree = "<group>"; };
+		C91AD65C3A47631570F833C8361266E3 /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Sources/Debugging.swift; sourceTree = "<group>"; };
+		CE070BE29A43A32EAB0F7069442394E0 /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Sources/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
+		CFE595E4E15F371C5E3F73BE81E19C2C /* ConstraintMakerPrioritizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPrioritizable.swift; path = Sources/ConstraintMakerPrioritizable.swift; sourceTree = "<group>"; };
+		D290148BEF8AA057ED95FCA378A2D9BB /* SwiftSiriWaveformView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftSiriWaveformView-Info.plist"; sourceTree = "<group>"; };
+		D63004EE0F83061EAC35393ACBD0030B /* SwiftSiriWaveformView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftSiriWaveformView-dummy.m"; sourceTree = "<group>"; };
+		D70EBB2DDB5AB64B6A0BD4C1D2854EB2 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Sources/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
 		D77B9F0B859215CF37F04412DF2CCE51 /* Pods-APP-Sound-APP-SoundUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-APP-Sound-APP-SoundUITests-dummy.m"; sourceTree = "<group>"; };
+		DCD0E10348D612F434D040DD8E456874 /* SwiftSiriWaveformView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSiriWaveformView.swift; path = Pod/Classes/SwiftSiriWaveformView.swift; sourceTree = "<group>"; };
 		E47DB3820DA43780528715B56A764BD4 /* Pods-APP-SoundTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-APP-SoundTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E4AFDAB3AA70D12D96421DD0E9F71580 /* Pods-APP-SoundTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-APP-SoundTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E5F67B08A1CA6071F4E204B46FA68B5C /* Pods-APP-SoundTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-APP-SoundTests-dummy.m"; sourceTree = "<group>"; };
-		ECA1D83621635A20C78AF7573C7818A8 /* SwiftSiriWaveformView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSiriWaveformView.debug.xcconfig; sourceTree = "<group>"; };
-		EF6CB2DC424CBCA4C5727550751E5699 /* SwiftSiriWaveformView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSiriWaveformView-umbrella.h"; sourceTree = "<group>"; };
-		F07B1CB22102EACB10AF7B0E3F1B9C71 /* SwiftSiriWaveformView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftSiriWaveformView-dummy.m"; sourceTree = "<group>"; };
-		FCC898AC24438F8864BD3457E452C9F7 /* SwiftySound-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftySound-Info.plist"; sourceTree = "<group>"; };
-		FF1ABDD8BA3BCB303E05663FB322DE59 /* SwiftSiriWaveformView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSiriWaveformView.release.xcconfig; sourceTree = "<group>"; };
+		EAFDAA81227A7939D1C89A07CEDB8F8B /* EMTNeumorphicView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = EMTNeumorphicView.modulemap; sourceTree = "<group>"; };
+		EC4AC3D058A59A8F5352391B74752EED /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapKit.modulemap; sourceTree = "<group>"; };
+		ED46B2DA4EDFB4969FC6D778E4F5C7A3 /* SwiftSiriWaveformView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSiriWaveformView-prefix.pch"; sourceTree = "<group>"; };
+		F0E3E3BC574CB5B29CCFB0149FA60EC0 /* EMTNeumorphicView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EMTNeumorphicView-dummy.m"; sourceTree = "<group>"; };
+		F15D2E0A28DD11607DD87ED40544822B /* SwiftySound.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftySound.debug.xcconfig; sourceTree = "<group>"; };
+		F16BC6867710D8585F148FE3A1017368 /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Sources/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
+		F64585D5627FCD659AEC6B4E35B68E63 /* EMTNeumorphicView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "EMTNeumorphicView-Info.plist"; sourceTree = "<group>"; };
+		F891A3846969A08412B10E828A867A11 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Sources/ConstraintAttributes.swift; sourceTree = "<group>"; };
+		F9575AB2843A6B5455528695B4E37BE9 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Sources/ConstraintDescription.swift; sourceTree = "<group>"; };
+		F9ADE8FD563DF24A6FD8590D164BD1FF /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Sources/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
+		FC62270DBCE38AFF2F199577C65D6AEE /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Sources/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		19A622D963A59F077FCF9BBF39EC1AE1 /* Frameworks */ = {
+		397C68B78E4E80BDE593F6A54A08E591 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				090FF809B49462F1417ADBBE3C33EC20 /* Foundation.framework in Frameworks */,
+				768F937CB3780440E55C02164390197E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7C0C398529CF97E1A5CA8FEDF961858A /* Frameworks */ = {
+		6EDDF71E917304141106E492F854A44A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39F1D65E58CCEA6CB6598A0B186EEBAF /* AVFoundation.framework in Frameworks */,
-				67EEFAA935C521281A57F08E1F288DC1 /* Foundation.framework in Frameworks */,
+				4BB3255A6BE5F06DF2B3417008797AE4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7FEB19F70BB5B1C325AE79EFCDD82744 /* Frameworks */ = {
+		763E75347A9CF84E865C5A8F60FEA988 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAEAA5478086B8486EB3C8C3F3F281EA /* Foundation.framework in Frameworks */,
+				6CCBDAC6E983D8D54C8B9AD6BB125752 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		988D90447C8C336AE0C0A6DAB01A1D1D /* Frameworks */ = {
+		7B2595E6B8315800D1C923C14063C69B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B30C7C15124FDD2EEA6815B634E8BD3 /* Foundation.framework in Frameworks */,
+				8638CF899E1F240D281EFDF37F969B2F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AE89A58AD39DEAF5C942E3485FB583A0 /* Frameworks */ = {
+		8EA43ADA6C97D2BB755647AFE82BB009 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD1B5F1F17159951EC049E0CD7F9EA1E /* Foundation.framework in Frameworks */,
+				1483195F624719EEF27EC16F2F464BFE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B07BD5F48D06937AA894FBF4C6307E8B /* Frameworks */ = {
+		9BE29C388052B3B108EF9D4D3D772D90 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79F1EDA17C0580F3AA7EEDFEF4D424DD /* Foundation.framework in Frameworks */,
+				F9F735423ABBDDB1679FFDACEB4B1BDE /* AVFoundation.framework in Frameworks */,
+				D6F519A0DDF8051607B63C6A777B29B3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8E4E7CE8309D3EF7B7476AC57986BE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0833E66E7F19849322305D67777B77DB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,26 +334,40 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2315D373FD178DF3C91968F8FE76466E /* Support Files */ = {
+		4539BCAFE18D14A7ED61ED40C7A6A61B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				23D5F09B481A963F16F87FC738A53EFC /* SwiftSiriWaveformView.modulemap */,
-				F07B1CB22102EACB10AF7B0E3F1B9C71 /* SwiftSiriWaveformView-dummy.m */,
-				71F23FEBBB927C993E86F7C33003EC02 /* SwiftSiriWaveformView-Info.plist */,
-				412580E56D79901D7203B5D6336E3166 /* SwiftSiriWaveformView-prefix.pch */,
-				EF6CB2DC424CBCA4C5727550751E5699 /* SwiftSiriWaveformView-umbrella.h */,
-				ECA1D83621635A20C78AF7573C7818A8 /* SwiftSiriWaveformView.debug.xcconfig */,
-				FF1ABDD8BA3BCB303E05663FB322DE59 /* SwiftSiriWaveformView.release.xcconfig */,
+				271FC11E43DC219899DCBA8A3EDFD7BB /* SwiftySound.modulemap */,
+				AF3E6D3B24EA077B39DE5FF1D6191B46 /* SwiftySound-dummy.m */,
+				9F45A90E9E705B9ABD440835E1BE02D0 /* SwiftySound-Info.plist */,
+				B7F6523320C4F1F7D6B162417EB9E194 /* SwiftySound-prefix.pch */,
+				915CC97445567527767C46BBC9FA9FDA /* SwiftySound-umbrella.h */,
+				F15D2E0A28DD11607DD87ED40544822B /* SwiftySound.debug.xcconfig */,
+				530201021F1E4A1D69CCC2D1B108E33B /* SwiftySound.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/SwiftSiriWaveformView";
+			path = "../Target Support Files/SwiftySound";
 			sourceTree = "<group>";
 		};
-		3B3020F33C49B970DE64545E9AF6B567 /* SwiftSiriWaveformView */ = {
+		4C6EBF9162DA7BC5A2CE8B881BCF7E6C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				324F7F51F5E793A3946F2F9B4AC38C22 /* SwiftSiriWaveformView.swift */,
-				2315D373FD178DF3C91968F8FE76466E /* Support Files */,
+				4CDC562046A208F477B625D5AE67795F /* EMTNeumorphicView */,
+				39653BDC3A24B56CD2663293106D73C1 /* Pods-APP-Sound */,
+				882F46B48DDD3C1F6AD84DE630FB68ED /* Pods-APP-Sound-APP-SoundUITests */,
+				1C5807A1054E16FB746C9D45C3616A66 /* Pods-APP-SoundTests */,
+				979486118B3E90C08386079D57962701 /* SnapKit */,
+				1FEEE17B7F031591011B64B62F1FC91C /* SwiftSiriWaveformView */,
+				996615DEDCD6C2933EC3F8504427765B /* SwiftySound */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6727618E7393241D6C78238145CFE3EC /* SwiftSiriWaveformView */ = {
+			isa = PBXGroup;
+			children = (
+				DCD0E10348D612F434D040DD8E456874 /* SwiftSiriWaveformView.swift */,
+				F79B08813BF41104174A215669895E54 /* Support Files */,
 			);
 			name = SwiftSiriWaveformView;
 			path = SwiftSiriWaveformView;
@@ -268,6 +389,36 @@
 			path = "Target Support Files/Pods-APP-SoundTests";
 			sourceTree = "<group>";
 		};
+		7E03F378559F9E04B7640BB23BE6CF2A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAFDAA81227A7939D1C89A07CEDB8F8B /* EMTNeumorphicView.modulemap */,
+				F0E3E3BC574CB5B29CCFB0149FA60EC0 /* EMTNeumorphicView-dummy.m */,
+				F64585D5627FCD659AEC6B4E35B68E63 /* EMTNeumorphicView-Info.plist */,
+				BCE60C848EC708CB8C0C644159DFDB5C /* EMTNeumorphicView-prefix.pch */,
+				0BAEAA705B4E2ED78FD5C810129A97E8 /* EMTNeumorphicView-umbrella.h */,
+				3E5A4C2A343E14308B079CC0AB7C1A58 /* EMTNeumorphicView.debug.xcconfig */,
+				41780420B5BFB4212F5BD1BFCEE1B487 /* EMTNeumorphicView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/EMTNeumorphicView";
+			sourceTree = "<group>";
+		};
+		80BBAB067ED0BCA2BA6AA00213363AEC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC4AC3D058A59A8F5352391B74752EED /* SnapKit.modulemap */,
+				BD505D88B68C304A84228E6A3636214C /* SnapKit-dummy.m */,
+				653F8479C0C553BCA8ECF150CC11A47B /* SnapKit-Info.plist */,
+				1F855BF32C3A8CB5611AEBD6DB54C6E5 /* SnapKit-prefix.pch */,
+				A56C7608D2EBE051A0F6765E9676ADB1 /* SnapKit-umbrella.h */,
+				98E4FB7ED6F8FD4E819A5B267F1CF208 /* SnapKit.debug.xcconfig */,
+				17862FABA2E21AC4EBB8C29B3E5F9D51 /* SnapKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SnapKit";
+			sourceTree = "<group>";
+		};
 		86E3486D3480BDFA88ABCF1F08C13D7F /* Pods-APP-Sound-APP-SoundUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -285,19 +436,6 @@
 			path = "Target Support Files/Pods-APP-Sound-APP-SoundUITests";
 			sourceTree = "<group>";
 		};
-		957DB1233E65E9FB250F0DA60568B830 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				4CDC562046A208F477B625D5AE67795F /* EMTNeumorphicView.framework */,
-				39653BDC3A24B56CD2663293106D73C1 /* Pods_APP_Sound.framework */,
-				882F46B48DDD3C1F6AD84DE630FB68ED /* Pods_APP_Sound_APP_SoundUITests.framework */,
-				1C5807A1054E16FB746C9D45C3616A66 /* Pods_APP_SoundTests.framework */,
-				1FEEE17B7F031591011B64B62F1FC91C /* SwiftSiriWaveformView.framework */,
-				996615DEDCD6C2933EC3F8504427765B /* SwiftySound.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		A5DEB1C07BFBF0A176A0DC89338897E5 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -306,6 +444,18 @@
 				795AC072A9B60C2392F1F5BE83919F17 /* Pods-APP-SoundTests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C27E5258291C0E01806A38775AE7B67C /* EMTNeumorphicView */ = {
+			isa = PBXGroup;
+			children = (
+				BCE91271B1B89CD80222DEEB7A6BD4AC /* EMTNeumorphicLayer.swift */,
+				98BBBEF2816BC953D4582A293EBF41E0 /* EMTNeumorphicView.swift */,
+				79F3C37320599CB059CEB539AFBD6C32 /* UIColor+tool.swift */,
+				7E03F378559F9E04B7640BB23BE6CF2A /* Support Files */,
+			);
+			name = EMTNeumorphicView;
+			path = EMTNeumorphicView;
 			sourceTree = "<group>";
 		};
 		CA13D49ADE69D79D70A8B79AAAC38DE9 /* iOS */ = {
@@ -317,181 +467,228 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		CF1408CF629C7361332E53B88F7BD30C = {
+		CEB900B968BB630ED558E0845F853479 /* SwiftySound */ = {
 			isa = PBXGroup;
 			children = (
-				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
-				FD0E535A85A666AACF9934CFC7E3DEC4 /* Pods */,
-				957DB1233E65E9FB250F0DA60568B830 /* Products */,
-				A5DEB1C07BFBF0A176A0DC89338897E5 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		EDBC12A35F6184763B1649621A68317C /* EMTNeumorphicView */ = {
-			isa = PBXGroup;
-			children = (
-				8DB400D0131736842937DA279238E858 /* EMTNeumorphicLayer.swift */,
-				933C714AE0783BE945924B98F5415C01 /* EMTNeumorphicView.swift */,
-				C6E1A776C987E8C3A9D5468D1938B828 /* UIColor+tool.swift */,
-				F20E0E9E715BAF1E9F744958B18352E4 /* Support Files */,
-			);
-			name = EMTNeumorphicView;
-			path = EMTNeumorphicView;
-			sourceTree = "<group>";
-		};
-		F20E0E9E715BAF1E9F744958B18352E4 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				CE586302C5BE2F6DD9744790C993BB82 /* EMTNeumorphicView.modulemap */,
-				1D7D184264F544D972D533B92727CE29 /* EMTNeumorphicView-dummy.m */,
-				21B0DA77D56DB4FF4C881929FF292F29 /* EMTNeumorphicView-Info.plist */,
-				81C038BC035D1C91761C200990E56EAD /* EMTNeumorphicView-prefix.pch */,
-				B87218C921A7F864736CD1A68426B221 /* EMTNeumorphicView-umbrella.h */,
-				1085B00C116C10523A6774F583BF185B /* EMTNeumorphicView.debug.xcconfig */,
-				85E6C34567B8726896510308D1533BCF /* EMTNeumorphicView.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/EMTNeumorphicView";
-			sourceTree = "<group>";
-		};
-		FBEA9501CACB1E08661DA0FF9A634774 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				527F6F918A2CDA4FC6211D386F04602E /* SwiftySound.modulemap */,
-				BD52247246E7385CF235C6E816297E33 /* SwiftySound-dummy.m */,
-				FCC898AC24438F8864BD3457E452C9F7 /* SwiftySound-Info.plist */,
-				810D12FF39233EF3719B845FF2255AEC /* SwiftySound-prefix.pch */,
-				037429A7D8BFDAAF9B511CCA41B48008 /* SwiftySound-umbrella.h */,
-				01B70DDD7053357B3114F112B82CE00D /* SwiftySound.debug.xcconfig */,
-				1736847A097F079EA3ABF889EFF20C63 /* SwiftySound.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftySound";
-			sourceTree = "<group>";
-		};
-		FD0E535A85A666AACF9934CFC7E3DEC4 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				EDBC12A35F6184763B1649621A68317C /* EMTNeumorphicView */,
-				3B3020F33C49B970DE64545E9AF6B567 /* SwiftSiriWaveformView */,
-				FFC9C4255CB28D1C8F9A57834F8FB2AE /* SwiftySound */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		FFC9C4255CB28D1C8F9A57834F8FB2AE /* SwiftySound */ = {
-			isa = PBXGroup;
-			children = (
-				8953CFFB64FA6BE665D385206E531340 /* Sound.swift */,
-				FBEA9501CACB1E08661DA0FF9A634774 /* Support Files */,
+				0F8F6D9BC66BD5F2F5BB76A0FF98AB4E /* Sound.swift */,
+				4539BCAFE18D14A7ED61ED40C7A6A61B /* Support Files */,
 			);
 			name = SwiftySound;
 			path = SwiftySound;
 			sourceTree = "<group>";
 		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				E9BFEF4358CB5448EB421A1B131F86AE /* Pods */,
+				4C6EBF9162DA7BC5A2CE8B881BCF7E6C /* Products */,
+				A5DEB1C07BFBF0A176A0DC89338897E5 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		DB9A57FB50578A96D5CCBA496AAECD83 /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				9F8323617207227075D01A4FCBDD1D2D /* Constraint.swift */,
+				F891A3846969A08412B10E828A867A11 /* ConstraintAttributes.swift */,
+				70DBD395172F10F946ECD84D7AB7B986 /* ConstraintConfig.swift */,
+				47F6792067BDF6A6980CD88C6AE282DE /* ConstraintConstantTarget.swift */,
+				F9575AB2843A6B5455528695B4E37BE9 /* ConstraintDescription.swift */,
+				2CFAA152A1E27BE978B60293259F560B /* ConstraintDirectionalInsets.swift */,
+				80E36B752466306C0E8FB0099F262184 /* ConstraintDirectionalInsetTarget.swift */,
+				183701718A2B51114B90A7580C81998D /* ConstraintDSL.swift */,
+				3E2B22F5AFE08257099E98D902396C62 /* ConstraintInsets.swift */,
+				32223A1981F015982B83C5B7528CA34D /* ConstraintInsetTarget.swift */,
+				C239E8353C5C78C7059D13EB884005BF /* ConstraintItem.swift */,
+				5A903449CDD10BD56E6FB90A0D21A794 /* ConstraintLayoutGuide.swift */,
+				304B2B32C981DC3E94298C5454108F87 /* ConstraintLayoutGuide+Extensions.swift */,
+				CE070BE29A43A32EAB0F7069442394E0 /* ConstraintLayoutGuideDSL.swift */,
+				6431D1830BC873AFE3558841B76E6EDC /* ConstraintLayoutSupport.swift */,
+				3D5E49B1B04269EFD521988754B8BD88 /* ConstraintLayoutSupportDSL.swift */,
+				8A0A7665CE3B18F716077BDF12BD62CD /* ConstraintMaker.swift */,
+				F9ADE8FD563DF24A6FD8590D164BD1FF /* ConstraintMakerEditable.swift */,
+				C04C3CC0F4452B1CD9F646E91529C7FB /* ConstraintMakerExtendable.swift */,
+				3949634108598875211AA4D4A5FF37EF /* ConstraintMakerFinalizable.swift */,
+				CFE595E4E15F371C5E3F73BE81E19C2C /* ConstraintMakerPrioritizable.swift */,
+				C2FE8042B48A47916A81030084BDF307 /* ConstraintMakerRelatable.swift */,
+				2D34690F86FF4EF1D365EF38382F3B21 /* ConstraintMakerRelatable+Extensions.swift */,
+				ABAF6F0DDFE7ADDFC766A777AACE6D22 /* ConstraintMultiplierTarget.swift */,
+				F16BC6867710D8585F148FE3A1017368 /* ConstraintOffsetTarget.swift */,
+				8C40225979AC3AFC5D7D0900E4E4FCAB /* ConstraintPriority.swift */,
+				1F68CAAF83023D753D55F2036E936139 /* ConstraintPriorityTarget.swift */,
+				D70EBB2DDB5AB64B6A0BD4C1D2854EB2 /* ConstraintRelatableTarget.swift */,
+				A36F76C704FC871538FFBB16B4F56A5E /* ConstraintRelation.swift */,
+				060D2A3AD743B7B8304F1C60E36E5FE6 /* ConstraintView.swift */,
+				FC62270DBCE38AFF2F199577C65D6AEE /* ConstraintView+Extensions.swift */,
+				C638C73F64F5C94AE03E0AE0A71FBAD9 /* ConstraintViewDSL.swift */,
+				C91AD65C3A47631570F833C8361266E3 /* Debugging.swift */,
+				4E98C734654DAF6B916F143D24F45B52 /* LayoutConstraint.swift */,
+				48FE22DC4F53C9B863C0BA771AC0C815 /* LayoutConstraintItem.swift */,
+				B2940B96AAEBBCA87141AC607C2A8920 /* Typealiases.swift */,
+				6A9263335A51516EFDA3CAE2A87732D8 /* UILayoutSupport+Extensions.swift */,
+				80BBAB067ED0BCA2BA6AA00213363AEC /* Support Files */,
+			);
+			name = SnapKit;
+			path = SnapKit;
+			sourceTree = "<group>";
+		};
+		E9BFEF4358CB5448EB421A1B131F86AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C27E5258291C0E01806A38775AE7B67C /* EMTNeumorphicView */,
+				DB9A57FB50578A96D5CCBA496AAECD83 /* SnapKit */,
+				6727618E7393241D6C78238145CFE3EC /* SwiftSiriWaveformView */,
+				CEB900B968BB630ED558E0845F853479 /* SwiftySound */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F79B08813BF41104174A215669895E54 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B85EBA177998240815D237A83ED306A5 /* SwiftSiriWaveformView.modulemap */,
+				D63004EE0F83061EAC35393ACBD0030B /* SwiftSiriWaveformView-dummy.m */,
+				D290148BEF8AA057ED95FCA378A2D9BB /* SwiftSiriWaveformView-Info.plist */,
+				ED46B2DA4EDFB4969FC6D778E4F5C7A3 /* SwiftSiriWaveformView-prefix.pch */,
+				7BC3A1B2ABCC85E11DD10C95BB1B5C79 /* SwiftSiriWaveformView-umbrella.h */,
+				24F7BB825306EB65F2C00539282C1F56 /* SwiftSiriWaveformView.debug.xcconfig */,
+				B9B5C1853964849824E25A77C5C55152 /* SwiftSiriWaveformView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftSiriWaveformView";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2807E1F9DD4F213A632C038F09D5C95E /* Headers */ = {
+		00E0439FFD36894DD089681B20E5C91C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2338FE6ECE65009DC0D62A9E07ECED4B /* SwiftySound-umbrella.h in Headers */,
+				157F87D0C2876B4CCF105A4F6B281DC8 /* SwiftSiriWaveformView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4075EEDD6FA74BCF4812C3A5172E5DAC /* Headers */ = {
+		5FA4790A32ECD84F2CEA55509107BD0A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7F61FF2045DFA84DCF3A3578AB2DAA9 /* Pods-APP-Sound-APP-SoundUITests-umbrella.h in Headers */,
+				A3E3AB7C765C21AE17B1E6EE6560040C /* SnapKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		564ECDF42B7C97A45AFE57E9B4D7BAAE /* Headers */ = {
+		BC8803EB6C8993ECF4A0B5D9FA30FB9A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				754B4DA7350B0EAA585F0BC417E996A8 /* SwiftSiriWaveformView-umbrella.h in Headers */,
+				FE8B9BD971E022ABE8E1CAF3CECAA0D8 /* SwiftySound-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		93BAA1FFD77D0341DCC86E82B1CA2E47 /* Headers */ = {
+		BE0D8B510B5BE695FBD2EE04A619C33F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6EC9711DACCF858BB3972F3FC0EFC8EE /* Pods-APP-Sound-umbrella.h in Headers */,
+				D8C57043B07BD88B755AFD860B1EC526 /* EMTNeumorphicView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AC7DACF02463677FABD4450920B6D292 /* Headers */ = {
+		C070F8F420A3B3C657E0F76CFB59FC50 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB4C23AF8C24743FB58CA993D9A37033 /* EMTNeumorphicView-umbrella.h in Headers */,
+				723FEAEA1CAC2DAD52FBAB49E9417367 /* Pods-APP-Sound-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DEE9612F419E80AB676E1D2D9AE9E1A0 /* Headers */ = {
+		C45F58977836C8292133D6187A0F32A9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F02B06D94E38E6A555B608390B3366F /* Pods-APP-SoundTests-umbrella.h in Headers */,
+				E6C09A25AC8255747DEB75DCBCA2B264 /* Pods-APP-Sound-APP-SoundUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E77D2E0FACAC5615E05F40382ACD1C98 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB9F4F61B3BEBEA0FB314ED930B35BE5 /* Pods-APP-SoundTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3E857AF56A379E709360B089FD556299 /* Pods-APP-SoundTests */ = {
+		19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 272B91358370F0B84C8516EF34D36AC7 /* Build configuration list for PBXNativeTarget "Pods-APP-SoundTests" */;
+			buildConfigurationList = 58EAA7FF29EA237538F747F2AF468203 /* Build configuration list for PBXNativeTarget "SnapKit" */;
 			buildPhases = (
-				DEE9612F419E80AB676E1D2D9AE9E1A0 /* Headers */,
-				95E3E7FA335BF9D5DCE11E9FDAAAF1A7 /* Sources */,
-				19A622D963A59F077FCF9BBF39EC1AE1 /* Frameworks */,
-				3ABF7D6B8A807583D5FF75D91DB5869C /* Resources */,
+				5FA4790A32ECD84F2CEA55509107BD0A /* Headers */,
+				7B7E69B2799BABEB7764F85296B591B7 /* Sources */,
+				E8E4E7CE8309D3EF7B7476AC57986BE9 /* Frameworks */,
+				820C67429A90336F5AF1C850DF03B1B9 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C9F4BD35EB1B3C0D32310A8E8CE70320 /* PBXTargetDependency */,
+			);
+			name = SnapKit;
+			productName = SnapKit;
+			productReference = 979486118B3E90C08386079D57962701 /* SnapKit */;
+			productType = "com.apple.product-type.framework";
+		};
+		3E857AF56A379E709360B089FD556299 /* Pods-APP-SoundTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 871DCA93763E86895E6B4FADF42DCEB5 /* Build configuration list for PBXNativeTarget "Pods-APP-SoundTests" */;
+			buildPhases = (
+				E77D2E0FACAC5615E05F40382ACD1C98 /* Headers */,
+				87C434CCF1C9AA59EA2FCE0968378A21 /* Sources */,
+				8EA43ADA6C97D2BB755647AFE82BB009 /* Frameworks */,
+				F6A8183A1882436A4AA683D421284DE6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C73466FC5216EFC5FCF03E2D1B1885D2 /* PBXTargetDependency */,
 			);
 			name = "Pods-APP-SoundTests";
-			productName = "Pods-APP-SoundTests";
-			productReference = 1C5807A1054E16FB746C9D45C3616A66 /* Pods_APP_SoundTests.framework */;
+			productName = Pods_APP_SoundTests;
+			productReference = 1C5807A1054E16FB746C9D45C3616A66 /* Pods-APP-SoundTests */;
 			productType = "com.apple.product-type.framework";
 		};
 		49C71DA517F5399431C427162746CD3B /* Pods-APP-Sound-APP-SoundUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A96B0638CBF237CC979F873D500D3660 /* Build configuration list for PBXNativeTarget "Pods-APP-Sound-APP-SoundUITests" */;
+			buildConfigurationList = 14A9233332D1E9D3FF1F760DC1C3377E /* Build configuration list for PBXNativeTarget "Pods-APP-Sound-APP-SoundUITests" */;
 			buildPhases = (
-				4075EEDD6FA74BCF4812C3A5172E5DAC /* Headers */,
-				69B5BB24BD305B1B8DEB1870DB23A923 /* Sources */,
-				AE89A58AD39DEAF5C942E3485FB583A0 /* Frameworks */,
-				113307044AA39E5794AA56A65CB8E606 /* Resources */,
+				C45F58977836C8292133D6187A0F32A9 /* Headers */,
+				39DE466E05A734158CF6243E7A582ACA /* Sources */,
+				6EDDF71E917304141106E492F854A44A /* Frameworks */,
+				D51A48537DFD322C74A2848E2C29404B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8D0CE579DE2CDE5CDE7F20EAC12FE765 /* PBXTargetDependency */,
-				439CEB04ADB40CD9EBA26CC0E7AA12C6 /* PBXTargetDependency */,
-				64E7576D6F24488987A4A6FBAA0D68C9 /* PBXTargetDependency */,
+				00D5108D57E51026043A49A3D9CE4606 /* PBXTargetDependency */,
+				89486D83B7C427A86A9C8614F8993058 /* PBXTargetDependency */,
+				668305DC1427CEF540CE3A5915604F26 /* PBXTargetDependency */,
+				7EE4F9D2E15D62103D7093D273898DCC /* PBXTargetDependency */,
 			);
 			name = "Pods-APP-Sound-APP-SoundUITests";
-			productName = "Pods-APP-Sound-APP-SoundUITests";
-			productReference = 882F46B48DDD3C1F6AD84DE630FB68ED /* Pods_APP_Sound_APP_SoundUITests.framework */;
+			productName = Pods_APP_Sound_APP_SoundUITests;
+			productReference = 882F46B48DDD3C1F6AD84DE630FB68ED /* Pods-APP-Sound-APP-SoundUITests */;
 			productType = "com.apple.product-type.framework";
 		};
 		8305E0279723F2F5C790F6BEE58E8596 /* SwiftSiriWaveformView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 438F88F66B842AE6E1C477BF5E8EFA1E /* Build configuration list for PBXNativeTarget "SwiftSiriWaveformView" */;
+			buildConfigurationList = 27FF8EE4B0D8B5DB0FC9259D7E1FEF04 /* Build configuration list for PBXNativeTarget "SwiftSiriWaveformView" */;
 			buildPhases = (
-				564ECDF42B7C97A45AFE57E9B4D7BAAE /* Headers */,
-				447ECACDBE1ABB6596022835E65BC3A1 /* Sources */,
-				7FEB19F70BB5B1C325AE79EFCDD82744 /* Frameworks */,
-				ACA12F767A7CD9D00D107A65421DADBC /* Resources */,
+				00E0439FFD36894DD089681B20E5C91C /* Headers */,
+				C819B58CC8CC203577DFE4F93AF4131B /* Sources */,
+				763E75347A9CF84E865C5A8F60FEA988 /* Frameworks */,
+				5B3AECD599EBBB18BE1FAE40EB8C1B4A /* Resources */,
 			);
 			buildRules = (
 			);
@@ -499,17 +696,17 @@
 			);
 			name = SwiftSiriWaveformView;
 			productName = SwiftSiriWaveformView;
-			productReference = 1FEEE17B7F031591011B64B62F1FC91C /* SwiftSiriWaveformView.framework */;
+			productReference = 1FEEE17B7F031591011B64B62F1FC91C /* SwiftSiriWaveformView */;
 			productType = "com.apple.product-type.framework";
 		};
 		8CE6EE7AB67EEDB2785C26554B4B516A /* EMTNeumorphicView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9B447BF0A49CA0F61C057C8077AD7AB4 /* Build configuration list for PBXNativeTarget "EMTNeumorphicView" */;
+			buildConfigurationList = B3120E28D0A5C89C04144E5748F9B1CA /* Build configuration list for PBXNativeTarget "EMTNeumorphicView" */;
 			buildPhases = (
-				AC7DACF02463677FABD4450920B6D292 /* Headers */,
-				9BE6596799A3D9CDE8558E6E14F6C998 /* Sources */,
-				988D90447C8C336AE0C0A6DAB01A1D1D /* Frameworks */,
-				1AE334D8D0C1DF4A34382F07BEDA0CE6 /* Resources */,
+				BE0D8B510B5BE695FBD2EE04A619C33F /* Headers */,
+				03E1ABC990AAA8A6F156BFFD3D648F99 /* Sources */,
+				7B2595E6B8315800D1C923C14063C69B /* Frameworks */,
+				F7D7B970B393BB9BC0B2765199621B9E /* Resources */,
 			);
 			buildRules = (
 			);
@@ -517,17 +714,17 @@
 			);
 			name = EMTNeumorphicView;
 			productName = EMTNeumorphicView;
-			productReference = 4CDC562046A208F477B625D5AE67795F /* EMTNeumorphicView.framework */;
+			productReference = 4CDC562046A208F477B625D5AE67795F /* EMTNeumorphicView */;
 			productType = "com.apple.product-type.framework";
 		};
 		AF76419D4650F093FFACB1AD713C1EF1 /* SwiftySound */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B2A37169BBD7EFFC48B7611978D6AB36 /* Build configuration list for PBXNativeTarget "SwiftySound" */;
+			buildConfigurationList = CF74FADB2B69096A7F543A113959FD60 /* Build configuration list for PBXNativeTarget "SwiftySound" */;
 			buildPhases = (
-				2807E1F9DD4F213A632C038F09D5C95E /* Headers */,
-				2CCEB52A5AA9328DB3C354D90B756540 /* Sources */,
-				7C0C398529CF97E1A5CA8FEDF961858A /* Frameworks */,
-				E082A762DFB45E48103107E118C90AE1 /* Resources */,
+				BC8803EB6C8993ECF4A0B5D9FA30FB9A /* Headers */,
+				1C03CC6C1EDCAC90FE5A3BADFB4ED7D4 /* Sources */,
+				9BE29C388052B3B108EF9D4D3D772D90 /* Frameworks */,
+				FF497B1E6002E475922BFF4DD6F1750D /* Resources */,
 			);
 			buildRules = (
 			);
@@ -535,28 +732,29 @@
 			);
 			name = SwiftySound;
 			productName = SwiftySound;
-			productReference = 996615DEDCD6C2933EC3F8504427765B /* SwiftySound.framework */;
+			productReference = 996615DEDCD6C2933EC3F8504427765B /* SwiftySound */;
 			productType = "com.apple.product-type.framework";
 		};
 		CD98539CE51FAC58BD544156EBD5958C /* Pods-APP-Sound */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 564DF0A4003C4E6EAE0E71BEE418CAD3 /* Build configuration list for PBXNativeTarget "Pods-APP-Sound" */;
+			buildConfigurationList = EBB320EE34876CDE67A0DA508F46477A /* Build configuration list for PBXNativeTarget "Pods-APP-Sound" */;
 			buildPhases = (
-				93BAA1FFD77D0341DCC86E82B1CA2E47 /* Headers */,
-				C4987606C3FEBE4ADF031D36E62E8895 /* Sources */,
-				B07BD5F48D06937AA894FBF4C6307E8B /* Frameworks */,
-				25231DB8D0E810F06AA3BB7E4C25E8A3 /* Resources */,
+				C070F8F420A3B3C657E0F76CFB59FC50 /* Headers */,
+				D72DDF8F3B0239100FB5F7DC9D059846 /* Sources */,
+				397C68B78E4E80BDE593F6A54A08E591 /* Frameworks */,
+				EF7061C3938915D9141EEAE8BAC87701 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BD5460BE7DF3FE71B5E894F2EFA6D44D /* PBXTargetDependency */,
-				7E4FB14F10B21C6405D1659A35DE0531 /* PBXTargetDependency */,
-				78353B4CD325DEF6F6B85DCACE28D0B4 /* PBXTargetDependency */,
+				E76582A07BA602012118BB38ADD52D17 /* PBXTargetDependency */,
+				D2AC0B8F8414A1FB599FF7A17DDB7EBB /* PBXTargetDependency */,
+				309525BDCAE2D4497B73130F44E151B4 /* PBXTargetDependency */,
+				2F9D498353F3809E4938153E22F76B1E /* PBXTargetDependency */,
 			);
 			name = "Pods-APP-Sound";
-			productName = "Pods-APP-Sound";
-			productReference = 39653BDC3A24B56CD2663293106D73C1 /* Pods_APP_Sound.framework */;
+			productName = Pods_APP_Sound;
+			productReference = 39653BDC3A24B56CD2663293106D73C1 /* Pods-APP-Sound */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -565,19 +763,19 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 957DB1233E65E9FB250F0DA60568B830 /* Products */;
+			productRefGroup = 4C6EBF9162DA7BC5A2CE8B881BCF7E6C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -585,6 +783,7 @@
 				CD98539CE51FAC58BD544156EBD5958C /* Pods-APP-Sound */,
 				49C71DA517F5399431C427162746CD3B /* Pods-APP-Sound-APP-SoundUITests */,
 				3E857AF56A379E709360B089FD556299 /* Pods-APP-SoundTests */,
+				19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */,
 				8305E0279723F2F5C790F6BEE58E8596 /* SwiftSiriWaveformView */,
 				AF76419D4650F093FFACB1AD713C1EF1 /* SwiftySound */,
 			);
@@ -592,42 +791,49 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		113307044AA39E5794AA56A65CB8E606 /* Resources */ = {
+		5B3AECD599EBBB18BE1FAE40EB8C1B4A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1AE334D8D0C1DF4A34382F07BEDA0CE6 /* Resources */ = {
+		820C67429A90336F5AF1C850DF03B1B9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		25231DB8D0E810F06AA3BB7E4C25E8A3 /* Resources */ = {
+		D51A48537DFD322C74A2848E2C29404B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3ABF7D6B8A807583D5FF75D91DB5869C /* Resources */ = {
+		EF7061C3938915D9141EEAE8BAC87701 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ACA12F767A7CD9D00D107A65421DADBC /* Resources */ = {
+		F6A8183A1882436A4AA683D421284DE6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E082A762DFB45E48103107E118C90AE1 /* Resources */ = {
+		F7D7B970B393BB9BC0B2765199621B9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF497B1E6002E475922BFF4DD6F1750D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -637,110 +843,316 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2CCEB52A5AA9328DB3C354D90B756540 /* Sources */ = {
+		03E1ABC990AAA8A6F156BFFD3D648F99 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA782B7A91216D85090879BDB3226736 /* Sound.swift in Sources */,
-				CB59F60F311B28783E1E7A816828D316 /* SwiftySound-dummy.m in Sources */,
+				65C884CE0E6F76F5CF2D298E33DA090A /* EMTNeumorphicLayer.swift in Sources */,
+				EDFBC6226973356455ED922B0A902DA5 /* EMTNeumorphicView.swift in Sources */,
+				6BBBAE922F7735131C159262024957D1 /* EMTNeumorphicView-dummy.m in Sources */,
+				A1CB4AC31483DDC2F149308F981AB22C /* UIColor+tool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		447ECACDBE1ABB6596022835E65BC3A1 /* Sources */ = {
+		1C03CC6C1EDCAC90FE5A3BADFB4ED7D4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E3EBB13122437E4B5AB87B8DC9A6BBA /* SwiftSiriWaveformView-dummy.m in Sources */,
-				F5B5A6AB61EEEBA04820125E57D8DE9E /* SwiftSiriWaveformView.swift in Sources */,
+				ACAA5B9B4341425981D1CFEABAA4ED33 /* Sound.swift in Sources */,
+				0B9579CC651F5ECC0634860B67080B07 /* SwiftySound-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		69B5BB24BD305B1B8DEB1870DB23A923 /* Sources */ = {
+		39DE466E05A734158CF6243E7A582ACA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFAE8A59BFA8877AA94FA254FEAFAB86 /* Pods-APP-Sound-APP-SoundUITests-dummy.m in Sources */,
+				3117C10566606BDC5C26812DAE1B039D /* Pods-APP-Sound-APP-SoundUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		95E3E7FA335BF9D5DCE11E9FDAAAF1A7 /* Sources */ = {
+		7B7E69B2799BABEB7764F85296B591B7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08BF1935889F0124642C46DAA4D8B0C8 /* Pods-APP-SoundTests-dummy.m in Sources */,
+				6EAC8B6FA2D115DE708A58C601DD25E1 /* Constraint.swift in Sources */,
+				0B994CDC79B1AD3A7BE62490D27C60C8 /* ConstraintAttributes.swift in Sources */,
+				3660B4F629053ABC3C1DF69366770289 /* ConstraintConfig.swift in Sources */,
+				9C9548E8B4675954566202F7B87FF0E6 /* ConstraintConstantTarget.swift in Sources */,
+				5380454C48A12A6E376122ABD8096968 /* ConstraintDescription.swift in Sources */,
+				E98DC8FB2578E76A812E0C94BA10E1B1 /* ConstraintDirectionalInsets.swift in Sources */,
+				04637C70546B34F93C3A1D79C3F78B37 /* ConstraintDirectionalInsetTarget.swift in Sources */,
+				56AC6DC6459AE47E7BC4AF06E5B148D2 /* ConstraintDSL.swift in Sources */,
+				604D3C93C17978C23600EC415949AB64 /* ConstraintInsets.swift in Sources */,
+				9E02CFFEFE1BEC978B512286F03D31DA /* ConstraintInsetTarget.swift in Sources */,
+				69DE75BA185BBAB5FDAA28321F3C849F /* ConstraintItem.swift in Sources */,
+				611CEF7FF1EF9EA1BCEF6C73EEE3ACCF /* ConstraintLayoutGuide.swift in Sources */,
+				6AC1B881BB319C89AD023A02CDC8FC3D /* ConstraintLayoutGuide+Extensions.swift in Sources */,
+				EF21586EC3DFF6097A58EEC87376A0C1 /* ConstraintLayoutGuideDSL.swift in Sources */,
+				00A2749F46C967ED4725A32357E3FB1B /* ConstraintLayoutSupport.swift in Sources */,
+				56A72F6D13D930C4A2568F24DEA33C8D /* ConstraintLayoutSupportDSL.swift in Sources */,
+				FAB03959C2357E325B19E08BC4775DAB /* ConstraintMaker.swift in Sources */,
+				220D6AC9B1B1EC8EFFB204F9C1EAC842 /* ConstraintMakerEditable.swift in Sources */,
+				A5A8BF973BFE9C9304372A26C9F2E35B /* ConstraintMakerExtendable.swift in Sources */,
+				42B6ACFCF650183030867CB3EF345E95 /* ConstraintMakerFinalizable.swift in Sources */,
+				B43017FEC99D227D4CDD81DD2C27D9D9 /* ConstraintMakerPrioritizable.swift in Sources */,
+				183D8B3E057B885EA7DF9A8CDCCE9029 /* ConstraintMakerRelatable.swift in Sources */,
+				95E194A3AABB5407231E898B6686F73E /* ConstraintMakerRelatable+Extensions.swift in Sources */,
+				F7C0960CEEB8F0C18F4503B405EAC08F /* ConstraintMultiplierTarget.swift in Sources */,
+				A03FDA8BC5741880B1EF11AFD248EF48 /* ConstraintOffsetTarget.swift in Sources */,
+				06E43B4751069B47B3BD4AFD936A57E3 /* ConstraintPriority.swift in Sources */,
+				4DA72FD7F1FB2C0449EDEF4B8A579807 /* ConstraintPriorityTarget.swift in Sources */,
+				55E51F45F1E157D3B4942BA7252C277E /* ConstraintRelatableTarget.swift in Sources */,
+				4BAD99B7394E225CEDBF94B8100BCC7F /* ConstraintRelation.swift in Sources */,
+				B752F7C4BECB65894B1F49421049CE5F /* ConstraintView.swift in Sources */,
+				F953AA9104BFE0C2DAD639EA60104A75 /* ConstraintView+Extensions.swift in Sources */,
+				256558233B40ACA6818F143BBC5B8017 /* ConstraintViewDSL.swift in Sources */,
+				5D36B99F3CAB1FC7337082D9581FECA6 /* Debugging.swift in Sources */,
+				0591132B5EA1BE4DDA268D8A9C3D0421 /* LayoutConstraint.swift in Sources */,
+				98F570DA48370453D648BD526FDAAEAA /* LayoutConstraintItem.swift in Sources */,
+				BD47CB74CD9B2B4D2D942C9B65748DFB /* SnapKit-dummy.m in Sources */,
+				B03B5579590D528CBA6D11FF638BC2AF /* Typealiases.swift in Sources */,
+				38B9D58E94D9C1CECD7E381C64A2329D /* UILayoutSupport+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9BE6596799A3D9CDE8558E6E14F6C998 /* Sources */ = {
+		87C434CCF1C9AA59EA2FCE0968378A21 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D572570A1405E02681483F2E4E34CDB7 /* EMTNeumorphicLayer.swift in Sources */,
-				7B2BF2A4DD2B598ECD1BCA3D9E080C73 /* EMTNeumorphicView-dummy.m in Sources */,
-				DBECE51AE3302A98334D9BBF65E149D0 /* EMTNeumorphicView.swift in Sources */,
-				51321813BA07355609140E23D506354D /* UIColor+tool.swift in Sources */,
+				5951A80A020077B301E5F6059605C387 /* Pods-APP-SoundTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C4987606C3FEBE4ADF031D36E62E8895 /* Sources */ = {
+		C819B58CC8CC203577DFE4F93AF4131B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B481F4773B8326545AC17DD4FEF1E204 /* Pods-APP-Sound-dummy.m in Sources */,
+				4D55E645A828A3EE7AA00DC5603587B7 /* SwiftSiriWaveformView.swift in Sources */,
+				37B1BE453A504FA98F2C28214D3A1741 /* SwiftSiriWaveformView-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D72DDF8F3B0239100FB5F7DC9D059846 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				527656DE6160FC654088D738A7057535 /* Pods-APP-Sound-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		439CEB04ADB40CD9EBA26CC0E7AA12C6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftSiriWaveformView;
-			target = 8305E0279723F2F5C790F6BEE58E8596 /* SwiftSiriWaveformView */;
-			targetProxy = 2812F243B26A7F83E1C3592EA3CF49E4 /* PBXContainerItemProxy */;
-		};
-		64E7576D6F24488987A4A6FBAA0D68C9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftySound;
-			target = AF76419D4650F093FFACB1AD713C1EF1 /* SwiftySound */;
-			targetProxy = 9ADC013B7BECD8A2C0E7AB5F2B044A49 /* PBXContainerItemProxy */;
-		};
-		78353B4CD325DEF6F6B85DCACE28D0B4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftySound;
-			target = AF76419D4650F093FFACB1AD713C1EF1 /* SwiftySound */;
-			targetProxy = 6A0D9C1A2BD97F3E59A80C750791C720 /* PBXContainerItemProxy */;
-		};
-		7E4FB14F10B21C6405D1659A35DE0531 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftSiriWaveformView;
-			target = 8305E0279723F2F5C790F6BEE58E8596 /* SwiftSiriWaveformView */;
-			targetProxy = 6FAB00115BE112877A0DAA120346C4CB /* PBXContainerItemProxy */;
-		};
-		8D0CE579DE2CDE5CDE7F20EAC12FE765 /* PBXTargetDependency */ = {
+		00D5108D57E51026043A49A3D9CE4606 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = EMTNeumorphicView;
 			target = 8CE6EE7AB67EEDB2785C26554B4B516A /* EMTNeumorphicView */;
-			targetProxy = 6EF847F3801EBB49CCF42D5220B0EFA1 /* PBXContainerItemProxy */;
+			targetProxy = 9D560C82B08597FA0D5F0EBB38313FB6 /* PBXContainerItemProxy */;
 		};
-		BD5460BE7DF3FE71B5E894F2EFA6D44D /* PBXTargetDependency */ = {
+		2F9D498353F3809E4938153E22F76B1E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = EMTNeumorphicView;
-			target = 8CE6EE7AB67EEDB2785C26554B4B516A /* EMTNeumorphicView */;
-			targetProxy = 0CE967135EE1E47F5C2408D6DE637F84 /* PBXContainerItemProxy */;
+			name = SwiftySound;
+			target = AF76419D4650F093FFACB1AD713C1EF1 /* SwiftySound */;
+			targetProxy = 0B02D8D5794AD8B7BC043A8A26C3D127 /* PBXContainerItemProxy */;
 		};
-		C9F4BD35EB1B3C0D32310A8E8CE70320 /* PBXTargetDependency */ = {
+		309525BDCAE2D4497B73130F44E151B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftSiriWaveformView;
+			target = 8305E0279723F2F5C790F6BEE58E8596 /* SwiftSiriWaveformView */;
+			targetProxy = F77D381010DEE843D2D6C281B9DB9B77 /* PBXContainerItemProxy */;
+		};
+		668305DC1427CEF540CE3A5915604F26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftSiriWaveformView;
+			target = 8305E0279723F2F5C790F6BEE58E8596 /* SwiftSiriWaveformView */;
+			targetProxy = A9DC49162B65AB3400B79F1FD592A5C3 /* PBXContainerItemProxy */;
+		};
+		7EE4F9D2E15D62103D7093D273898DCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftySound;
+			target = AF76419D4650F093FFACB1AD713C1EF1 /* SwiftySound */;
+			targetProxy = D0F39E163CBE36748AE43D9CD43B7D43 /* PBXContainerItemProxy */;
+		};
+		89486D83B7C427A86A9C8614F8993058 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = 19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */;
+			targetProxy = 97A37D06830673834F8BCC08AC0DBF2F /* PBXContainerItemProxy */;
+		};
+		C73466FC5216EFC5FCF03E2D1B1885D2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-APP-Sound";
 			target = CD98539CE51FAC58BD544156EBD5958C /* Pods-APP-Sound */;
-			targetProxy = 09B461B85430F6CE994C5A577D1A04A3 /* PBXContainerItemProxy */;
+			targetProxy = F87AF7108133D7B733D5F4C3C8A4B51E /* PBXContainerItemProxy */;
+		};
+		D2AC0B8F8414A1FB599FF7A17DDB7EBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = 19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */;
+			targetProxy = B15F80DAF99BB76F601CD9A03D026B23 /* PBXContainerItemProxy */;
+		};
+		E76582A07BA602012118BB38ADD52D17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EMTNeumorphicView;
+			target = 8CE6EE7AB67EEDB2785C26554B4B516A /* EMTNeumorphicView */;
+			targetProxy = F7396A75D797E0A2AB82477FD0DCE6D7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		072D851D7DA7EA8E21C74BA1B9B3B224 /* Debug */ = {
+		0E92599137036B3642BCE8E4EB3E20EB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2FAF563174A96B2BDEB0B00DB302054F /* Pods-APP-Sound.debug.xcconfig */;
+			baseConfigurationReference = AB5D566A6BD352D0FBD2809402ED663E /* Pods-APP-Sound-APP-SoundUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-APP-Sound-APP-SoundUITests/Pods-APP-Sound-APP-SoundUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-APP-Sound-APP-SoundUITests/Pods-APP-Sound-APP-SoundUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2487B6758D403BFCEC02C8EC5DD0FBF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52EF582470EABAD9CF5034E6EC750120 /* Pods-APP-Sound-APP-SoundUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-APP-Sound-APP-SoundUITests/Pods-APP-Sound-APP-SoundUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-APP-Sound-APP-SoundUITests/Pods-APP-Sound-APP-SoundUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		47001280A61C4DC6C4C4E0CFA291B97E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B9F23266EC27A342E14973CDACFFA94 /* Pods-APP-SoundTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-APP-SoundTests/Pods-APP-SoundTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-APP-SoundTests/Pods-APP-SoundTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4B1E4DED61A18FACDB8FDD39DF8BB7D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41780420B5BFB4212F5BD1BFCEE1B487 /* EMTNeumorphicView.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/EMTNeumorphicView/EMTNeumorphicView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EMTNeumorphicView/EMTNeumorphicView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/EMTNeumorphicView/EMTNeumorphicView.modulemap";
+				PRODUCT_MODULE_NAME = EMTNeumorphicView;
+				PRODUCT_NAME = EMTNeumorphicView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4EE6A3AD8F680D3890C507FE6F57F1A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C61620D7778ED42C39302EF418A242D /* Pods-APP-Sound.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -770,78 +1182,11 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
-		};
-		183895C4F01258FFC5BD6002E899F229 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 01B70DDD7053357B3114F112B82CE00D /* SwiftySound.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftySound/SwiftySound-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftySound/SwiftySound-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SwiftySound/SwiftySound.modulemap";
-				PRODUCT_MODULE_NAME = SwiftySound;
-				PRODUCT_NAME = SwiftySound;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.1;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		2980B28B0E4C7F462DF94E29962F0607 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = ECA1D83621635A20C78AF7573C7818A8 /* SwiftSiriWaveformView.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftSiriWaveformView/SwiftSiriWaveformView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftSiriWaveformView/SwiftSiriWaveformView-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SwiftSiriWaveformView/SwiftSiriWaveformView.modulemap";
-				PRODUCT_MODULE_NAME = SwiftSiriWaveformView;
-				PRODUCT_NAME = SwiftSiriWaveformView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
+			name = Release;
 		};
 		5B82FA55F6A12DBC8196D07B0C1EEB40 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -905,9 +1250,46 @@
 			};
 			name = Release;
 		};
-		679EA66C34961151B480E5D977ECA797 /* Release */ = {
+		68077B6BADD8CD66FD6CC1A747BEBA4D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 85E6C34567B8726896510308D1533BCF /* EMTNeumorphicView.release.xcconfig */;
+			baseConfigurationReference = E4AFDAB3AA70D12D96421DD0E9F71580 /* Pods-APP-SoundTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-APP-SoundTests/Pods-APP-SoundTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-APP-SoundTests/Pods-APP-SoundTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6809D35D75F366FC43F6416E4CEB0AFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E5A4C2A343E14308B079CC0AB7C1A58 /* EMTNeumorphicView.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -935,11 +1317,10 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		6C6178559BD9074C26E073DF5769DB42 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1007,9 +1388,114 @@
 			};
 			name = Debug;
 		};
-		6E048D55E18E3DFD412FBD32DE27913B /* Release */ = {
+		7C32EFD23F77627430DC503377A94E94 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF1ABDD8BA3BCB303E05663FB322DE59 /* SwiftSiriWaveformView.release.xcconfig */;
+			baseConfigurationReference = F15D2E0A28DD11607DD87ED40544822B /* SwiftySound.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftySound/SwiftySound-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftySound/SwiftySound-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftySound/SwiftySound.modulemap";
+				PRODUCT_MODULE_NAME = SwiftySound;
+				PRODUCT_NAME = SwiftySound;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8C925430B65BE03F92ABCD1B2005EE0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17862FABA2E21AC4EBB8C29B3E5F9D51 /* SnapKit.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A6F0173BAEB974532D93E05E5A94E50A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98E4FB7ED6F8FD4E819A5B267F1CF208 /* SnapKit.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CBBF4F7C93EABF034EC3074985ED9722 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9B5C1853964849824E25A77C5C55152 /* SwiftSiriWaveformView.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1042,46 +1528,9 @@
 			};
 			name = Release;
 		};
-		7C2335145E85DB96140025D7D02E2AA5 /* Debug */ = {
+		E89EBD354294EC60F4D48BCE0DA1D1F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 52EF582470EABAD9CF5034E6EC750120 /* Pods-APP-Sound-APP-SoundUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-APP-Sound-APP-SoundUITests/Pods-APP-Sound-APP-SoundUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-APP-Sound-APP-SoundUITests/Pods-APP-Sound-APP-SoundUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		BBB1DFBEEF38058172D9C74356B850EC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C61620D7778ED42C39302EF418A242D /* Pods-APP-Sound.release.xcconfig */;
+			baseConfigurationReference = 2FAF563174A96B2BDEB0B00DB302054F /* Pods-APP-Sound.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1111,163 +1560,14 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		CD7A8DD677B8CA6A3257F03E463B06B9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1085B00C116C10523A6774F583BF185B /* EMTNeumorphicView.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/EMTNeumorphicView/EMTNeumorphicView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/EMTNeumorphicView/EMTNeumorphicView-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/EMTNeumorphicView/EMTNeumorphicView.modulemap";
-				PRODUCT_MODULE_NAME = EMTNeumorphicView;
-				PRODUCT_NAME = EMTNeumorphicView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		E0482AF5D1B578F5A49F9B78B6DBF59F /* Release */ = {
+		F1236B56E1162C6A302E500B32BD086A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4B9F23266EC27A342E14973CDACFFA94 /* Pods-APP-SoundTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-APP-SoundTests/Pods-APP-SoundTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-APP-SoundTests/Pods-APP-SoundTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		EABD1DB287992F7A084CF9743D26BA17 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AB5D566A6BD352D0FBD2809402ED663E /* Pods-APP-Sound-APP-SoundUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-APP-Sound-APP-SoundUITests/Pods-APP-Sound-APP-SoundUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-APP-Sound-APP-SoundUITests/Pods-APP-Sound-APP-SoundUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		F4FDBEF71055C5B69A6CBC7906158866 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E4AFDAB3AA70D12D96421DD0E9F71580 /* Pods-APP-SoundTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-APP-SoundTests/Pods-APP-SoundTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-APP-SoundTests/Pods-APP-SoundTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		F682E780F0721EC251D1C42AD4D24B3D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1736847A097F079EA3ABF889EFF20C63 /* SwiftySound.release.xcconfig */;
+			baseConfigurationReference = 530201021F1E4A1D69CCC2D1B108E33B /* SwiftySound.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1300,23 +1600,57 @@
 			};
 			name = Release;
 		};
+		FC2C88F08B1BB1213EB187FED3DDD981 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24F7BB825306EB65F2C00539282C1F56 /* SwiftSiriWaveformView.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSiriWaveformView/SwiftSiriWaveformView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSiriWaveformView/SwiftSiriWaveformView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftSiriWaveformView/SwiftSiriWaveformView.modulemap";
+				PRODUCT_MODULE_NAME = SwiftSiriWaveformView;
+				PRODUCT_NAME = SwiftSiriWaveformView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		272B91358370F0B84C8516EF34D36AC7 /* Build configuration list for PBXNativeTarget "Pods-APP-SoundTests" */ = {
+		14A9233332D1E9D3FF1F760DC1C3377E /* Build configuration list for PBXNativeTarget "Pods-APP-Sound-APP-SoundUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F4FDBEF71055C5B69A6CBC7906158866 /* Debug */,
-				E0482AF5D1B578F5A49F9B78B6DBF59F /* Release */,
+				2487B6758D403BFCEC02C8EC5DD0FBF4 /* Debug */,
+				0E92599137036B3642BCE8E4EB3E20EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		438F88F66B842AE6E1C477BF5E8EFA1E /* Build configuration list for PBXNativeTarget "SwiftSiriWaveformView" */ = {
+		27FF8EE4B0D8B5DB0FC9259D7E1FEF04 /* Build configuration list for PBXNativeTarget "SwiftSiriWaveformView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2980B28B0E4C7F462DF94E29962F0607 /* Debug */,
-				6E048D55E18E3DFD412FBD32DE27913B /* Release */,
+				FC2C88F08B1BB1213EB187FED3DDD981 /* Debug */,
+				CBBF4F7C93EABF034EC3074985ED9722 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1330,38 +1664,47 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		564DF0A4003C4E6EAE0E71BEE418CAD3 /* Build configuration list for PBXNativeTarget "Pods-APP-Sound" */ = {
+		58EAA7FF29EA237538F747F2AF468203 /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				072D851D7DA7EA8E21C74BA1B9B3B224 /* Debug */,
-				BBB1DFBEEF38058172D9C74356B850EC /* Release */,
+				A6F0173BAEB974532D93E05E5A94E50A /* Debug */,
+				8C925430B65BE03F92ABCD1B2005EE0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9B447BF0A49CA0F61C057C8077AD7AB4 /* Build configuration list for PBXNativeTarget "EMTNeumorphicView" */ = {
+		871DCA93763E86895E6B4FADF42DCEB5 /* Build configuration list for PBXNativeTarget "Pods-APP-SoundTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CD7A8DD677B8CA6A3257F03E463B06B9 /* Debug */,
-				679EA66C34961151B480E5D977ECA797 /* Release */,
+				68077B6BADD8CD66FD6CC1A747BEBA4D /* Debug */,
+				47001280A61C4DC6C4C4E0CFA291B97E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A96B0638CBF237CC979F873D500D3660 /* Build configuration list for PBXNativeTarget "Pods-APP-Sound-APP-SoundUITests" */ = {
+		B3120E28D0A5C89C04144E5748F9B1CA /* Build configuration list for PBXNativeTarget "EMTNeumorphicView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7C2335145E85DB96140025D7D02E2AA5 /* Debug */,
-				EABD1DB287992F7A084CF9743D26BA17 /* Release */,
+				6809D35D75F366FC43F6416E4CEB0AFF /* Debug */,
+				4B1E4DED61A18FACDB8FDD39DF8BB7D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B2A37169BBD7EFFC48B7611978D6AB36 /* Build configuration list for PBXNativeTarget "SwiftySound" */ = {
+		CF74FADB2B69096A7F543A113959FD60 /* Build configuration list for PBXNativeTarget "SwiftySound" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				183895C4F01258FFC5BD6002E899F229 /* Debug */,
-				F682E780F0721EC251D1C42AD4D24B3D /* Release */,
+				7C32EFD23F77627430DC503377A94E94 /* Debug */,
+				F1236B56E1162C6A302E500B32BD086A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBB320EE34876CDE67A0DA508F46477A /* Build configuration list for PBXNativeTarget "Pods-APP-Sound" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E89EBD354294EC60F4D48BCE0DA1D1F6 /* Debug */,
+				4EE6A3AD8F680D3890C507FE6F57F1A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

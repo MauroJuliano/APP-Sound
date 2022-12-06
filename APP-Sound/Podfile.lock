@@ -1,24 +1,28 @@
 PODS:
   - EMTNeumorphicView (1.0.4)
+  - SnapKit (5.6.0)
   - SwiftSiriWaveformView (2.4.0)
   - SwiftySound (1.2.0)
 
 DEPENDENCIES:
   - EMTNeumorphicView
+  - SnapKit (~> 5.6.0)
   - SwiftSiriWaveformView
   - SwiftySound
 
 SPEC REPOS:
   trunk:
     - EMTNeumorphicView
+    - SnapKit
     - SwiftSiriWaveformView
     - SwiftySound
 
 SPEC CHECKSUMS:
   EMTNeumorphicView: cb5e92953e43b1872ab47fefd451a9ce0c16fc77
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   SwiftSiriWaveformView: baa04ed2089e854af00ea54c38a7700ca43d7ae0
   SwiftySound: 9eb28bb14edb601b40027e44319e0ef8383f88bf
 
-PODFILE CHECKSUM: fcd5476b179ce1aba2277f7d3d54ed8607d06936
+PODFILE CHECKSUM: 1b312cad2e40cf0a675434b1c69a5cad8f2c2cc0
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.11.3

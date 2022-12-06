@@ -16,7 +16,7 @@ class SongListTableViewCell: UITableViewCell {
     
     var buttonTap : (() -> ()) = {}
     var cellTap : (() -> ()) = {}
-    let color2 = UIColor(rgb: 0xF0EEEF)
+    let color2 = UIColor(RGB: 0xF0EEEF)
     
     override func awakeFromNib() {
         super.awakeFromNib()

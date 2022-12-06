@@ -1,6 +1,7 @@
-import UIKit
-import EMTNeumorphicView
 import AVFoundation
+import EMTNeumorphicView
+import SnapKit
+import UIKit
 
 class MainView: UIView {
     private lazy var titleLabel: UILabel = {
@@ -81,7 +82,7 @@ class MainView: UIView {
         favoritesIcon.setImage(UIImage(systemName: "guitars.fill"), for: .normal)
         songsIndicatorLabel.text = "\(musics)\n Songs"
         recommendedLabel.text = "Recommended"
-        self.backgroundColor = UIColor(rgb: 0xF0EEEF)
+        self.backgroundColor = UIColor(RGB: 0xF0EEEF)
         buildHierarchy()
         setupContraints()
     }
@@ -99,44 +100,47 @@ class MainView: UIView {
     }
     
     func setupContraints() {
-        titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        subtitleLabel.translatesAutoresizingMaskIntoConstraints = false
-        favoriteView.translatesAutoresizingMaskIntoConstraints = false
-        recommendedLabel.translatesAutoresizingMaskIntoConstraints = false
-        collectionView.translatesAutoresizingMaskIntoConstraints = false
-        favoritesIcon.translatesAutoresizingMaskIntoConstraints = false
-        favoriteLabel.translatesAutoresizingMaskIntoConstraints = false
-        songsIndicatorLabel.translatesAutoresizingMaskIntoConstraints = false
+        titleLabel.snp.makeConstraints {
+            $0.top.leading.equalToSuperview().inset(Space.base07.rawValue)
+        }
         
-        NSLayoutConstraint.activate([
-            titleLabel.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: Space.base07.rawValue),
-            titleLabel.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: Space.base07.rawValue),
-            subtitleLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: Space.base05.rawValue),
-            subtitleLabel.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: Space.base07.rawValue),
-            
-            favoriteView.topAnchor.constraint(equalTo: subtitleLabel.bottomAnchor, constant: Space.base07.rawValue),
-            favoriteView.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: Space.base07.rawValue),
-            favoriteView.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -Space.base07.rawValue),
-            favoriteView.heightAnchor.constraint(equalToConstant: 190),
-            
-            favoritesIcon.topAnchor.constraint(equalTo: favoriteView.topAnchor, constant: Space.base05.rawValue),
-            favoritesIcon.leadingAnchor.constraint(equalTo: favoriteView.leadingAnchor, constant: Space.base05.rawValue),
-            favoritesIcon.heightAnchor.constraint(equalToConstant: 40),
-            favoritesIcon.widthAnchor.constraint(equalToConstant: 40),
-            
-            favoriteLabel.topAnchor.constraint(equalTo: favoritesIcon.bottomAnchor, constant: Space.base09.rawValue),
-            favoriteLabel.leadingAnchor.constraint(equalTo: favoriteView.leadingAnchor, constant: Space.base05.rawValue),
-            
-            songsIndicatorLabel.bottomAnchor.constraint(equalTo: favoriteView.bottomAnchor , constant: -Space.base07.rawValue),
-            songsIndicatorLabel.trailingAnchor.constraint(equalTo: favoriteView.trailingAnchor, constant: -Space.base05.rawValue),
-            
-            recommendedLabel.topAnchor.constraint(equalTo: favoriteView.bottomAnchor, constant: Space.base07.rawValue),
-            recommendedLabel.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: Space.base07.rawValue),
-            
-            collectionView.topAnchor.constraint(equalTo: recommendedLabel.bottomAnchor, constant: Space.base07.rawValue),
-            collectionView.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: Space.base07.rawValue),
-            collectionView.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: Space.none.rawValue),
-            collectionView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -Space.base12.rawValue)
-           ])
+        subtitleLabel.snp.makeConstraints {
+            $0.top.equalTo(titleLabel.snp.bottom).offset(Space.base05.rawValue)
+            $0.leading.equalToSuperview().offset(Space.base07.rawValue)
+        }
+        
+        favoriteView.snp.makeConstraints {
+            $0.top.equalTo(subtitleLabel.snp.bottom).offset(Space.base07.rawValue)
+            $0.leading.equalToSuperview().offset(Space.base07.rawValue)
+            $0.trailing.equalToSuperview().offset(-Space.base07.rawValue)
+            $0.height.equalTo(190)
+        }
+        
+        favoritesIcon.snp.makeConstraints {
+            $0.top.leading.equalToSuperview().offset(Space.base05.rawValue)
+            $0.width.height.equalTo(40)
+        }
+        
+        favoriteLabel.snp.makeConstraints {
+            $0.top.equalTo(favoritesIcon.snp.bottom).offset(Space.base09.rawValue)
+            $0.leading.equalTo(favoriteView.snp.leading).offset(Space.base05.rawValue)
+        }
+        
+        songsIndicatorLabel.snp.makeConstraints {
+            $0.trailing.equalToSuperview().offset(-Space.base05.rawValue)
+            $0.bottom.equalToSuperview().offset(-Space.base07.rawValue)
+        }
+        
+        recommendedLabel.snp.makeConstraints {
+            $0.top.equalTo(favoriteView.snp.bottom).offset(Space.base07.rawValue)
+            $0.leading.equalToSuperview().offset(Space.base07.rawValue)
+        }
+        
+        collectionView.snp.makeConstraints {
+            $0.top.equalTo(recommendedLabel.snp.bottom).offset(Space.base07.rawValue)
+            $0.leading.equalToSuperview().offset(Space.base07.rawValue)
+            $0.trailing.equalToSuperview().offset(Space.none.rawValue)
+            $0.bottom.equalToSuperview().offset(-Space.base12.rawValue)
+        }
     }
 }
