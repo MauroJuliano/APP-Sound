@@ -1,12 +1,6 @@
-//
-//  SongListViewController.swift
-//  APP-Sound
-//
-//  Created by Lestad on 2021-02-28.
-//
-
-import UIKit
 import EMTNeumorphicView
+import UIKit
+
 class SongListViewController: UIViewController {
     @IBOutlet var albumImageView: UIImageView!
     @IBOutlet var AlbumImageButton: EMTNeumorphicButton!
@@ -15,7 +9,7 @@ class SongListViewController: UIViewController {
     @IBOutlet var albumView: UIView!
     @IBOutlet var backButton: EMTNeumorphicButton!
     var albumSelected: Music?
-    var musicArray = [Music]()
+    var musicArray: [Music]?
     let color2 = UIColor(RGB: 0xF0EEEF)
     var controller: SongListController?
     var musicController = NewSong()
@@ -27,16 +21,25 @@ class SongListViewController: UIViewController {
         self.view = customView
 //        setupUI()
 //        tableViewSetup()
-//        getSongs()
+        getSongs()
         // Do any additional setup after loading the view.
     }
+    
     func getSongs(){
         musicController.addNewSongs(completionHandler: { success, _ in
-            if success{
+            if success {
                 self.musicArray = self.musicController.musicArray
-                self.controller?.arraySetup()
+                self.setupArray()
             }
         })
+    }
+    
+    func setupArray() {
+        guard let album = musicArray?.filter({ $0.songAlbum == albumSelected?.songAlbum}) else { return }
+        
+        if let name = album.first?.songName, let illustration = album.first?.songImage {
+            customView.setupUI(title: name, Illustration: illustration, songList: album)
+        }
     }
         
     func setupUI(){

@@ -71,12 +71,6 @@ class SongOptionView: UIView {
         contentView.addSubview(albumImage)
         contentView.addSubview(stackView)
         
-        let vc = SongListView(title: "Teste", subtitle: "dasdasda")
-        stackView.addArrangedSubview(vc)
-        
-        let vc2 = SongListView(title: "Teste", subtitle: "dasdasda")
-        stackView.addArrangedSubview(vc2)
-        
         scrollView.addSubview(contentView)
         addSubview(scrollView)
         
@@ -116,6 +110,16 @@ class SongOptionView: UIView {
         stackView.snp.makeConstraints {
             $0.top.equalTo(albumImage.snp.bottom).offset(Space.base09.rawValue)
             $0.leading.trailing.bottom.equalTo(contentView)
+        }
+    }
+    
+    func setupUI(title: String, Illustration: String, songList: [Music]) {
+        titleLabel.text = title
+        albumImageView.image = UIImage(named: Illustration)
+        
+        songList.forEach { song in
+            let list = SongListView(title: song.songName, subtitle: song.songAutor)
+            stackView.addArrangedSubview(list)
         }
     }
     

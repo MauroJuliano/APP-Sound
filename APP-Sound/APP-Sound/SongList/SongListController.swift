@@ -17,13 +17,14 @@ class SongListController: NSObject, UITableViewDelegate, UITableViewDataSource {
         self.view = view
     }
     
-    func arraySetup(){
-        if let arrayAlbum = view?.musicArray.filter({ $0.songAlbum == view?.albumSelected?.songAlbum}){
-            
-            self.songsArray.append(contentsOf: arrayAlbum)
-            
-        }
-    }
+//    func arraySetup(){
+//        if let arrayAlbum = view?.musicArray.filter({ $0.songAlbum == view?.albumSelected?.songAlbum}){
+//            
+//            self.songsArray.append(contentsOf: arrayAlbum)
+//            
+//        }
+//    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return songsArray.count
     }
