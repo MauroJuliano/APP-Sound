@@ -20,11 +20,14 @@ class SongListViewController: UIViewController {
     var controller: SongListController?
     var musicController = NewSong()
     
+    let customView = SongOptionView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupUI()
-        tableViewSetup()
-        getSongs()
+        self.view = customView
+//        setupUI()
+//        tableViewSetup()
+//        getSongs()
         // Do any additional setup after loading the view.
     }
     func getSongs(){
@@ -41,9 +44,13 @@ class SongListViewController: UIViewController {
         albumTitleLabel.text = albumSelected?.songAlbum
         albumImageView.image = UIImage(named: (albumSelected?.songImage)!)
         albumImageView.roundCorners(.allCorners, radius: 82.5)
+        
         AlbumImageButton.neumorphicLayer?.elementBackgroundColor = view.backgroundColor?.cgColor ?? UIColor.white.cgColor
-        albumView.backgroundColor = color2
         AlbumImageButton.neumorphicLayer?.cornerRadius = 90
+        
+        albumView.backgroundColor = color2
+        
+       
         
         backButton.neumorphicLayer?.elementBackgroundColor = view.backgroundColor?.cgColor ?? UIColor.white.cgColor
         backButton.backgroundColor = color2

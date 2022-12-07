@@ -33,6 +33,9 @@
 		4CEEEE0A25ED93B20013A257 /* Drum go dum.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CEEEE0925ED93B20013A257 /* Drum go dum.mp3 */; };
 		701F02F140DBFBC7683966F7 /* Pods_APP_Sound.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2A9E68806AD57E8FEB269E6 /* Pods_APP_Sound.framework */; };
 		71AD966A703674745888825A /* Pods_APP_Sound_APP_SoundUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72DA7017BDD117A784B4507D /* Pods_APP_Sound_APP_SoundUITests.framework */; };
+		A9AE4C71293FEDF200FDAE89 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9AE4C70293FEDF200FDAE89 /* Localizable.strings */; };
+		A9AE4C73293FEEED00FDAE89 /* SongOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AE4C72293FEEED00FDAE89 /* SongOptionView.swift */; };
+		A9AE4C75293FFDBF00FDAE89 /* SongListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AE4C74293FFDBF00FDAE89 /* SongListView.swift */; };
 		A9CEC3B7293D52D600F8718B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CEC3B4293D52D600F8718B /* MainViewController.swift */; };
 		A9CEC3B8293D52D600F8718B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CEC3B5293D52D600F8718B /* MainView.swift */; };
 		A9CEC3B9293D52D600F8718B /* MainViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CEC3B6293D52D600F8718B /* MainViewPresenter.swift */; };
@@ -95,6 +98,9 @@
 		72DA7017BDD117A784B4507D /* Pods_APP_Sound_APP_SoundUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APP_Sound_APP_SoundUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FC7B85EBEE6EB1DF9BAB285 /* Pods_APP_SoundTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APP_SoundTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9377F689BAC87F030BDA50A0 /* Pods-APP-Sound-APP-SoundUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APP-Sound-APP-SoundUITests.debug.xcconfig"; path = "Target Support Files/Pods-APP-Sound-APP-SoundUITests/Pods-APP-Sound-APP-SoundUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A9AE4C70293FEDF200FDAE89 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		A9AE4C72293FEEED00FDAE89 /* SongOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongOptionView.swift; sourceTree = "<group>"; };
+		A9AE4C74293FFDBF00FDAE89 /* SongListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListView.swift; sourceTree = "<group>"; };
 		A9CEC3B4293D52D600F8718B /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A9CEC3B5293D52D600F8718B /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		A9CEC3B6293D52D600F8718B /* MainViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewPresenter.swift; sourceTree = "<group>"; };
@@ -181,6 +187,7 @@
 				4C0F380F25DC852400C4AD34 /* Music */,
 				4CA2559A25EBEDD9005EB538 /* Player */,
 				4CA2559925EBEDBE005EB538 /* SongList */,
+				A9AE4C70293FEDF200FDAE89 /* Localizable.strings */,
 			);
 			path = "APP-Sound";
 			sourceTree = "<group>";
@@ -223,8 +230,10 @@
 			children = (
 				4CA2558F25EBE561005EB538 /* SongList.storyboard */,
 				4CA2559425EBE708005EB538 /* SongListViewController.swift */,
+				A9AE4C72293FEEED00FDAE89 /* SongOptionView.swift */,
 				4CA2559E25EBEE0E005EB538 /* SongListTableViewCell.swift */,
 				4CA255A325EBEEB6005EB538 /* SongListController.swift */,
+				A9AE4C74293FFDBF00FDAE89 /* SongListView.swift */,
 			);
 			path = SongList;
 			sourceTree = "<group>";
@@ -390,6 +399,7 @@
 				4C0F37BC25DC66F100C4AD34 /* Assets.xcassets in Resources */,
 				4CEEEDFA25ED93910013A257 /* i dont wanna be you anymore.mp3 in Resources */,
 				4CA2559025EBE561005EB538 /* SongList.storyboard in Resources */,
+				A9AE4C71293FEDF200FDAE89 /* Localizable.strings in Resources */,
 				4CEEEE0A25ED93B20013A257 /* Drum go dum.mp3 in Resources */,
 				4C0F37BA25DC66EF00C4AD34 /* Main.storyboard in Resources */,
 				4C20718625E9B7A100BDB885 /* Childhood dreams.mp3 in Resources */,
@@ -531,8 +541,10 @@
 				4CA255C325EC104B005EB538 /* NewSongs.swift in Sources */,
 				4C0F37EB25DC674300C4AD34 /* PlayerViewController.swift in Sources */,
 				4C0F37B325DC66EF00C4AD34 /* AppDelegate.swift in Sources */,
+				A9AE4C73293FEEED00FDAE89 /* SongOptionView.swift in Sources */,
 				4CA2559F25EBEE0E005EB538 /* SongListTableViewCell.swift in Sources */,
 				4C20717C25E9AD9C00BDB885 /* PlayerController.swift in Sources */,
+				A9AE4C75293FFDBF00FDAE89 /* SongListView.swift in Sources */,
 				4C0F37B525DC66EF00C4AD34 /* SceneDelegate.swift in Sources */,
 				4CA2558B25EBE499005EB538 /* Music.swift in Sources */,
 			);
