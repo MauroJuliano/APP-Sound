@@ -13,17 +13,10 @@ class SongListController: NSObject, UITableViewDelegate, UITableViewDataSource {
     var view: SongListViewController?
     var songsArray = [Music]()
     var song = ""
+    
     init(view: SongListViewController) {
         self.view = view
     }
-    
-//    func arraySetup(){
-//        if let arrayAlbum = view?.musicArray.filter({ $0.songAlbum == view?.albumSelected?.songAlbum}){
-//            
-//            self.songsArray.append(contentsOf: arrayAlbum)
-//            
-//        }
-//    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return songsArray.count
@@ -37,6 +30,7 @@ class SongListController: NSObject, UITableViewDelegate, UITableViewDataSource {
         cell.cellTap = {
             self.nextView(music: array)
         }
+        
         cell.buttonTap = {
             
                 cell.playButton.setImage(UIImage(systemName: "pause"), for: .selected)
@@ -56,7 +50,8 @@ class SongListController: NSObject, UITableViewDelegate, UITableViewDataSource {
         
         return cell
     }
-    func nextView(music: Music?){
+    
+    func nextView(music: Music?) {
         if let storyboard = UIStoryboard(name: "Player", bundle: nil).instantiateInitialViewController() as? PlayerViewController {
             storyboard.modalPresentationStyle = .fullScreen
             storyboard.musicSelected = music

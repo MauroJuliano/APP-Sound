@@ -13,6 +13,7 @@ class SongOptionView: UIView {
     
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
+        label.font = UIFont(name: "Lobster Two", size: 18)
         return label
     }()
     
@@ -23,13 +24,14 @@ class SongOptionView: UIView {
         view.neumorphicLayer?.cornerRadius = 20
         view.setImage(UIImage(systemName: "return"), for: .normal)
         view.tintColor = .systemIndigo
+        view.addTarget(self, action: #selector(backButtonAction), for: .touchUpInside)
         return view
     }()
     
     private lazy var albumImageView: UIImageView = {
         let view = UIImageView()
         view.layer.cornerRadius = 82.5
-        view.image = UIImage(named: "gotye")
+        view.contentMode = .scaleAspectFill
         view.layer.masksToBounds = true
         return view
     }()
@@ -50,14 +52,13 @@ class SongOptionView: UIView {
         return stackView
     }()
     
-    var backAction = { /* Intentionally unimplemented */ }
+    var backAction: () -> Void = { /* Intentionally unimplemented */ }
     
     init() {
         super.init(frame: .zero)
         configureView()
         buildHierarchy()
         setupContraints()
-        titleLabel.text = "duhahuhsu udsahdhu"
     }
     
     required init?(coder: NSCoder) {
@@ -113,12 +114,16 @@ class SongOptionView: UIView {
         }
     }
     
-    func setupUI(title: String, Illustration: String, songList: [Music]) {
+    @objc
+    func backButtonAction() {
+        backAction()
+    }
+    
+    func setupUI(title: String, Illustration: String, songList: [SongListView]) {
         titleLabel.text = title
         albumImageView.image = UIImage(named: Illustration)
         
-        songList.forEach { song in
-            let list = SongListView(title: song.songName, subtitle: song.songAutor)
+        songList.forEach { list in
             stackView.addArrangedSubview(list)
         }
     }

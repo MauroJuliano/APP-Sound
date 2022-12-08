@@ -58,9 +58,6 @@
                                             </constraints>
                                             <color key="tintColor" systemColor="systemIndigoColor"/>
                                             <state key="normal" image="return" catalog="system"/>
-                                            <connections>
-                                                <action selector="backButton:" destination="Iqi-p4-P2H" eventType="touchUpInside" id="BRG-ai-yv7"/>
-                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -93,7 +90,7 @@
                                                                 <constraint firstAttribute="height" constant="21" id="dWA-uO-hJB"/>
                                                                 <constraint firstAttribute="width" constant="306" id="pCn-zd-l5T"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="0.0"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -103,7 +100,7 @@
                                                                 <constraint firstAttribute="height" constant="21" id="QjW-w6-Vto"/>
                                                                 <constraint firstAttribute="width" constant="306" id="hLg-F5-qyx"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="0.0"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -169,14 +166,6 @@
                             <constraint firstAttribute="bottom" secondItem="kWx-MI-8tm" secondAttribute="bottom" id="vlq-fv-hXy"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="AlbumImageButton" destination="tgW-tY-Xoh" id="g5H-TG-nwD"/>
-                        <outlet property="albumImageView" destination="y79-lo-ydL" id="j5i-c8-iMP"/>
-                        <outlet property="albumTitleLabel" destination="CvY-VB-Rdf" id="iui-hT-Tc7"/>
-                        <outlet property="albumView" destination="LNR-QY-rI9" id="7Qy-db-iEV"/>
-                        <outlet property="backButton" destination="0si-by-7na" id="7o6-Q5-VWe"/>
-                        <outlet property="songListTable" destination="kWx-MI-8tm" id="A4x-1L-LQV"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sqy-jH-2Nl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

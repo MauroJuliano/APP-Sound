@@ -33,6 +33,7 @@
 		4CEEEE0A25ED93B20013A257 /* Drum go dum.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CEEEE0925ED93B20013A257 /* Drum go dum.mp3 */; };
 		701F02F140DBFBC7683966F7 /* Pods_APP_Sound.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2A9E68806AD57E8FEB269E6 /* Pods_APP_Sound.framework */; };
 		71AD966A703674745888825A /* Pods_APP_Sound_APP_SoundUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72DA7017BDD117A784B4507D /* Pods_APP_Sound_APP_SoundUITests.framework */; };
+		A9300C8529415CFF0087437E /* LobsterTwo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9300C8329415C870087437E /* LobsterTwo-Regular.ttf */; };
 		A9AE4C71293FEDF200FDAE89 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9AE4C70293FEDF200FDAE89 /* Localizable.strings */; };
 		A9AE4C73293FEEED00FDAE89 /* SongOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AE4C72293FEEED00FDAE89 /* SongOptionView.swift */; };
 		A9AE4C75293FFDBF00FDAE89 /* SongListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AE4C74293FFDBF00FDAE89 /* SongListView.swift */; };
@@ -98,6 +99,10 @@
 		72DA7017BDD117A784B4507D /* Pods_APP_Sound_APP_SoundUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APP_Sound_APP_SoundUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FC7B85EBEE6EB1DF9BAB285 /* Pods_APP_SoundTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APP_SoundTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9377F689BAC87F030BDA50A0 /* Pods-APP-Sound-APP-SoundUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APP-Sound-APP-SoundUITests.debug.xcconfig"; path = "Target Support Files/Pods-APP-Sound-APP-SoundUITests/Pods-APP-Sound-APP-SoundUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A9300C8129415C870087437E /* LobsterTwo-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LobsterTwo-BoldItalic.ttf"; sourceTree = "<group>"; };
+		A9300C8229415C870087437E /* LobsterTwo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LobsterTwo-Bold.ttf"; sourceTree = "<group>"; };
+		A9300C8329415C870087437E /* LobsterTwo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LobsterTwo-Regular.ttf"; sourceTree = "<group>"; };
+		A9300C8429415C870087437E /* LobsterTwo-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LobsterTwo-Italic.ttf"; sourceTree = "<group>"; };
 		A9AE4C70293FEDF200FDAE89 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		A9AE4C72293FEEED00FDAE89 /* SongOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongOptionView.swift; sourceTree = "<group>"; };
 		A9AE4C74293FFDBF00FDAE89 /* SongListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListView.swift; sourceTree = "<group>"; };
@@ -263,6 +268,10 @@
 		A9CEC3BE293D53E200F8718B /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				A9300C8229415C870087437E /* LobsterTwo-Bold.ttf */,
+				A9300C8129415C870087437E /* LobsterTwo-BoldItalic.ttf */,
+				A9300C8429415C870087437E /* LobsterTwo-Italic.ttf */,
+				A9300C8329415C870087437E /* LobsterTwo-Regular.ttf */,
 				A9CEC3BA293D536300F8718B /* Space.swift */,
 				A9CEC3BB293D536300F8718B /* extension+hexdecimalColor.swift */,
 			);
@@ -398,6 +407,7 @@
 				4C20718125E9B78A00BDB885 /* MORE.mp3 in Resources */,
 				4C0F37BC25DC66F100C4AD34 /* Assets.xcassets in Resources */,
 				4CEEEDFA25ED93910013A257 /* i dont wanna be you anymore.mp3 in Resources */,
+				A9300C8529415CFF0087437E /* LobsterTwo-Regular.ttf in Resources */,
 				4CA2559025EBE561005EB538 /* SongList.storyboard in Resources */,
 				A9AE4C71293FEDF200FDAE89 /* Localizable.strings in Resources */,
 				4CEEEE0A25ED93B20013A257 /* Drum go dum.mp3 in Resources */,

@@ -7,25 +7,27 @@ class SongListView: UIView {
     
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont(name: "Noto Sans Oriya", size: 16)
+        label.font = UIFont(name: "Lobster Two", size: 16)
         return label
     }()
     
     private lazy var subtitleLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont(name: "Noto Sans Oriya", size: 12)
+        label.font = UIFont(name: "Lobster Two", size: 12)
         return label
     }()
     
-    private lazy var playButton: EMTNeumorphicButton = {
+    lazy var playButton: EMTNeumorphicButton = {
         let view = EMTNeumorphicButton()
         view.neumorphicLayer?.elementBackgroundColor = secondaryColor.cgColor
         view.backgroundColor = UIColor(RGB: 0xF0EEEF)
         view.neumorphicLayer?.cornerRadius = 20
         view.setImage(UIImage(systemName: "play.fill"), for: .normal)
+        view.setImage(UIImage(systemName: "pause"), for: .selected)
         view.tintColor = .systemIndigo
         view.neumorphicLayer?.edged = true
         view.neumorphicLayer?.borderColor = UIColor.black.cgColor
+        view.addTarget(self, action: #selector(playButtonAction), for: .touchUpInside)
         return view
     }()
     
@@ -34,8 +36,12 @@ class SongListView: UIView {
         view.neumorphicLayer?.elementBackgroundColor = secondaryColor.cgColor
         view.neumorphicLayer?.depthType = .convex
         view.neumorphicLayer?.elementDepth = 7
+        view.addTarget(self, action: #selector(contentButtonAction), for: .touchUpInside)
         return view
     }()
+    
+    var contentAction: () -> Void = { /* Intentionally unimplemented */ }
+    var playAction: () -> Void = { /* Intentionally unimplemented */ }
     
     init(title: String, subtitle: String) {
         super.init(frame: .zero)
@@ -80,5 +86,15 @@ class SongListView: UIView {
             $0.width.height.equalTo(40)
             $0.centerY.equalToSuperview()
         }
+    }
+    
+    @objc
+    func contentButtonAction() {
+        contentAction()
+    }
+    
+    @objc
+    func playButtonAction() {
+        playAction()
     }
 }
