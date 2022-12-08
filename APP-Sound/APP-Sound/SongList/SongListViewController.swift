@@ -2,18 +2,10 @@ import EMTNeumorphicView
 import UIKit
 
 final class SongListViewController: UIViewController {
-    @IBOutlet var albumImageView: UIImageView!
-    @IBOutlet var AlbumImageButton: EMTNeumorphicButton!
-    @IBOutlet var albumTitleLabel: UILabel!
-    @IBOutlet var songListTable: UITableView!
-    @IBOutlet var albumView: UIView!
-    @IBOutlet var backButton: EMTNeumorphicButton!
-    
     var lists = [SongListView]()
     var albumSelected: Music?
     var musicArray: [Music]?
-    let color2 = UIColor(RGB: 0xF0EEEF)
-    private lazy var controller = SongListController(view: self)
+    private lazy var songListModel = SongListViewModel(view: self)
     var musicController = NewSong()
     
     private lazy var customView: SongOptionView = {
@@ -51,17 +43,17 @@ final class SongListViewController: UIViewController {
                 list.playAction = {
                     guard !list.playButton.isSelected else {
                         list.playButton.isSelected = false
-                        self.controller.pausePlayer()
+                        self.songListModel.pausePlayer()
                         return
                     }
                     
-                    self.controller.resumeNow(currentSong: songs.songName)
-                    self.controller.song = songs.songName
+                    self.songListModel.resumeNow(currentSong: songs.songName)
+                    self.songListModel.song = songs.songName
                     list.playButton.isSelected = true
                 }
                 
                 list.contentAction = { [weak self] in
-                    self?.controller.nextView(music: songs)
+                    self?.songListModel.nextView(music: songs)
                 }
                 
                 lists.append(list)
