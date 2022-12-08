@@ -20,17 +20,18 @@ class PlayListsCollectionViewCell: UICollectionViewCell {
         button.neumorphicLayer?.cornerRadius = 20
         button.neumorphicLayer?.elementDepth = 7
         button.neumorphicLayer?.edged = true
+        button.tintColor = .systemIndigo
         return button
     }()
     
     private lazy var iconImageView: UIImageView = {
-        var button = UIImageView()
-        
-        return button
+        var view = UIImageView()
+        return view
     }()
     
     private lazy var albumName: UILabel = {
         var label = UILabel()
+        label.font = UIFont(name: "Lobster Two", size: 20)
         return label
     }()
     

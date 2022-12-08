@@ -1,65 +1,70 @@
-//
-//  SongListViewController.swift
-//  APP-Sound
-//
-//  Created by Lestad on 2021-02-28.
-//
-
-import UIKit
 import EMTNeumorphicView
-class SongListViewController: UIViewController {
-    @IBOutlet var albumImageView: UIImageView!
-    @IBOutlet var AlbumImageButton: EMTNeumorphicButton!
-    @IBOutlet var albumTitleLabel: UILabel!
-    @IBOutlet var songListTable: UITableView!
-    @IBOutlet var albumView: UIView!
-    @IBOutlet var backButton: EMTNeumorphicButton!
+import UIKit
+
+final class SongListViewController: UIViewController {
+    var lists = [SongListView]()
     var albumSelected: Music?
-    var musicArray = [Music]()
-    let color2 = UIColor(RGB: 0xF0EEEF)
-    var controller: SongListController?
+    var musicArray: [Music]?
+    private lazy var songListModel = SongListViewModel(view: self)
     var musicController = NewSong()
+    
+    private lazy var customView: SongOptionView = {
+        let view = SongOptionView()
+        view.backAction = { [weak self] in
+          self?.backAction()
+        }
+        return view
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupUI()
-        tableViewSetup()
+        self.view = customView
         getSongs()
-        // Do any additional setup after loading the view.
     }
+    
     func getSongs(){
         musicController.addNewSongs(completionHandler: { success, _ in
-            if success{
+            if success {
                 self.musicArray = self.musicController.musicArray
-                self.controller?.arraySetup()
+                self.setupUI()
             }
         })
     }
         
-    func setupUI(){
-        self.view.backgroundColor = color2
-        albumTitleLabel.text = albumSelected?.songAlbum
-        albumImageView.image = UIImage(named: (albumSelected?.songImage)!)
-        albumImageView.roundCorners(.allCorners, radius: 82.5)
-        AlbumImageButton.neumorphicLayer?.elementBackgroundColor = view.backgroundColor?.cgColor ?? UIColor.white.cgColor
-        albumView.backgroundColor = color2
-        AlbumImageButton.neumorphicLayer?.cornerRadius = 90
+    func setupUI() {
+        guard let album = musicArray?.filter({ $0.songAlbum == albumSelected?.songAlbum}) else { return }
         
-        backButton.neumorphicLayer?.elementBackgroundColor = view.backgroundColor?.cgColor ?? UIColor.white.cgColor
-        backButton.backgroundColor = color2
-        backButton.neumorphicLayer?.cornerRadius = 20
+        if let name = album.first?.songAutor,
+           let illustration = album.first?.songImage {
+            
+            album.forEach { songs in
+                let list = SongListView(title: songs.songName, subtitle: songs.songAlbum)
+                
+                list.playAction = {
+                    guard !list.playButton.isSelected else {
+                        list.playButton.isSelected = false
+                        self.songListModel.pausePlayer()
+                        return
+                    }
+                    
+                    self.songListModel.resumeNow(currentSong: songs.songName)
+                    self.songListModel.song = songs.songName
+                    list.playButton.isSelected = true
+                }
+                
+                list.contentAction = { [weak self] in
+                    self?.songListModel.nextView(music: songs)
+                }
+                
+                lists.append(list)
+            }
+            
+            customView.setupUI(title: name, Illustration: illustration, songList: lists)
+        }
         
     }
-    @IBAction func backButton(_ sender: Any) {
+    
+    func backAction() {
         self.dismiss(animated: true, completion: nil)
     }
-    
-    func tableViewSetup(){
-        controller = SongListController(view: self)
-        songListTable.backgroundColor = color2
-        songListTable.delegate = controller
-        songListTable.dataSource = controller
-        songListTable.reloadData()
-    }
-    
 }

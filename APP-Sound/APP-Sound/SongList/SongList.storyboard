@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Iqi-p4-P2H">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Iqi-p4-P2H">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -57,9 +58,6 @@
                                             </constraints>
                                             <color key="tintColor" systemColor="systemIndigoColor"/>
                                             <state key="normal" image="return" catalog="system"/>
-                                            <connections>
-                                                <action selector="backButton:" destination="Iqi-p4-P2H" eventType="touchUpInside" id="BRG-ai-yv7"/>
-                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -76,8 +74,8 @@
                                     </constraints>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SongList" rowHeight="69" id="Djq-wU-nIe" customClass="SongListTableViewCell" customModule="APP_Sound" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="308" width="414" height="69"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SongList" rowHeight="69" id="Djq-wU-nIe">
+                                        <rect key="frame" x="0.0" y="324.5" width="414" height="69"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Djq-wU-nIe" id="BhM-je-yQn">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="69"/>
@@ -92,7 +90,7 @@
                                                                 <constraint firstAttribute="height" constant="21" id="dWA-uO-hJB"/>
                                                                 <constraint firstAttribute="width" constant="306" id="pCn-zd-l5T"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="0.0"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -102,7 +100,7 @@
                                                                 <constraint firstAttribute="height" constant="21" id="QjW-w6-Vto"/>
                                                                 <constraint firstAttribute="width" constant="306" id="hLg-F5-qyx"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="0.0"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -168,14 +166,6 @@
                             <constraint firstAttribute="bottom" secondItem="kWx-MI-8tm" secondAttribute="bottom" id="vlq-fv-hXy"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="AlbumImageButton" destination="tgW-tY-Xoh" id="g5H-TG-nwD"/>
-                        <outlet property="albumImageView" destination="y79-lo-ydL" id="j5i-c8-iMP"/>
-                        <outlet property="albumTitleLabel" destination="CvY-VB-Rdf" id="iui-hT-Tc7"/>
-                        <outlet property="albumView" destination="LNR-QY-rI9" id="7Qy-db-iEV"/>
-                        <outlet property="backButton" destination="0si-by-7na" id="7o6-Q5-VWe"/>
-                        <outlet property="songListTable" destination="kWx-MI-8tm" id="A4x-1L-LQV"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sqy-jH-2Nl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

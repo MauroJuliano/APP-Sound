@@ -2,7 +2,11 @@ import UIKit
 import EMTNeumorphicView
 import AVFoundation
 
-class MainViewController: UIViewController {
+protocol MainViewDelegate: AnyObject {
+    func getSongs2()
+}
+
+final class MainViewController: UIViewController {
     private var customView = MainView()
     private var albumMusic = [Music]()
     

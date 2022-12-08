@@ -7,14 +7,14 @@ class MainView: UIView {
     private lazy var titleLabel: UILabel = {
         var label = UILabel()
         label.textAlignment = .left
-        label.font = UIFont(name: "Noto Sans Oriya", size: 30)
+        label.font = UIFont(name: "Lobster Two", size: 30)
         return label
     }()
     
     private lazy var subtitleLabel: UILabel = {
         var label = UILabel()
         label.textAlignment = .left
-        label.font = UIFont(name: "Noto Sans Oriya", size: 20)
+        label.font = UIFont(name: "Lobster Two", size: 20)
         return label
     }()
     
@@ -34,11 +34,13 @@ class MainView: UIView {
         button.neumorphicLayer?.cornerRadius = 20
         button.neumorphicLayer?.elementBackgroundColor = NeumorphicColor.base01.color.cgColor
         button.neumorphicLayer?.elementDepth = 7
+        button.tintColor = .systemIndigo
         return button
     }()
     
     private lazy var favoriteLabel: UILabel = {
         var label = UILabel()
+        label.font = UIFont(name: "Lobster Two", size: 20)
         return label
     }()
     
@@ -52,7 +54,7 @@ class MainView: UIView {
     private lazy var recommendedLabel: UILabel = {
         var label = UILabel()
         label.textAlignment = .left
-        label.font = UIFont(name: "Noto Sans Oriya", size: 20)
+        label.font = UIFont(name: "Lobster Two", size: 25)
         return label
     }()
     
@@ -101,12 +103,13 @@ class MainView: UIView {
     
     func setupContraints() {
         titleLabel.snp.makeConstraints {
-            $0.top.leading.equalToSuperview().inset(Space.base07.rawValue)
+            $0.top.equalToSuperview().inset(Space.base12.rawValue)
+            $0.leading.equalToSuperview().inset(Space.base08.rawValue)
         }
         
         subtitleLabel.snp.makeConstraints {
             $0.top.equalTo(titleLabel.snp.bottom).offset(Space.base05.rawValue)
-            $0.leading.equalToSuperview().offset(Space.base07.rawValue)
+            $0.leading.equalToSuperview().offset(Space.base08.rawValue)
         }
         
         favoriteView.snp.makeConstraints {
@@ -133,7 +136,7 @@ class MainView: UIView {
         
         recommendedLabel.snp.makeConstraints {
             $0.top.equalTo(favoriteView.snp.bottom).offset(Space.base07.rawValue)
-            $0.leading.equalToSuperview().offset(Space.base07.rawValue)
+            $0.leading.equalToSuperview().offset(Space.base08.rawValue)
         }
         
         collectionView.snp.makeConstraints {
