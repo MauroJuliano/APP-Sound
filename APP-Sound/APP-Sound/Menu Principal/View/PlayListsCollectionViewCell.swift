@@ -43,9 +43,9 @@ class PlayListsCollectionViewCell: UICollectionViewCell {
         contentView.backgroundColor = NeumorphicColor.base01.color
     }
     
-    func setup(music: Music) {
+    func setup(music: Singer) {
         setupCell()
-        albumName.text = music.songAlbum
+        albumName.text = music.name
         let image = UIImage(systemName: "guitars.fill")
         favoritesIcon.setImage(image, for: .normal)
         

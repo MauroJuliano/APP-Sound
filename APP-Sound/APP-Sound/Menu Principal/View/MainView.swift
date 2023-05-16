@@ -25,6 +25,7 @@ class MainView: UIView {
         button.neumorphicLayer?.edged = true
         button.neumorphicLayer?.depthType = .convex
         button.neumorphicLayer?.borderColor = UIColor.black.cgColor
+        button.addTarget(self, action: #selector(pressedAction), for: .touchUpInside)
         return button
     }()
     
@@ -69,12 +70,29 @@ class MainView: UIView {
         return view
     }()
    
+    lazy var musicSheet: MusicSheet = {
+        let view = MusicSheet()
+        view.playAction = {
+            self.playFloatingAction()
+            self.isMusicSheetSelected = true
+        }
+        return view
+    }()
+     
+    var isMusicSheetSelected: Bool = false
+    var action: () -> Void = { /* Intentionally unimplemented */ }
+    var floatingAction: () -> Void = { /* Intentionally unimplemented */ }
+    
     init() {
         super.init(frame: .zero)
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func currentSong(title: String, subTitle: String, illustration: String) {
+        musicSheet.setup(title: title, subtitle: subTitle, illustration: illustration)
     }
     
     func setupView(musics: Int) {
@@ -99,6 +117,15 @@ class MainView: UIView {
         addSubview(favoriteView)
         addSubview(recommendedLabel)
         addSubview(collectionView)
+        addSubview(musicSheet)
+    }
+    
+    func playFloatingAction() {
+        floatingAction()
+    }
+    @objc
+    func pressedAction(){
+        action()
     }
     
     func setupContraints() {
@@ -143,7 +170,13 @@ class MainView: UIView {
             $0.top.equalTo(recommendedLabel.snp.bottom).offset(Space.base07.rawValue)
             $0.leading.equalToSuperview().offset(Space.base07.rawValue)
             $0.trailing.equalToSuperview().offset(Space.none.rawValue)
-            $0.bottom.equalToSuperview().offset(-Space.base12.rawValue)
+        }
+        
+        musicSheet.snp.makeConstraints {
+            $0.top.equalTo(collectionView.snp.bottom).offset(Space.base04.rawValue)
+            $0.leading.trailing.equalToSuperview().inset(Space.base04.rawValue)
+            $0.bottom.equalToSuperview()
+            $0.height.equalTo(100)
         }
     }
 }

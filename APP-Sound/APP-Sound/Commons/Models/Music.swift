@@ -1,11 +1,16 @@
-//
-//  Music.swift
-//  APP-Sound
-//
-//  Created by Lestad on 2021-02-28.
-//
-
 import Foundation
+
+class Singer {
+    var name: String
+    var image: String
+    var music: [Music]
+    
+    init(name: String,image: String, music: [Music]) {
+        self.name = name
+        self.image = image
+        self.music = music
+    }
+}
 
 class Music {
     var songName: String
@@ -22,3 +27,5 @@ class Music {
         self.isFavorite = isFavorite
     }
 }
+
+

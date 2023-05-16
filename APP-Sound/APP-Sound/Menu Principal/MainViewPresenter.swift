@@ -1,39 +1,35 @@
 import Foundation
 import UIKit
 
-class MainViewPresenter: NSObject {
-    var viewController: MainViewController?
-    var musicController = NewSong()
-    var musicArray = [Music]()
-    var albumMusic = [Music]()
-    var alreadyHas = [String]()
+protocol MainViewPresenting: AnyObject {
+    func presenterPerform(action: MainViewAction)
+    func displayScreen(musicList: [Singer], currentSong: Int, currentSinger: Int)
+  
+}
+
+final class MainViewPresenteer: MainViewPresenting {
+    private var coordinator: MainViewCoordinating
+    weak var viewController: MainViewDisplaying?
     
-    init(view: MainViewController){
-        self.viewController = view
+    init(coordinator: MainViewCoordinating) {
+        self.coordinator = coordinator
     }
     
-    func getSongs(){
-        musicController.addNewSongs(completionHandler: { success, _ in
-            if success {
-                self.musicArray.append(contentsOf: self.musicController.musicArray)
-                self.getMusic()
-            }
-        })
+    func displayScreen(musicList: [Singer], currentSong: Int, currentSinger: Int) {
+        viewController?.musics = musicList
+        let currentSongName = musicList[currentSinger].music[currentSong]
+        viewController?.displayScreen(musicInfo: currentSongName)
     }
     
-    func getMusic() {
-        musicArray.forEach { (itens) in
-            if !alreadyHas.contains(itens.songAutor){
-                albumMusic.append(itens)
-                alreadyHas.append(itens.songAlbum)
-            }
+    func presenterPerform(action: MainViewAction) {
+        coordinator.player(action: action)
+        switch action {
+        case .play:
+            viewController?.playButton(isSelected: true)
+        case .pause:
+            viewController?.playButton(isSelected: false)
+        default:
+            print("do nothing")
         }
-        
-        viewController?.displayScreen(viewModel: albumMusic)
-    }
-    
-    func getFavorites(){
-        let favorites = musicArray.filter({$0.isFavorite == true})
-        // TODO: Implement favorites next PR
     }
 }

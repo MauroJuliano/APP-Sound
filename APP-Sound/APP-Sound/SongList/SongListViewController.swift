@@ -1,11 +1,18 @@
 import EMTNeumorphicView
 import UIKit
 
+protocol SongListDisplaying: AnyObject {
+    func displayScreen(singer: String)
+}
+
 final class SongListViewController: UIViewController {
     var lists = [SongListView]()
-    var albumSelected: Music?
-    var musicArray: [Music]?
-    private lazy var songListModel = SongListViewModel(view: self)
+    var songName: String?
+    var songImage: String?
+    var musicArray: [Singer]?
+    
+    private var interactor: SongListInteracting
+    
     var musicController = NewSong()
     
     private lazy var customView: SongOptionView = {
@@ -16,55 +23,63 @@ final class SongListViewController: UIViewController {
         return view
     }()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.view = customView
-        getSongs()
+    init(interactor: SongListInteracting) {
+        self.interactor = interactor
+        super.init(nibName: nil, bundle: nil)
     }
     
-    func getSongs(){
-        musicController.addNewSongs(completionHandler: { success, _ in
-            if success {
-                self.musicArray = self.musicController.musicArray
-                self.setupUI()
-            }
-        })
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
+    
+    override func loadView() {
+        self.view = customView
+        interactor.loadData()
+    }
+    
+    func setupUI(singer: String) {
+        musicArray = Songs.getMusics()
+        guard let album = musicArray?.filter({ $0.name == singer }) else { return }
+        let illustration = album.first?.image ?? ""
         
-    func setupUI() {
-        guard let album = musicArray?.filter({ $0.songAlbum == albumSelected?.songAlbum}) else { return }
-        
-        if let name = album.first?.songAutor,
-           let illustration = album.first?.songImage {
-            
-            album.forEach { songs in
+        album.forEach { album in
+            album.music.forEach { songs in
                 let list = SongListView(title: songs.songName, subtitle: songs.songAlbum)
                 
                 list.playAction = {
                     guard !list.playButton.isSelected else {
                         list.playButton.isSelected = false
-                        self.songListModel.pausePlayer()
+                        self.interactor.pauseSong()
                         return
                     }
                     
-                    self.songListModel.resumeNow(currentSong: songs.songName)
-                    self.songListModel.song = songs.songName
+                    self.interactor.playSong(currentSong: songs.songName)
                     list.playButton.isSelected = true
                 }
                 
                 list.contentAction = { [weak self] in
-                    self?.songListModel.nextView(music: songs)
+                    self?.interactor.openPlayer(singer: album.name,
+                                                illustration: illustration,
+                                                songName: songs.songName)
+                    //self?.songListModel.nextView(music: songs)
                 }
-                
                 lists.append(list)
             }
-            
-            customView.setupUI(title: name, Illustration: illustration, songList: lists)
         }
+        
+        customView.setupUI(title: singer,
+                           Illustration: illustration,
+                           songList: lists)
         
     }
     
     func backAction() {
         self.dismiss(animated: true, completion: nil)
+    }
+}
+
+extension SongListViewController: SongListDisplaying {
+    func displayScreen(singer: String) {
+        setupUI(singer: singer)
     }
 }

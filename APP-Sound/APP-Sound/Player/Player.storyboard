@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="71X-ej-j0A">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,7 +12,7 @@
         <!--Player-->
         <scene sceneID="71n-PW-1Vo">
             <objects>
-                <viewController storyboardIdentifier="Player" title="Player" useStoryboardIdentifierAsRestorationIdentifier="YES" id="71X-ej-j0A" customClass="PlayerViewController" customModule="APP_Sound" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Player" title="Player" id="71X-ej-j0A" customClass="PlayerViewController" customModule="APP_Sound" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="48m-ib-wLq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,9 +25,6 @@
                                 </constraints>
                                 <color key="tintColor" systemColor="systemIndigoColor"/>
                                 <state key="normal" image="arrowshape.turn.up.left" catalog="system"/>
-                                <connections>
-                                    <action selector="backButton:" destination="71X-ej-j0A" eventType="touchUpInside" id="UGq-Hg-tvG"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glg-kD-9ew" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
                                 <rect key="frame" x="335" y="49" width="40" height="40"/>
@@ -45,9 +43,6 @@
                                 </constraints>
                                 <color key="tintColor" systemColor="systemIndigoColor"/>
                                 <state key="normal" image="backward.frame" catalog="system"/>
-                                <connections>
-                                    <action selector="previousSongButton:" destination="71X-ej-j0A" eventType="touchUpInside" id="r5s-NF-7hr"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Asc-zT-Lln" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
                                 <rect key="frame" x="305" y="699" width="50" height="50"/>
@@ -57,9 +52,6 @@
                                 </constraints>
                                 <color key="tintColor" systemColor="systemIndigoColor"/>
                                 <state key="normal" image="forward.end" catalog="system"/>
-                                <connections>
-                                    <action selector="nextSongButton:" destination="71X-ej-j0A" eventType="touchUpInside" id="9oJ-mp-lVj"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phk-NA-oGc" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
                                 <rect key="frame" x="164" y="684" width="86" height="80"/>
@@ -69,9 +61,6 @@
                                 </constraints>
                                 <color key="tintColor" systemColor="systemIndigoColor"/>
                                 <state key="normal" image="play" catalog="system"/>
-                                <connections>
-                                    <action selector="playButton:" destination="71X-ej-j0A" eventType="touchUpInside" id="GR8-9g-HOd"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLAYING NOW" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="swG-Vn-Z56">
                                 <rect key="frame" x="131" y="59" width="160" height="21"/>
@@ -192,20 +181,6 @@
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="artistNameLabel" destination="siu-Y6-byt" id="h5o-4j-CCW"/>
-                        <outlet property="autorImage" destination="ghU-6c-Qo9" id="6ka-D0-4km"/>
-                        <outlet property="backButton" destination="EgX-H0-ir9" id="t14-aJ-ER5"/>
-                        <outlet property="backwardButton" destination="xfz-68-aeZ" id="nGz-qH-mgp"/>
-                        <outlet property="currentTimeLabel" destination="3Kz-PY-XcF" id="1LC-2e-UUA"/>
-                        <outlet property="durationSongLabel" destination="JWw-JR-mUa" id="iqb-BA-U2j"/>
-                        <outlet property="forwardButton" destination="Asc-zT-Lln" id="A5c-mu-uW2"/>
-                        <outlet property="menuListButton" destination="glg-kD-9ew" id="MbH-Ha-MED"/>
-                        <outlet property="playButton" destination="phk-NA-oGc" id="O7J-Xt-I8s"/>
-                        <outlet property="siriProgressView" destination="lLF-Rd-hvO" id="22t-BS-DR1"/>
-                        <outlet property="songNameLabel" destination="tor-kZ-zjd" id="gwN-gR-6Up"/>
-                        <outlet property="viewImage" destination="7c4-rf-dn1" id="ErR-k7-Fl5"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ama-1b-aSI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

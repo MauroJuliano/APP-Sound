@@ -2,31 +2,73 @@ import UIKit
 import EMTNeumorphicView
 import AVFoundation
 
-protocol MainViewDelegate: AnyObject {
-    func getSongs2()
+protocol MusicDelegate: AnyObject {
+    func updateMusic(currentSinger: Int, currentSong: Int)
+}
+
+protocol MainViewDisplaying: AnyObject {
+    var musics: [Singer] {get set}
+    func displayScreen(musicInfo: Music)
+    func playButton(isSelected: Bool)
+    func updateMusic(currentSinger: Int, currentSong: Int)
 }
 
 final class MainViewController: UIViewController {
-    private var customView = MainView()
-    private var albumMusic = [Music]()
+    var musics = [Singer]()
     
-    var player: AVAudioPlayer?
-    var musicArray = [Music]()
-    lazy var controller = MainViewPresenter(view: self)
-    var musicController = NewSong()
+    private var interactor: MainViewInterating
     
-    override func loadView() {
-        controller.getSongs()
-        self.view = customView
+    private lazy var customView: MainView = {
+        let view = MainView()
+        view.action = { [weak self] in
+            self?.interactor.loadSongs()
+        }
+        return view
+    }()
+    
+    
+    init(interactor: MainViewInterating) {
+        self.interactor = interactor
+        super.init(nibName: nil, bundle: nil)
     }
     
-    func displayScreen(viewModel: [Music]) {
-        albumMusic.append(contentsOf: viewModel)
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func loadView() {
+        self.view = customView
+        interactor.loadSongs()
+    }
+}
+
+extension MainViewController: MainViewDisplaying {
+    func displayScreen(musicInfo: Music) {
         customView.collectionView.delegate = self
         customView.collectionView.dataSource = self
-        customView.collectionView.reloadData()
         
-        customView.setupView(musics: viewModel.count)
+        customView.setupView(musics: musics.count)
+        customView.currentSong(title: musicInfo.songName,
+                               subTitle: musicInfo.songAutor,
+                               illustration: musicInfo.songImage)
+        
+        customView.floatingAction = { [weak self] in
+            let isSelected = self?.customView.musicSheet.playButton.isSelected ?? false
+            
+            if isSelected {
+                self?.interactor.pauseSong()
+            } else {
+                self?.interactor.playSong()
+            }
+        }
+    }
+    
+    func playButton(isSelected: Bool) {
+        customView.musicSheet.playButton.isSelected = isSelected
+    }
+    
+    func updateMusic(currentSinger: Int, currentSong: Int) {
+        print(currentSong, currentSinger)
     }
 }
 
@@ -37,22 +79,24 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if let storyboard = UIStoryboard(name: "SongList", bundle: nil).instantiateInitialViewController() as? SongListViewController {
-            storyboard.albumSelected = albumMusic[indexPath.row]
-            storyboard.modalPresentationStyle = .fullScreen
-            present(storyboard, animated: true, completion: nil)
-        }
+        self.interactor.openSongList(singer: musics[indexPath.row].name)
+//        if let storyboard = UIStoryboard(name: "SongList", bundle: nil).instantiateInitialViewController() as? SongListViewController {
+//            storyboard.songName = musics[indexPath.row].name
+//            storyboard.songImage = musics[indexPath.row].image
+//            storyboard.modalPresentationStyle = .fullScreen
+          //  present(storyboard, animated: true, completion: nil)
+     //  }
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return albumMusic.count
+        return musics.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PlayListCell", for: indexPath) as? PlayListsCollectionViewCell else {
             return UICollectionViewCell()
         }
-        cell.setup(music: albumMusic[indexPath.row])
+        cell.setup(music: musics[indexPath.row])
         return cell
     }
 }
